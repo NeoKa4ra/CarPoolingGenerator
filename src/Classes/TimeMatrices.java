@@ -27,7 +27,7 @@ public class TimeMatrices {
 
 	// Print the matrix in the carpooling needed form
 	public void printMatrix() {
-		System.out.println("t=[");
+		System.out.println("tA=[");
 		for (int i = 0; i < mLenY; i++) {
 			System.out.print('[');
 			for (int j = 0; j < mLenX; j++) {

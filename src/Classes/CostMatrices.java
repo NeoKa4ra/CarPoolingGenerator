@@ -59,7 +59,7 @@ public class CostMatrices {
 
 	// Print the matrix in the carpooling needed form
 	public void printMatrix() {
-		System.out.println("c=[");
+		System.out.println("cA=[");
 		for (int i = 0; i < mLenY; i++) {
 			System.out.print('[');
 			for (int j = 0; j < mLenX; j++) {

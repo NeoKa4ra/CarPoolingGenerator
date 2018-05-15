@@ -13,7 +13,7 @@ public class Generator {
 	public static void main(String[] args) {
 		// ********************* DATAS TO GIVE ********************* //
 		// Vertices
-		int nPersonnes = 10;
+		int nPersonnes = 25;
 		int mode = ALLER;
 		// SATELLITES
 		int nSatellites = 0;
