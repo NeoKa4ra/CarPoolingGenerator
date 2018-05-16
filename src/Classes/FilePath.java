@@ -4,7 +4,7 @@ public class FilePath {
 	String path = "";
 
 	public FilePath(Vertices v, int matrixMode, int wayMode, int rdmRange) {
-		this.path = "P:\\Travaux\\Modelisation\\Tests\\";
+		this.path = "P:\\Travaux\\Modelisation\\Tests\\test";
 
 		switch (matrixMode) {
 		case Constants.RW: // random matrix to go to work

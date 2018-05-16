@@ -7,8 +7,10 @@ public class Generator {
 	public static void main(String[] args) {
 		// ********************* DATAS TO GIVE ********************* //
 		// Vertices
-		int nPersonnes = 25;
-		int wayMode = Constants.W;
+		int nPersonnes = 6;
+		// Way W : Going to work; WS : with satellites; WH : Going to work and to home; WHS : with satellites
+		int wayMode = Constants.WH;
+		// RW : Random matrix to work; RCW : with close houses and close works; RSW : only one work; RxSW : with 1 to x works
 		int matrixMode = Constants.RCW;
 		// SATELLITES
 		int nSatellites = 0;
@@ -23,7 +25,7 @@ public class Generator {
 		System.out.println(v);
 
 		// Generation of the number of passengers
-		Passengers p = new Passengers(v.getOriginsW());
+		Passengers p = new Passengers(v);
 		System.out.println(p);
 
 		// Generation of the cost matrix
@@ -35,11 +37,11 @@ public class Generator {
 		System.out.println(tM);
 
 		// Generation of the hours
-		Hours h = new Hours(v.getOriginsW());
+		Hours h = new Hours(v);
 		System.out.println(h);
 
 		// Generation of the drivers capacity and maximal travel time
-		Drivers d = new Drivers(v.getOriginsW(), tM);
+		Drivers d = new Drivers(tM);
 		System.out.println(d);
 
 		FilePath FP = new FilePath(v, matrixMode, wayMode, rdmRange);
