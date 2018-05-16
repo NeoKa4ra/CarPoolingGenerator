@@ -6,8 +6,8 @@ public class Drivers {
 	private int[] capacite;
 	private int[] tempsTrajetMax;
 	private int nPotentialDrivers;
-	
-	private void Initialisation(int n){
+
+	private void Initialisation(int n) {
 		this.nPotentialDrivers = n;
 		this.capacite = new int[nPotentialDrivers];
 		this.tempsTrajetMax = new int[nPotentialDrivers];
@@ -31,23 +31,27 @@ public class Drivers {
 	}
 
 	// Print the potential drivers in the carpooling needed form
-	public void printDrivers() {
-		System.out.print("qV=[");
+	public String toString() {
+		String str = "//DRIVERS\n";
+		str += "//Capacity of the car\n";
+		str += "qV=[";
 		for (int i = 0; i < nPotentialDrivers; i++) {
-				System.out.print(this.capacite[i]);
+			str += this.capacite[i];
 			if (i != nPotentialDrivers - 1) {
-				System.out.print(",");
-			} 
+				str += ",";
+			}
 		}
-		System.out.println("];");
-		System.out.print("tV=[");
+		str += "];\n";
+		str += "//Maximal travel time of the driver\n";
+		str += "tV=[";
 		for (int i = 0; i < nPotentialDrivers; i++) {
-				System.out.print(this.tempsTrajetMax[i]);
+			str += this.tempsTrajetMax[i];
 			if (i != nPotentialDrivers - 1) {
-				System.out.print(",");
-			} 
+				str += ",";
+			}
 		}
-		System.out.println("];");
+		str += "];\n";
+		return str;
 	}
 
 }

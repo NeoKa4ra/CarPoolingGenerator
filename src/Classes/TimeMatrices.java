@@ -19,47 +19,53 @@ public class TimeMatrices {
 		int rdmNumber;
 		for (int i = 0; i < mLenY; i++) {
 			for (int j = 0; j < mLenY; j++) {
-				rdmNumber = randomGenerator.nextInt((2*gapPercentage  * this.m[i][j])/ 100 + 1);
-				this.m[i][j] = this.m[i][j] + rdmNumber - (gapPercentage  * this.m[i][j])/ 100;
+				rdmNumber = randomGenerator.nextInt((2 * gapPercentage * this.m[i][j]) / 100 + 1);
+				this.m[i][j] = this.m[i][j] + rdmNumber - (gapPercentage * this.m[i][j]) / 100;
 			}
 		}
 	}
 
 	// Print the matrix in the carpooling needed form
-	public void printMatrix() {
-		System.out.println("tA=[");
+	public String toString() {
+		String str = "//tA[i][j] = time to travel from i to j to work\n";
+		str += "tA=[\n";
 		for (int i = 0; i < mLenY; i++) {
-			System.out.print('[');
+			str += '[';
 			for (int j = 0; j < mLenX; j++) {
-				System.out.print(this.m[i][j]);
+				str += this.m[i][j];
 				if (j != mLenX - 1) {
-					System.out.print(", ");
+					str += ", ";
 				}
 			}
 			if (i != mLenY - 1) {
-				System.out.println("],");
+				str += "],\n";
 			} else {
-				System.out.println("]");
+				str += "]\n";
 			}
 		}
-		System.out.println("];");
+		str += "];\n";
+		return str;
 	}
-	
-	//Getters
-		public int[][] getM(){
-			return this.m.clone();
-		}
-		public int getRange(){
-			return this.rdmRange;
-		}
-		public int getLengthX(){
-			return this.mLenX;
-		}
-		public int getLengthY(){
-			return this.mLenY;
-		}
-		public int getDiagonal(){
-			return this.diagonal;
-		}
+
+	// Getters
+	public int[][] getM() {
+		return this.m.clone();
+	}
+
+	public int getRange() {
+		return this.rdmRange;
+	}
+
+	public int getLengthX() {
+		return this.mLenX;
+	}
+
+	public int getLengthY() {
+		return this.mLenY;
+	}
+
+	public int getDiagonal() {
+		return this.diagonal;
+	}
 
 }

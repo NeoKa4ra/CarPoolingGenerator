@@ -20,18 +20,20 @@ public class Hours {
 	}
 
 	// Print the generated hours in the carpooling needed form
-	public void printHours() {
-		System.out.print("hDDA=[");
+	public String toString() {
+		String str = "//HOURS\n";
+		str += "//Hour of arrival at the latest to work\n";
+		str += "hDDA=[";
 		for (int i = 0; i < nPersonnes; i++) {
-				System.out.print(this.latestArrivalTime[i]);
+			str += this.latestArrivalTime[i];
 			if (i != nPersonnes - 1) {
-				System.out.print(",");
-			} 
+				str += ",";
+			}
 		}
-		System.out.println("];");
-		System.out.print("hDOR=[");
-		System.out.println("];");
+		str += "];\n";
+		str += "//Hour of arrival at the latest to home\n";
+		str += "hDOR=[";
+		str += "];\n";
+		return str;
 	}
-
-
 }

@@ -27,19 +27,21 @@ public class Passengers {
 	}
 
 	// Print the generated number of passengers in the carpooling needed form
-	public void printPassengers() {
-		System.out.print("nPassagers=[");
+	public String toString() {
+		String str = "//NUMBER OF PARTICIPANTS ON EACH VERTEX\n";
+		str += "nPassagers=[";
 		for (int i = 0; i < nPersonnes; i++) {
-			System.out.print(this.nPassagers[i]);
-			System.out.print(",");
+			str += this.nPassagers[i];
+			str += ",";
 		}
 		for (int i = 0; i < nPersonnes; i++) {
-			System.out.print((-1) * this.nPassagers[i]);
+			str += (-1) * this.nPassagers[i];
 			if (i != nPersonnes - 1) {
-				System.out.print(",");
+				str += ",";
 			}
 		}
-		System.out.println("];");
+		str += "];\n";
+		return str;
 	}
 
 }
