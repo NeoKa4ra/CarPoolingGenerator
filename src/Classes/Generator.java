@@ -7,13 +7,11 @@ public class Generator {
 	public static void main(String[] args) {
 		// ********************* DATAS TO GIVE ********************* //
 		// Vertices
-		int nPersonnes = 6;
+		int nPersonnes = 9;
 		// Way W : Going to work; WS : with satellites; WH : Going to work and to home; WHS : with satellites
 		int wayMode = Constants.WH;
 		// RW : Random matrix to work; RCW : with close houses and close works; RSW : only one work; RxSW : with 1 to x works
 		int matrixMode = Constants.RCW;
-		// SATELLITES
-		int nSatellites = 0;
 		// Range of the randomness of the costs and times matrices
 		int rdmRange = 200;
 
@@ -21,7 +19,7 @@ public class Generator {
 
 		// ********************* GENERATIONS AND PRINTS ********************* //
 		// Generation of the characteristics of the scenario
-		Vertices v = new Vertices(nPersonnes, wayMode, nSatellites);
+		Vertices v = new Vertices(nPersonnes, wayMode);
 		System.out.println(v);
 
 		// Generation of the number of passengers

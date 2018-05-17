@@ -14,9 +14,11 @@ public class CostMatrices {
 	public CostMatrices(Vertices vertices, int mode, int range) {
 		Random randomGenerator = new Random();
 		this.v = vertices;
-		this.rdmRange = range;
-		this.mW = new int[this.v.getOriginsW()+this.v.getDestinationW()][this.v.getOriginsW()+this.v.getDestinationW()];
-		this.mH = new int[this.v.getOriginsH()+this.v.getDestinationH()][this.v.getOriginsH()+this.v.getDestinationH()];
+		this.rdmRange = (int) range / 2;
+		this.mW = new int[this.v.getOriginsW() + this.v.getDestinationW()][this.v.getOriginsW()
+				+ this.v.getDestinationW()];
+		this.mH = new int[this.v.getOriginsH() + this.v.getDestinationH()][this.v.getOriginsH()
+				+ this.v.getDestinationH()];
 
 		// For the close work and houses
 		int percentageClosure = 5;
@@ -26,13 +28,13 @@ public class CostMatrices {
 		// Generates a scenario following the mode given
 		switch (mode) {
 		case Constants.RW: // random matrix to go to work
-			for (int i = 0; i < this.v.getOriginsW()+this.v.getDestinationW(); i++) {
-				for (int j = i; j < this.v.getOriginsW()+this.v.getDestinationW(); j++) {
+			for (int i = 0; i < this.v.getOriginsW() + this.v.getDestinationW(); i++) {
+				for (int j = i; j < this.v.getOriginsW() + this.v.getDestinationW(); j++) {
 					if (i == j) {
 						this.mW[i][j] = diagonal;
 					} else {
 						// to get a number between 1 and rdmRange
-						rdmNumber = randomGenerator.nextInt(rdmRange - 1) + 1;
+						rdmNumber = rdmRange + randomGenerator.nextInt(rdmRange - 1) + 1;
 						// Symmetric matrix
 						this.mW[i][j] = rdmNumber;
 						this.mW[j][i] = rdmNumber;
@@ -40,13 +42,13 @@ public class CostMatrices {
 				}
 			}
 
-			for (int i = 0; i < this.v.getOriginsH()+this.v.getDestinationH(); i++) {
-				for (int j = i; j < this.v.getOriginsH()+this.v.getDestinationH(); j++) {
+			for (int i = 0; i < this.v.getOriginsH() + this.v.getDestinationH(); i++) {
+				for (int j = i; j < this.v.getOriginsH() + this.v.getDestinationH(); j++) {
 					if (i == j) {
 						this.mH[i][j] = diagonal;
 					} else {
 						// to get a number between 1 and rdmRange
-						rdmNumber = randomGenerator.nextInt(rdmRange - 1) + 1;
+						rdmNumber = rdmRange + randomGenerator.nextInt(rdmRange - 1) + 1;
 						// Symmetric matrix
 						this.mH[i][j] = rdmNumber;
 						this.mH[j][i] = rdmNumber;
@@ -56,8 +58,8 @@ public class CostMatrices {
 			break;
 
 		case Constants.RCW: // random matrix with close houses and close works
-			for (int i = 0; i < this.v.getOriginsW()+this.v.getDestinationW(); i++) {
-				for (int j = i; j < this.v.getOriginsW()+this.v.getDestinationW(); j++) {
+			for (int i = 0; i < this.v.getOriginsW() + this.v.getDestinationW(); i++) {
+				for (int j = i; j < this.v.getOriginsW() + this.v.getDestinationW(); j++) {
 					if (i == j) {
 						this.mW[i][j] = diagonal;
 					} else {
@@ -68,7 +70,7 @@ public class CostMatrices {
 							// Vertices from works to works
 							rdmNumber = randomGenerator.nextInt(rdmCloseRange) + 1;
 						} else {
-							rdmNumber = randomGenerator.nextInt(rdmRange - 1) + 1;
+							rdmNumber = rdmRange + randomGenerator.nextInt(rdmRange - 1) + 1;
 						}
 						this.mW[i][j] = rdmNumber;
 						this.mW[j][i] = rdmNumber;
@@ -76,8 +78,8 @@ public class CostMatrices {
 				}
 			}
 
-			for (int i = 0; i < this.v.getOriginsH()+this.v.getDestinationH(); i++) {
-				for (int j = i; j < this.v.getOriginsH()+this.v.getDestinationH(); j++) {
+			for (int i = 0; i < this.v.getOriginsH() + this.v.getDestinationH(); i++) {
+				for (int j = i; j < this.v.getOriginsH() + this.v.getDestinationH(); j++) {
 					if (i == j) {
 						this.mH[i][j] = diagonal;
 					} else {
@@ -88,7 +90,7 @@ public class CostMatrices {
 							// Vertices from works to works
 							rdmNumber = randomGenerator.nextInt(rdmCloseRange) + 1;
 						} else {
-							rdmNumber = randomGenerator.nextInt(rdmRange - 1) + 1;
+							rdmNumber = rdmRange + randomGenerator.nextInt(rdmRange - 1) + 1;
 						}
 						this.mH[i][j] = rdmNumber;
 						this.mH[j][i] = rdmNumber;
@@ -106,13 +108,13 @@ public class CostMatrices {
 			break;
 
 		default: // random matrix to go to work
-			for (int i = 0; i < this.v.getOriginsW()+this.v.getDestinationW(); i++) {
-				for (int j = i; j < this.v.getOriginsW()+this.v.getDestinationW(); j++) {
+			for (int i = 0; i < this.v.getOriginsW() + this.v.getDestinationW(); i++) {
+				for (int j = i; j < this.v.getOriginsW() + this.v.getDestinationW(); j++) {
 					if (i == j) {
 						this.mW[i][j] = diagonal;
 					} else {
 						// to get a number between 1 and rdmRange
-						rdmNumber = randomGenerator.nextInt(rdmRange - 1) + 1;
+						rdmNumber = rdmRange + randomGenerator.nextInt(rdmRange - 1) + 1;
 						// Symmetric matrix
 						this.mW[i][j] = rdmNumber;
 						this.mW[j][i] = rdmNumber;
@@ -120,13 +122,13 @@ public class CostMatrices {
 				}
 			}
 
-			for (int i = 0; i < this.v.getOriginsH()+this.v.getDestinationH(); i++) {
-				for (int j = i; j < this.v.getOriginsH()+this.v.getDestinationH(); j++) {
+			for (int i = 0; i < this.v.getOriginsH() + this.v.getDestinationH(); i++) {
+				for (int j = i; j < this.v.getOriginsH() + this.v.getDestinationH(); j++) {
 					if (i == j) {
 						this.mH[i][j] = diagonal;
 					} else {
 						// to get a number between 1 and rdmRange
-						rdmNumber = randomGenerator.nextInt(rdmRange - 1) + 1;
+						rdmNumber = rdmRange + randomGenerator.nextInt(rdmRange - 1) + 1;
 						// Symmetric matrix
 						this.mH[i][j] = rdmNumber;
 						this.mH[j][i] = rdmNumber;
@@ -142,15 +144,15 @@ public class CostMatrices {
 		String str = "//ARCS\n";
 		str += "// cA[i][j] = cost to travel from i to j to work\n";
 		str += "cA=[\n";
-		for (int i = 0; i < this.v.getOriginsW()+this.v.getDestinationW(); i++) {
+		for (int i = 0; i < this.v.getOriginsW() + this.v.getDestinationW(); i++) {
 			str += '[';
-			for (int j = 0; j < this.v.getOriginsW()+this.v.getDestinationW(); j++) {
+			for (int j = 0; j < this.v.getOriginsW() + this.v.getDestinationW(); j++) {
 				str += this.mW[i][j];
-				if (j != this.v.getOriginsW()+this.v.getDestinationW() - 1) {
+				if (j != this.v.getOriginsW() + this.v.getDestinationW() - 1) {
 					str += ", ";
 				}
 			}
-			if (i != this.v.getOriginsW()+this.v.getDestinationW() - 1) {
+			if (i != this.v.getOriginsW() + this.v.getDestinationW() - 1) {
 				str += "],\n";
 			} else {
 				str += "]\n";
@@ -159,15 +161,15 @@ public class CostMatrices {
 		str += "];\n";
 		str += "// cR[i][j] = cost to travel from i to j to home\n";
 		str += "cR=[\n";
-		for (int i = 0; i < this.v.getOriginsH()+this.v.getDestinationH(); i++) {
+		for (int i = 0; i < this.v.getOriginsH() + this.v.getDestinationH(); i++) {
 			str += '[';
-			for (int j = 0; j < this.v.getOriginsH()+this.v.getDestinationH(); j++) {
+			for (int j = 0; j < this.v.getOriginsH() + this.v.getDestinationH(); j++) {
 				str += this.mH[i][j];
-				if (j != this.v.getOriginsH()+this.v.getDestinationH() - 1) {
+				if (j != this.v.getOriginsH() + this.v.getDestinationH() - 1) {
 					str += ", ";
 				}
 			}
-			if (i != this.v.getOriginsH()+this.v.getDestinationH() - 1) {
+			if (i != this.v.getOriginsH() + this.v.getDestinationH() - 1) {
 				str += "],\n";
 			} else {
 				str += "]\n";

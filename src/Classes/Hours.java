@@ -20,7 +20,7 @@ public class Hours {
 			this.latestArrivalWork[i] = 850 + randomGenerator.nextInt(50);
 		}
 		for (int i = 0; i < this.v.getDestinationH(); i++) {
-			this.latestArrivalHome[i] = 850 + randomGenerator.nextInt(50);
+			this.latestArrivalHome[i] = 1500 + randomGenerator.nextInt(500);
 		}
 	}
 
@@ -36,7 +36,7 @@ public class Hours {
 			}
 		}
 		str += "];\n";
-		str += "//Hour of arrival at the latest to home\n";
+		str += "//Hour of departure at the earliest to home\n";
 		str += "hDOR=[";
 		for (int i = 0; i < this.v.getDestinationH(); i++) {
 			str += this.latestArrivalHome[i];

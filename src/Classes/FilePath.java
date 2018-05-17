@@ -44,8 +44,6 @@ public class FilePath {
 		this.path += "-";
 		this.path += v.getDestinationW();
 		this.path += "-";
-		this.path += v.getSatellites();
-		this.path += "-";
 		this.path += v.getOriginsH();
 		this.path += "-";
 		this.path += v.getDestinationH();
