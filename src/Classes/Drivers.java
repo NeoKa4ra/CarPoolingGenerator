@@ -18,7 +18,7 @@ public class Drivers {
 		this.multiplicator = (float) 1.5;
 	}
 
-	public Drivers(TimeMatrices tM) {
+	public Drivers(CostMatrices tM) {
 		this.v = tM.getV();
 		Initialisation();
 		Random randomGenerator = new Random();
@@ -47,7 +47,7 @@ public class Drivers {
 	public String toString() {
 		String str = "//DRIVERS\n";
 		str += "//Capacity of the car\n";
-		str += "qV=[";
+		str += "Q=[";
 		for (int i = 0; i < nPotentialDrivers; i++) {
 			str += this.capacity[i];
 			if (i != nPotentialDrivers - 1) {
@@ -56,7 +56,7 @@ public class Drivers {
 		}
 		str += "];\n";
 		str += "//Maximal travel time of the driver\n";
-		str += "tVA=[";
+		str += "G=[";
 		for (int i = 0; i < nPotentialDrivers; i++) {
 			str += this.tMaxW[i];
 			if (i != nPotentialDrivers - 1) {
@@ -65,7 +65,7 @@ public class Drivers {
 		}
 		str += "];\n";
 		
-		str += "tVR=[";
+		str += "R=[";
 		for (int i = 0; i < nPotentialDrivers; i++) {
 			str += this.tMaxH[i];
 			if (i != nPotentialDrivers - 1) {

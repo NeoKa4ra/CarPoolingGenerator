@@ -33,8 +33,8 @@ public class TimeMatrices {
 
 	// Print the matrix in the carpooling needed form
 	public String toString() {
-		String str = "//tA[i][j] = time to travel from i to j to work\n";
-		str += "tA=[\n";
+		String str = "//T[1..2][i][j] = time to travel from i to j to work\n";
+		str += "T=[[\n";
 		for (int i = 0; i < this.v.getOriginsW()+this.v.getDestinationW(); i++) {
 			str += '[';
 			for (int j = 0; j < this.v.getOriginsW()+this.v.getDestinationW(); j++) {
@@ -49,10 +49,7 @@ public class TimeMatrices {
 				str += "]\n";
 			}
 		}
-		str += "];\n";
-
-		str += "//tR[i][j] = time to travel from i to j to home\n";
-		str += "tR=[\n";
+		str += "],[\n";
 		for (int i = 0; i < this.v.getOriginsH()+this.v.getDestinationH(); i++) {
 			str += '[';
 			for (int j = 0; j < this.v.getOriginsH()+this.v.getDestinationH(); j++) {
@@ -67,7 +64,7 @@ public class TimeMatrices {
 				str += "]\n";
 			}
 		}
-		str += "];\n";
+		str += "]];\n";
 		return str;
 	}
 

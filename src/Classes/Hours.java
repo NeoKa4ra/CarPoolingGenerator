@@ -28,7 +28,7 @@ public class Hours {
 	public String toString() {
 		String str = "//HOURS\n";
 		str += "//Hour of arrival at the latest to work\n";
-		str += "hDDA=[";
+		str += "B=[";
 		for (int i = 0; i < this.v.getDestinationW(); i++) {
 			str += this.latestArrivalWork[i];
 			if (i != this.v.getDestinationW() - 1) {
@@ -37,7 +37,7 @@ public class Hours {
 		}
 		str += "];\n";
 		str += "//Hour of departure at the earliest to home\n";
-		str += "hDOR=[";
+		str += "E=[";
 		for (int i = 0; i < this.v.getDestinationH(); i++) {
 			str += this.latestArrivalHome[i];
 			if (i != this.v.getDestinationH() - 1) {
