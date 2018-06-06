@@ -1,13 +1,17 @@
 package Classes.FileManagement;
 
-import Classes.Instanciation.Constants;
+import Classes.Constants;
 import Classes.Instanciation.Vertices;
 
 public class FilePath {
 	String path = "";
 
-	public FilePath(Vertices v, int matrixMode, int wayMode, int rdmRange) {
-		this.path = "P:\\Travaux\\Modelisation\\Tests\\test";
+	public FilePath(Vertices v, int matrixMode, int wayMode, int rdmRange, int mode) {
+		if (mode == Constants.TEST) {
+			this.path = "P:\\Travaux\\Modelisation\\Tests\\test";
+		} else if (mode == Constants.RES) {
+			this.path = "P:\\Travaux\\Modelisation\\Results\\res";
+		}
 
 		switch (matrixMode) {
 		case Constants.RW: // random matrix to go to work

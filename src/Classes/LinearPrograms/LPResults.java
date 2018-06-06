@@ -8,6 +8,7 @@ public class LPResults {
 	private boolean z[][];
 	private int b[][];
 	private int q[][];
+	private double ExecTime;
 
 	public LPResults(int nPersons) {
 		this.n = nPersons;
@@ -124,12 +125,20 @@ public class LPResults {
 	public void setb(int k, int v, int value) {
 		this.b[k][v] = value;
 	}
+	
+	public void setExecTime(double ET) {
+		this.ExecTime = ET;
+	}
 
 	// GETTERS
 	public double getObjective() {
 		return this.objective;
 	}
 
+	public double getExecTime() {
+		return this.ExecTime;
+	}
+	
 	public boolean[][][] getx() {
 		return this.x.clone();
 	}

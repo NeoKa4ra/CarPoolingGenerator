@@ -1,5 +1,7 @@
 package Classes.Instanciation;
 
+import Classes.Constants;
+
 public class Vertices {
 	// ********************* DATAS ********************* //
 	int nPersons;

@@ -1,4 +1,4 @@
-package Classes.Instanciation;
+package Classes;
 
 public class Constants {
 	// ****************** WAY ****************** //
@@ -12,4 +12,8 @@ public class Constants {
 	public final static int RCW = 1; // random matrix with close houses and close works
 	public final static int RSW = 2; // random matrix with the same work
 	public final static int RxSW = 3; // random matrix with between 1 and x same works
+
+	// ****************** RANDOM MATRIX ****************** //
+	public final static int TEST = 0; // random matrix to go to work
+	public final static int RES = 1; // random matrix to go to work
 }

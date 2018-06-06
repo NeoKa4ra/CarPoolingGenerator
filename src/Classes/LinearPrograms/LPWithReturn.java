@@ -10,6 +10,7 @@ import ilog.concert.IloLinearNumExpr;
 import ilog.concert.IloNumVar;
 import ilog.cplex.IloCplex;
 
+
 public class LPWithReturn {
 	private int n;
 	private Drivers drivers;
@@ -26,6 +27,14 @@ public class LPWithReturn {
 		this.p = instance.getPassengers();
 		try {
 			IloCplex cplex = new IloCplex();
+			
+			// ********************* CPLEX SETTINGS ********************* 
+			// Branch and bound options
+			//cplex.setParam(IloCplex.Param.MIP.Strategy.NodeSelect, 1);
+			//cplex.setParam(IloCplex.Param.MIP.Strategy.Branch,1);
+			//cplex.setParam(IloCplex.Param.MIP.Tolerances.MIPGap, 0.1);
+			// Display options
+			//cplex.setParam(IloCplex.Param.MIP.Display, 0);
 
 			// ****************************** DATAS ******************************
 			// ****************************** DATAS ******************************
@@ -513,12 +522,14 @@ public class LPWithReturn {
 			// ****************************** SOLVER ******************************
 			// ****************************** SOLVER ******************************
 			results = new LPResults(n);
+			double savedTime = cplex.getCplexTime();
 			if (cplex.solve()) {
 				results.setObjective(cplex.getObjValue());
 				for (int k = 0; k < O; k++) {
 					for (int i = 0; i < V; i++) {
 						for (int j = 0; j < V; j++) {
 							results.setx(k, i, j, ((int) cplex.getValue(x[k][i][j])) > 0 ? true : false);
+							cplex.getDetTime();
 						}
 						results.setz(k, i, ((int) cplex.getValue(z[k][i])) > 0 ? true : false);
 					}
@@ -533,9 +544,9 @@ public class LPWithReturn {
 			} else {
 				System.out.println("No solution");
 			}
+			results.setExecTime(cplex.getCplexTime()-savedTime);
 			cplex.end();
 		} catch (
-
 		IloException exc) {
 			exc.printStackTrace();
 		}

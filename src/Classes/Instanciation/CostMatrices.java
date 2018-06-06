@@ -2,6 +2,8 @@ package Classes.Instanciation;
 
 import java.util.Random;
 
+import Classes.Constants;
+
 public class CostMatrices {
 	private int mW[][];
 	private int mH[][];
