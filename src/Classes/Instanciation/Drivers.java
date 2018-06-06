@@ -1,4 +1,4 @@
-package Classes;
+package Classes.Instanciation;
 
 import java.util.Random;
 
@@ -76,15 +76,15 @@ public class Drivers {
 		return str;
 	}
 	
-	int[] getQ() {
+	public int[] getQ() {
 		return this.capacity.clone();
 	}
 	
-	int[] getG() {
+	public int[] getG() {
 		return this.G.clone();
 	}
 	
-	int[] getR() {
+	public int[] getR() {
 		return this.R.clone();
 	}
 

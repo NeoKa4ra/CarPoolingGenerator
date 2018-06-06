@@ -1,4 +1,4 @@
-package Classes;
+package Classes.Instanciation;
 
 public class Constants {
 	// ****************** WAY ****************** //

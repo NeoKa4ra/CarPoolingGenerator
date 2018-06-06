@@ -1,8 +1,8 @@
-package Classes;
+package Classes.Instanciation;
 
 public class Vertices {
 	// ********************* DATAS ********************* //
-	int nPersons = 15;
+	int nPersons;
 	int mode;
 	// ********************* LOGICAL ********************* //
 	// TO WORK

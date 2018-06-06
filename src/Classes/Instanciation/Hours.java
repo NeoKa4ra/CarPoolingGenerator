@@ -1,4 +1,4 @@
-package Classes;
+package Classes.Instanciation;
 
 import java.util.Random;
 

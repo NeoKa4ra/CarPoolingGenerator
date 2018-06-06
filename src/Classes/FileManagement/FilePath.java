@@ -1,4 +1,7 @@
-package Classes;
+package Classes.FileManagement;
+
+import Classes.Instanciation.Constants;
+import Classes.Instanciation.Vertices;
 
 public class FilePath {
 	String path = "";
@@ -46,7 +49,7 @@ public class FilePath {
 		this.path += "--";
 		this.path += rdmRange;
 	}
-	
+
 	public String toString() {
 		return this.path;
 	}

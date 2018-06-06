@@ -1,68 +1,90 @@
 package Classes;
 
-import ilog.concert.*;
-import ilog.cplex.*;
-
-import java.io.File;
-import java.io.FileWriter;
+import Classes.FileManagement.FileCreation;
+import Classes.Instanciation.Constants;
+import Classes.Instanciation.Instance;
+import Classes.LinearPrograms.LPResults;
+import Classes.LinearPrograms.LPSettings;
+import Classes.LinearPrograms.LPWithReturn;
 
 public class Generator {
 	public static void main(String[] args) {
-		// ********************* DATAS TO GIVE ********************* //
-		// Vertices
-		int n = 7;
+		// ******************************************************* //
+		// ********************* SETTINGS ********************* //
+		// ******************************************************* //
+
+		// *********** DATA GENERATION VARIABLES ********** //
+		// Number of vertices
+		int n = 8;
+
 		// Way W : Going to work; WS : with satellites; WH : Going to work and to home;
 		// WHS : with satellites
 		int wayMode = Constants.WH;
+
 		// RW : Random matrix to work; RCW : with close houses and close works; RSW :
 		// only one work; RxSW : with 1 to x works
 		int matrixMode = Constants.RCW;
+
 		// Range of the randomness of the costs and times matrices
 		int rdmRange = 200;
 
-		// int passengersRange = 2;
+		// *********** LINEAR PROGRAM VARIABLES ********** //
+		// Waiting times permitted to go (home-to-work trip) and to return
+		int WaitingTimeG = 40;
+		int WaitingTimeR = 20;
 
-		// ********************* GENERATIONS AND PRINTS ********************* //
-		// Generation of the characteristics of the scenario
-		Vertices vertices = new Vertices(n, wayMode);
-		System.out.println(vertices);
+		// Percentage of the travel duration deviation allowed and constant
+		int percentageTravelTime = 20;
+		int constantDeviation = 20;
 
-		// Generation of the cost matrix
-		CostMatrices C = new CostMatrices(vertices, matrixMode, rdmRange);
-		System.out.println(C);
+		// *********** PRINT AND WRITE SETTINGS ********** //
+		// Each execution write the test file
+		boolean write = false;
+		// Shows everything
+		boolean showALL = false;
+		// Shows instance
+		boolean showInstance = false;
+		// Shows the linear program variables
+		boolean showLPVariables = false;
+		// Shows the file path
+		boolean showFP = false;
+		// Shows the results of the Linear Program
+		boolean showRes = false;
 
-		// Generation of the hours
-		Hours hours = new Hours(vertices);
-		System.out.println(hours);
+		// ******************************************************* //
+		// ****************** GENERATOR OF INSTANCES ****************** //
+		// ******************************************************* //
 
-		// Generation of the drivers capacity and maximal travel time
-		Drivers drivers = new Drivers(C);
-		System.out.println(drivers);
-
-		Passengers passengers = new Passengers(vertices);
-		System.out.println(passengers);
-
-		FilePath FP = new FilePath(vertices, matrixMode, wayMode, rdmRange);
-		String path = FP.toString();
-		File f = new File(path + ".txt");
-		int numFichier = 1;
-		while (f.exists()) {
-			f = new File(path + " (" + (numFichier++) + ")" + ".txt");
+		// Creation of an instance
+		Instance i = new Instance(n, wayMode, matrixMode, rdmRange);
+		if (showInstance || showALL) {
+			System.out.println(i);
 		}
-		try {
-			// Creation of the file
-			f.createNewFile();
-			// creation of the writer
-			final FileWriter writer = new FileWriter(f);
-			try {
-				writer.write(vertices + "\n" + C + "\n" + hours + "\n" + drivers + "\n" + passengers);
-			} finally {
-				writer.close();
+
+		// Creation of test files
+		if (write) {
+			FileCreation f = new FileCreation(i, matrixMode, wayMode, rdmRange);
+			if (showFP || showALL) {
+				System.out.println(f);
 			}
-		} catch (Exception e) {
-			System.out.println("File creation impossible");
 		}
-
-		//Linear l = new Linear(n, drivers, C, hours);
+		
+		// ******************************************************* //
+		// ********************* LINEAR PROGRAMS ********************* //
+		// ******************************************************* //
+		// Set the variables for the LP
+		LPSettings var = new LPSettings(WaitingTimeG, WaitingTimeR, percentageTravelTime, constantDeviation);
+		if (showLPVariables || showALL) {
+			System.out.println(var);
+		}
+		
+		// Launches the LP
+		LPWithReturn l = new LPWithReturn(n, i, var);
+		LPResults res = l.getRes();
+		if (showRes || showALL) {
+			System.out.println(res);
+		}
+		System.out.println("Objective : " + res.getObjective());
 	}
+
 }
