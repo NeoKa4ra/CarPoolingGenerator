@@ -39,12 +39,6 @@ public class FilePath {
 		}
 		this.path += "-";
 		this.path += v.getPersons();
-		this.path += "--";
-		this.path += v.getOriginsW();
-		this.path += "-";
-		this.path += v.getDestinationW();
-		this.path += "-";
-		this.path += v.getOriginsH();
 		this.path += "-";
 		this.path += v.getDestinationH();
 		this.path += "--";

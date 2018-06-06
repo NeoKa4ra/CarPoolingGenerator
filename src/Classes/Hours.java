@@ -3,13 +3,13 @@ package Classes;
 import java.util.Random;
 
 public class Hours {
-	private int[] latestArrivalWork;
-	private int[] latestArrivalHome;
+	private int[] B;
+	private int[] E;
 	Vertices v;
 
 	private void Initialisation() {
-		this.latestArrivalWork = new int[this.v.getDestinationW()];
-		this.latestArrivalHome = new int[this.v.getDestinationH()];
+		this.B = new int[this.v.getDestinationW()];
+		this.E = new int[this.v.getDestinationH()];
 	}
 
 	public Hours(Vertices vertices) {
@@ -17,10 +17,10 @@ public class Hours {
 		Initialisation();
 		Random randomGenerator = new Random();
 		for (int i = 0; i < this.v.getDestinationW(); i++) {
-			this.latestArrivalWork[i] = 850 + randomGenerator.nextInt(50);
+			this.B[i] = 850 + randomGenerator.nextInt(50);
 		}
 		for (int i = 0; i < this.v.getDestinationH(); i++) {
-			this.latestArrivalHome[i] = 1500 + randomGenerator.nextInt(500);
+			this.E[i] = 1500 + randomGenerator.nextInt(500);
 		}
 	}
 
@@ -30,7 +30,7 @@ public class Hours {
 		str += "//Hour of arrival at the latest to work\n";
 		str += "B=[";
 		for (int i = 0; i < this.v.getDestinationW(); i++) {
-			str += this.latestArrivalWork[i];
+			str += this.B[i];
 			if (i != this.v.getDestinationW() - 1) {
 				str += ",";
 			}
@@ -39,12 +39,20 @@ public class Hours {
 		str += "//Hour of departure at the earliest to home\n";
 		str += "E=[";
 		for (int i = 0; i < this.v.getDestinationH(); i++) {
-			str += this.latestArrivalHome[i];
+			str += this.E[i];
 			if (i != this.v.getDestinationH() - 1) {
 				str += ",";
 			}
 		}
 		str += "];\n";
 		return str;
+	}
+	
+	public int[] getB() {
+		return this.B.clone();
+	}
+	
+	public int[] getE() {
+		return this.E.clone();
 	}
 }

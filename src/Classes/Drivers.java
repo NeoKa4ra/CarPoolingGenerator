@@ -4,8 +4,8 @@ import java.util.Random;
 
 public class Drivers {
 	private int[] capacity;
-	private int[] tMaxW;
-	private int[] tMaxH;
+	private int[] G;
+	private int[] R;
 	private int nPotentialDrivers;
 	private float multiplicator;
 	private Vertices v;
@@ -13,8 +13,8 @@ public class Drivers {
 	private void Initialisation() {
 		this.nPotentialDrivers = v.getOriginsW();
 		this.capacity = new int[nPotentialDrivers];
-		this.tMaxW = new int[nPotentialDrivers];
-		this.tMaxH = new int[nPotentialDrivers];
+		this.G = new int[nPotentialDrivers];
+		this.R = new int[nPotentialDrivers];
 		this.multiplicator = (float) 1.5;
 	}
 
@@ -24,10 +24,10 @@ public class Drivers {
 		Random randomGenerator = new Random();
 		for (int i = 0; i < nPotentialDrivers; i++) {
 			this.capacity[i] = 2 + randomGenerator.nextInt(3);
-			this.tMaxW[i] = (int) (tM.getMW()[i][i + v.getOriginsW()] * this.multiplicator);
+			this.G[i] = (int) (tM.A()[i][i + v.getOriginsW()] * this.multiplicator);
 		}
 		for (int i = 0; i < v.getOriginsH(); i++) {
-			this.tMaxH[i] = (int) (tM.getMH()[i][i + v.getOriginsH()] * this.multiplicator);
+			this.R[i] = (int) (tM.R()[i][i + v.getOriginsH()] * this.multiplicator);
 		}
 	}
 
@@ -36,10 +36,10 @@ public class Drivers {
 		Initialisation();
 		for (int i = 0; i < v.getOriginsW(); i++) {
 			this.capacity[i] = capacite;
-			this.tMaxW[i] = (int) (tM.getMW()[i][i + v.getOriginsW()] * (1.5));
+			this.G[i] = (int) (tM.getMW()[i][i + v.getOriginsW()] * (1.5));
 		}
 		for (int i = 0; i < v.getOriginsH(); i++) {
-			this.tMaxH[i] = (int) (tM.getMH()[i][i + v.getOriginsH()] * this.multiplicator);
+			this.R[i] = (int) (tM.getMH()[i][i + v.getOriginsH()] * this.multiplicator);
 		}
 	}
 
@@ -58,7 +58,7 @@ public class Drivers {
 		str += "//Maximal travel time of the driver\n";
 		str += "G=[";
 		for (int i = 0; i < nPotentialDrivers; i++) {
-			str += this.tMaxW[i];
+			str += this.G[i];
 			if (i != nPotentialDrivers - 1) {
 				str += ",";
 			}
@@ -67,13 +67,25 @@ public class Drivers {
 		
 		str += "R=[";
 		for (int i = 0; i < nPotentialDrivers; i++) {
-			str += this.tMaxH[i];
+			str += this.R[i];
 			if (i != nPotentialDrivers - 1) {
 				str += ",";
 			}
 		}
 		str += "];\n";
 		return str;
+	}
+	
+	int[] getQ() {
+		return this.capacity.clone();
+	}
+	
+	int[] getG() {
+		return this.G.clone();
+	}
+	
+	int[] getR() {
+		return this.R.clone();
 	}
 
 }

@@ -11,8 +11,8 @@ public class TimeMatrices {
 
 	public TimeMatrices(CostMatrices mC, int gapPercentage) {
 		Random randomGenerator = new Random();
-		this.mW = mC.getMW();
-		this.mH = mC.getMH();
+		this.mW = mC.A();
+		this.mH = mC.R();
 		this.v = mC.getV();
 		this.rdmRange = mC.getRange();
 		this.diagonal = mC.getDiagonal();

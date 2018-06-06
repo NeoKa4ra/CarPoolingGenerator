@@ -1,5 +1,8 @@
 package Classes;
 
+import ilog.concert.*;
+import ilog.cplex.*;
+
 import java.io.File;
 import java.io.FileWriter;
 
@@ -7,10 +10,12 @@ public class Generator {
 	public static void main(String[] args) {
 		// ********************* DATAS TO GIVE ********************* //
 		// Vertices
-		int nPersonnes = 10;
-		// Way W : Going to work; WS : with satellites; WH : Going to work and to home; WHS : with satellites
+		int n = 7;
+		// Way W : Going to work; WS : with satellites; WH : Going to work and to home;
+		// WHS : with satellites
 		int wayMode = Constants.WH;
-		// RW : Random matrix to work; RCW : with close houses and close works; RSW : only one work; RxSW : with 1 to x works
+		// RW : Random matrix to work; RCW : with close houses and close works; RSW :
+		// only one work; RxSW : with 1 to x works
 		int matrixMode = Constants.RCW;
 		// Range of the randomness of the costs and times matrices
 		int rdmRange = 200;
@@ -19,27 +24,30 @@ public class Generator {
 
 		// ********************* GENERATIONS AND PRINTS ********************* //
 		// Generation of the characteristics of the scenario
-		Vertices v = new Vertices(nPersonnes, wayMode);
-		System.out.println(v);
+		Vertices vertices = new Vertices(n, wayMode);
+		System.out.println(vertices);
 
 		// Generation of the cost matrix
-		CostMatrices cM = new CostMatrices(v, matrixMode, rdmRange);
-		System.out.println(cM);
+		CostMatrices C = new CostMatrices(vertices, matrixMode, rdmRange);
+		System.out.println(C);
 
 		// Generation of the hours
-		Hours h = new Hours(v);
-		System.out.println(h);
+		Hours hours = new Hours(vertices);
+		System.out.println(hours);
 
 		// Generation of the drivers capacity and maximal travel time
-		Drivers d = new Drivers(cM);
-		System.out.println(d);
+		Drivers drivers = new Drivers(C);
+		System.out.println(drivers);
 
-		FilePath FP = new FilePath(v, matrixMode, wayMode, rdmRange);
+		Passengers passengers = new Passengers(vertices);
+		System.out.println(passengers);
+
+		FilePath FP = new FilePath(vertices, matrixMode, wayMode, rdmRange);
 		String path = FP.toString();
-		File f = new File(path+".txt");
-		int i=1;
-		while(f.exists()) {
-			f = new File(path+" ("+(i++)+")"+".txt");
+		File f = new File(path + ".txt");
+		int numFichier = 1;
+		while (f.exists()) {
+			f = new File(path + " (" + (numFichier++) + ")" + ".txt");
 		}
 		try {
 			// Creation of the file
@@ -47,13 +55,14 @@ public class Generator {
 			// creation of the writer
 			final FileWriter writer = new FileWriter(f);
 			try {
-				writer.write(v+"\n"+cM+"\n"+h+"\n"+d);
+				writer.write(vertices + "\n" + C + "\n" + hours + "\n" + drivers + "\n" + passengers);
 			} finally {
 				writer.close();
 			}
 		} catch (Exception e) {
 			System.out.println("File creation impossible");
 		}
-	}
 
+		//Linear l = new Linear(n, drivers, C, hours);
+	}
 }

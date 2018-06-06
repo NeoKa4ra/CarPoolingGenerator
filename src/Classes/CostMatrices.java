@@ -216,11 +216,11 @@ public class CostMatrices {
 	}
 
 	// ********************* GETTERS/SETTERS ********************* //
-	public int[][] getMW() {
+	public int[][] A() {
 		return this.mW.clone();
 	}
 
-	public int[][] getMH() {
+	public int[][] R() {
 		return this.mH.clone();
 	}
 
