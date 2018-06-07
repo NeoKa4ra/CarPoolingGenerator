@@ -1,12 +1,13 @@
 package Classes.FileManagement;
 
+import java.io.File;
+
 import Classes.Constants;
-import Classes.Instanciation.Vertices;
 
 public class FilePath {
 	String path = "";
 
-	public FilePath(Vertices v, int matrixMode, int wayMode, int rdmRange, int mode) {
+	public FilePath(int n, int matrixMode, int wayMode, int rdmRange, int mode) {
 		if (mode == Constants.TEST) {
 			this.path = "P:\\Travaux\\Modelisation\\Tests\\test";
 		} else if (mode == Constants.RES) {
@@ -45,13 +46,19 @@ public class FilePath {
 			break;
 		}
 		this.path += "-";
-		this.path += v.getPersons();
-		this.path += "-";
-		this.path += v.getDestinationH();
+		this.path += n;
 		this.path += "--";
-		this.path += v.getVertices();
+		this.path += (n*4);
 		this.path += "--";
 		this.path += rdmRange;
+		String FILENAME = this.path.toString() + ".txt";
+		int numFichier = 1;
+		File FILE = new File(FILENAME);
+		while (FILE.exists()) {
+			FILENAME = this.path.toString() + " (" + (numFichier++) + ")" + ".txt";
+			FILE = new File(FILENAME);
+		}
+		this.path = FILENAME;
 	}
 
 	public String toString() {

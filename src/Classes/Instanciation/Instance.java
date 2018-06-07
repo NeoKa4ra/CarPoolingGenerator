@@ -1,13 +1,15 @@
 package Classes.Instanciation;
 
 public class Instance {
+	private int n;
 	private Vertices v;
 	private CostMatrices c;
 	private Hours h;
 	private Drivers d;
 	private Passengers p;
 
-	public Instance(int n, int wayMode, int matrixMode, int rdmRange) {
+	public Instance(int nPersons, int wayMode, int matrixMode, int rdmRange) {
+		this.n = nPersons;
 		// Generation of the characteristics of the scenario
 		this.v = new Vertices(n, wayMode);
 		// System.out.println(vertices);
@@ -35,6 +37,10 @@ public class Instance {
 	// GETTERS
 	public Vertices getVertices() {
 		return this.v;
+	}
+	
+	public int getnPersons() {
+		return this.n;
 	}
 
 	public CostMatrices getCostMatrices() {

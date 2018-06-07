@@ -11,14 +11,9 @@ public class TestFile {
 
 	public TestFile(Instance instance, int matrixMode, int wayMode, int rdmRange) {
 		
-		FilePath FP = new FilePath(instance.getVertices(), matrixMode, wayMode, rdmRange, Constants.TEST);
-		File f = new File(FP + ".txt");
-		str=FP.toString()+".txt";
-		int numFichier = 1;
-		while (f.exists()) {
-			f = new File(FP + " (" + (numFichier++) + ")" + ".txt");
-			str=FP.toString()+ " (" + (numFichier++) + ")" + ".txt";
-		}
+		FilePath FP = new FilePath(instance.getnPersons(), matrixMode, wayMode, rdmRange, Constants.TEST);
+		File f = new File(FP.toString());
+
 		try {
 			// Creation of the file
 			f.createNewFile();

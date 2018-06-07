@@ -1,5 +1,9 @@
 package Classes;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
+import java.io.IOException;
+
 import Classes.FileManagement.FilePath;
 import Classes.FileManagement.TestFile;
 import Classes.Instanciation.Instance;
@@ -22,7 +26,7 @@ public class Generator {
 		int matrixMode = Constants.RCW;
 		// Range of the randomness of the costs and times matrices
 		int rdmRange = 200;
-		
+
 		// *********** LINEAR PROGRAM VARIABLES ********** //
 		// Waiting times permitted to go (home-to-work trip) and to return
 		int WaitingTimeG = 40;
@@ -30,14 +34,14 @@ public class Generator {
 		// Percentage of the travel duration deviation allowed and constant
 		int percentageTravelTime = 20;
 		int constantDeviation = 20;
-		
+
 		// *********** PRINT AND WRITE SETTINGS ********** //
 		// Number of vertices
-		int n = 15;
+		int n = 7;
 		// Number of tests
-		int nTests = 1;
+		int nTests = 4;
 		// Each execution write the test file
-		boolean write = true;
+		boolean write = false;
 		// Shows everything
 		boolean showALL = false;
 		// Shows instance
@@ -52,40 +56,65 @@ public class Generator {
 		// ******************************************************* //
 		// ****************** GENERATOR OF INSTANCES ****************** //
 		// ******************************************************* //
-
-		for (int i = 0; i < nTests; i++) {
-			// Creation of an instance
-			Instance instance = new Instance(n, wayMode, matrixMode, rdmRange);
-			if (showInstance || showALL) {
-				System.out.println(i);
-			}
-
-			// Creation of test files
-			if (write) {
-				TestFile f = new TestFile(instance, matrixMode, wayMode, rdmRange);
-				if (showFP || showALL) {
-					System.out.println(f);
+		FilePath FILENAME = new FilePath(n, matrixMode, wayMode, rdmRange, Constants.RES);
+		BufferedWriter bw = null;
+		FileWriter fw = null;
+		try {
+			
+			fw = new FileWriter(FILENAME.toString());
+			bw = new BufferedWriter(fw);
+			
+			for (int i = 0; i < nTests; i++) {
+				// Creation of an instance
+				Instance instance = new Instance(n, wayMode, matrixMode, rdmRange);
+				if (showInstance || showALL) {
+					System.out.println(i);
 				}
-			}
 
-			// ******************************************************* //
-			// ********************* LINEAR PROGRAMS ********************* //
-			// ******************************************************* //
-			// Set the variables for the LP
-			LPSettings var = new LPSettings(WaitingTimeG, WaitingTimeR, percentageTravelTime, constantDeviation);
-			if (showLPVariables || showALL) {
-				System.out.println(var);
-			}
+				// Creation of test files
+				if (write) {
+					TestFile f = new TestFile(instance, matrixMode, wayMode, rdmRange);
+					if (showFP || showALL) {
+						System.out.println(f);
+					}
+				}
 
-			// Launches the LP
-			LPWithReturn LP = new LPWithReturn(n, instance, var);
-			LPResults res = LP.getRes();
-			if (showRes || showALL) {
-				System.out.println(res);
+				// ******************************************************* //
+				// ********************* LINEAR PROGRAMS ********************* //
+				// ******************************************************* //
+				// Set the variables for the LP
+				LPSettings var = new LPSettings(WaitingTimeG, WaitingTimeR, percentageTravelTime, constantDeviation);
+				if (showLPVariables || showALL) {
+					System.out.println(var);
+				}
+
+				// Launches the LP
+				LPWithReturn LP = new LPWithReturn(n, instance, var);
+				LPResults res = LP.getRes();
+				if (showRes || showALL) {
+					System.out.println(res);
+				}
+				
+				bw.write(String.valueOf(res.getObjective()) + " ");
+				System.out.println("Objective : " + res.getObjective());
+				
 			}
-			FilePath FP = new FilePath(instance.getVertices(), matrixMode, wayMode, rdmRange, Constants.RES);
-			System.out.println("Objective : " + res.getObjective());
+			
+		} catch (IOException e) {
+			e.printStackTrace();
+			
+		} finally {
+			try {
+				if (bw != null)
+					bw.close();
+				
+				if (fw != null)
+					fw.close();
+				
+			} catch (IOException ex) {
+				ex.printStackTrace();
+				
+			}
 		}
 	}
-
 }
