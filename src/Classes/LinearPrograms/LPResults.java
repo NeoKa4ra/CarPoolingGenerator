@@ -9,6 +9,7 @@ public class LPResults {
 	private int b[][];
 	private int q[][];
 	private double ExecTime;
+	private int[] varyingValues;
 
 	public LPResults(int nPersons) {
 		this.n = nPersons;
@@ -18,6 +19,8 @@ public class LPResults {
 		this.b = new int[nPersons][4 * nPersons];
 		this.q = new int[nPersons][4 * nPersons];
 		this.objective = 0.0;
+		this.ExecTime = 0.0;
+		this.varyingValues = null;
 	}
 
 	public String toString() {
@@ -27,7 +30,7 @@ public class LPResults {
 		for (int k = 0; k < n; k++) {
 			for (int i = 0; i < 4 * n; i++) {
 				for (int j = 0; j < 4 * n; j++) {
-					str += (this.x[k][i][j]==true)?1:0;
+					str += (this.x[k][i][j] == true) ? 1 : 0;
 					if (j != 4 * n - 1) {
 						str += " ";
 					}
@@ -47,7 +50,7 @@ public class LPResults {
 		str += "\n];\n";
 		str += "y=[";
 		for (int k = 0; k < n; k++) {
-			str += (this.y[k]==true)?1:0;
+			str += (this.y[k] == true) ? 1 : 0;
 			if (k != n - 1) {
 				str += " ";
 			}
@@ -56,7 +59,7 @@ public class LPResults {
 		str += "z=[\n[";
 		for (int k = 0; k < n; k++) {
 			for (int i = 0; i < 4 * n; i++) {
-				str += (this.z[k][i]==true)?1:0;
+				str += (this.z[k][i] == true) ? 1 : 0;
 				if (i != 4 * n - 1) {
 					str += " ";
 				}
@@ -125,9 +128,13 @@ public class LPResults {
 	public void setb(int k, int v, int value) {
 		this.b[k][v] = value;
 	}
-	
+
 	public void setExecTime(double ET) {
 		this.ExecTime = ET;
+	}
+
+	public void setVaryingValue(int[] vV) {
+		this.varyingValues = vV;
 	}
 
 	// GETTERS
@@ -138,7 +145,11 @@ public class LPResults {
 	public double getExecTime() {
 		return this.ExecTime;
 	}
-	
+
+	public int[] getVaryingValue() {
+		return this.varyingValues;
+	}
+
 	public boolean[][][] getx() {
 		return this.x.clone();
 	}

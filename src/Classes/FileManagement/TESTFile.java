@@ -3,15 +3,14 @@ package Classes.FileManagement;
 import java.io.File;
 import java.io.FileWriter;
 
-import Classes.Constants;
 import Classes.Instanciation.Instance;
 
-public class TestFile {
+public class TESTFile {
 	private String str;
 
-	public TestFile(Instance instance, int matrixMode, int wayMode, int rdmRange) {
+	public TESTFile(Instance instance, FileSettings FS) {
 		
-		FilePath FP = new FilePath(instance.getnPersons(), matrixMode, wayMode, rdmRange, Constants.TEST);
+		FilePath FP = new FilePath(FS);
 		File f = new File(FP.toString());
 
 		try {

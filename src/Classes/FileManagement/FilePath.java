@@ -7,14 +7,14 @@ import Classes.Constants;
 public class FilePath {
 	String path = "";
 
-	public FilePath(int n, int matrixMode, int wayMode, int rdmRange, int mode) {
-		if (mode == Constants.TEST) {
+	public FilePath(FileSettings FS) {
+		if (FS.getM() == Constants.TEST) {
 			this.path = "P:\\Travaux\\Modelisation\\Tests\\test";
-		} else if (mode == Constants.RES) {
+		} else if (FS.getM() == Constants.RES) {
 			this.path = "P:\\Travaux\\Modelisation\\Results\\res";
 		}
-
-		switch (matrixMode) {
+		
+		switch (FS.getMM()) {
 		case Constants.RW: // random matrix to go to work
 			this.path += "RW";
 			break;
@@ -31,7 +31,7 @@ public class FilePath {
 			this.path += "RxSW";
 			break;
 		}
-		switch (wayMode) {
+		switch (FS.getWM()) {
 		case Constants.W:
 			this.path += "-W";
 			break;
@@ -46,11 +46,13 @@ public class FilePath {
 			break;
 		}
 		this.path += "-";
-		this.path += n;
-		this.path += "--";
-		this.path += (n*4);
-		this.path += "--";
-		this.path += rdmRange;
+		this.path += FS.getN();
+		this.path += "-";
+		this.path += (FS.getN()*4);
+		this.path += "-";
+		this.path += FS.getRDMR();
+		this.path += "-";
+		this.path += FS.getSuffix();
 		String FILENAME = this.path.toString() + ".txt";
 		int numFichier = 1;
 		File FILE = new File(FILENAME);
