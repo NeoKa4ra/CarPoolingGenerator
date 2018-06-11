@@ -9,7 +9,6 @@ public class LPResults {
 	private int b[][];
 	private int q[][];
 	private double ExecTime;
-	private int[] varyingValues;
 
 	public LPResults(int nPersons) {
 		this.n = nPersons;
@@ -20,7 +19,6 @@ public class LPResults {
 		this.q = new int[nPersons][4 * nPersons];
 		this.objective = 0.0;
 		this.ExecTime = 0.0;
-		this.varyingValues = null;
 	}
 
 	public String toString() {
@@ -133,10 +131,6 @@ public class LPResults {
 		this.ExecTime = ET;
 	}
 
-	public void setVaryingValue(int[] vV) {
-		this.varyingValues = vV;
-	}
-
 	// GETTERS
 	public double getObjective() {
 		return this.objective;
@@ -144,10 +138,6 @@ public class LPResults {
 
 	public double getExecTime() {
 		return this.ExecTime;
-	}
-
-	public int[] getVaryingValue() {
-		return this.varyingValues;
 	}
 
 	public boolean[][][] getx() {
