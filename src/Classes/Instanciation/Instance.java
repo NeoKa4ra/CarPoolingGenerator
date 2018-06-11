@@ -8,14 +8,14 @@ public class Instance {
 	private Drivers d;
 	private Passengers p;
 
-	public Instance(int nPersons, int wayMode, int matrixMode, int rdmRange) {
+	public Instance(int nPersons, InstanceSettings IS) {
 		this.n = nPersons;
 		// Generation of the characteristics of the scenario
-		this.v = new Vertices(n, wayMode);
+		this.v = new Vertices(n, IS.getWM());
 		// System.out.println(vertices);
 
 		// Generation of the cost matrix
-		this.c = new CostMatrices(v, matrixMode, rdmRange);
+		this.c = new CostMatrices(v, IS.getMM(), IS.getRR());
 		// System.out.println(C);
 
 		// Generation of the hours

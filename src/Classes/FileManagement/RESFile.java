@@ -3,7 +3,6 @@ package Classes.FileManagement;
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.util.Enumeration;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
@@ -37,11 +36,11 @@ public class RESFile {
 			ListIterator<LinkedList<Double>> lR = everyResults.listIterator();
 			while (lVV.hasNext()) {
 				tempVV = lVV.next().listIterator();
-				while(tempVV.hasNext()) {
+				while (tempVV.hasNext()) {
 					bw.write(tempVV.next() + " ");
 				}
 				tempR = lR.next().listIterator();
-				while(tempR.hasNext()) {
+				while (tempR.hasNext()) {
 					bw.write(tempR.next() + " ");
 				}
 				bw.write("\n");

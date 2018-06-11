@@ -52,8 +52,8 @@ public class LPWithReturn {
 			int WaitingTimeA = var.getWTA();
 			int WaitingTimeR = var.getWTR();
 
-			double travelTime = var.getTravelTime();
-			int deviation = var.getDeviation();
+			double travelTime = var.getDP();
+			int deviation = var.getDV();
 
 			int M = 9999;
 
