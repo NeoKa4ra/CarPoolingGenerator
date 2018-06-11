@@ -56,7 +56,7 @@ public class Generator {
 				tempVaryingValues = new LinkedList<Integer>();
 				tempEveryResults = new LinkedList<Double>();
 				// To execute the LP
-				LP = new LPWithReturn(tempNUsers, instance, LPS);
+				LP = new LPWithReturn(tempNUsers, instance, new LPSettings(tempAdvance, tempWaitingTime, tempDeviationPercentage, tempDeviationValue));
 				// Add here every varying value you want
 				tempVaryingValues.add(Integer.valueOf(tempNUsers));
 				tempVaryingValues.add(Integer.valueOf(tempAdvance));

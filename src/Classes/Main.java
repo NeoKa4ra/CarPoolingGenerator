@@ -30,7 +30,7 @@ public class Main {
 		int rdmRange = 200;
 
 		// TEST
-		GS = new GlobalSettings(9, execTimeMax, 6, "VarPerDev10");
+		GS = new GlobalSettings(nRuns, execTimeMax, 6, "VarPerDev10");
 		IS = new InstanceSettings(nUsers, wayMode, matrixMode, rdmRange);
 		LPS = new LPSettings(50, 25, 0, 0);
 		LPVS = new LPVariationsSettings(0, 0, 0, 1, 0);
