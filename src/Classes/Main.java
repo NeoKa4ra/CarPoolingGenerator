@@ -24,7 +24,7 @@ public class Main {
 
 		int nRuns = 20;
 		int execTimeMax = 300;
-		int nUsers = 20;
+		int nUsers = 19;
 		int wayMode = Constants.WH;
 		int matrixMode = Constants.RW;
 		int rdmRange = 200;

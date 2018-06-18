@@ -43,7 +43,7 @@ public class Generator {
 			tempNUsers = IS.getNU();
 			tempAdvance = LPS.getWTA();
 			tempWaitingTime = LPS.getWTR();
-			tempDeviationPercentage = (int) LPS.getDP() * 100 - 100;
+			tempDeviationPercentage = (int) LPS.getDP() * 100 - 100; 
 			tempDeviationValue = LPS.getDV();
 			
 			// ********* CONSTANT INSTANCIATIONS ********* //
