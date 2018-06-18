@@ -36,7 +36,7 @@ public class Main {
 		LPVS = new LPVariationsSettings(0, 0, 0, 1, 0);
 		new Generator(GS, IS, LPS, LPVS);
 
-		// TEST
+		// TEST 
 		GS = new GlobalSettings(nRuns, execTimeMax, 6, "VarDevVal10");
 		IS = new InstanceSettings(nUsers, wayMode, matrixMode, rdmRange);
 		LPS = new LPSettings(50, 25, 0, 0);
