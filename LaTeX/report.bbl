@@ -1,0 +1,224 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{CdLHM04}
+
+\bibitem[ARN18]{ARNULFKlaxit2018}
+SYLVAIN ARNULF.
+\newblock Covoiturage domicile/travail : {Klaxit} (ex-{Wayzup}) embarque de
+  nouveaux partenaires pour se detacher, 2018.
+
+\bibitem[BB04]{bergerparallel2004}
+Jean Berger and Mohamed Barkaoui.
+\newblock A parallel hybrid genetic algorithm for the vehicle routing problem
+  with time windows.
+\newblock {\em Computers \& Operations Research}, 31(12):2037--2053, October
+  2004.
+
+\bibitem[BCCL11]{bruglieripoliunipool:2011}
+Maurizio Bruglieri, Diego Ciccarelli, Alberto Colorni, and Alessandro Lue.
+\newblock {PoliUniPool}: a carpooling system for universities.
+\newblock {\em Procedia - Social and Behavioral Sciences}, 20:558--567, January
+  2011.
+
+\bibitem[BGG{\etalchar{+}}17]{berlingeriograal2017}
+Michele Berlingerio, Bissan Ghaddar, Riccardo Guidotti, Alessandra Pascale, and
+  Andrea Sassi.
+\newblock The {GRAAL} of carpooling: {GReen} {And} {sociAL} optimization from
+  crowd-sourced data.
+\newblock {\em Transportation Research Part C: Emerging Technologies},
+  80:20--36, July 2017.
+
+\bibitem[BH06]{benttwo-stage2006}
+Russell Bent and Pascal~Van Hentenryck.
+\newblock A two-stage hybrid algorithm for pickup and delivery vehicle routing
+  problems with time windows.
+\newblock {\em Computers \& Operations Research}, 33(4):875--893, April 2006.
+
+\bibitem[BMM04]{baldacciexact2004}
+Roberto Baldacci, Vittorio Maniezzo, and Aristide Mingozzi.
+\newblock An {Exact} {Method} for the {Car} {Pooling} {Problem} {Based} on
+  {Lagrangean} {Column} {Generation}.
+\newblock {\em Operations Research}, 52(3):422--439, June 2004.
+
+\bibitem[CdLHM04]{calvodistributed2004}
+Roberto~Wolfler Calvo, Fabio de~Luigi, Palle Haastrup, and Vittorio Maniezzo.
+\newblock A distributed geographic information system for the daily car pooling
+  problem.
+\newblock {\em Computers \& Operations Research}, 31(13):2263--2278, 2004.
+
+\bibitem[CL03]{cordeautabu2003}
+Jean-François Cordeau and Gilbert Laporte.
+\newblock A tabu search heuristic for the static multi-vehicle dial-a-ride
+  problem.
+\newblock {\em Transportation Research Part B: Methodological}, 37(6):579--594,
+  2003.
+
+\bibitem[Cor06]{cordeaubranch-and-cut2006}
+Jean-François Cordeau.
+\newblock A {Branch}-and-{Cut} {Algorithm} for the {Dial}-a-{Ride} {Problem}.
+\newblock {\em Operations Research}, 54(3):573--586, June 2006.
+
+\bibitem[CV09]{correiaconceptual2009}
+G.~Correia and J.~M. Viegas.
+\newblock A conceptual model for carpooling systems simulation.
+\newblock {\em J Simulation}, 3(1):61--68, March 2009.
+
+\bibitem[DG16]{delhommecomparing2016}
+Patricia Delhomme and Alexandra Gheorghiu.
+\newblock Comparing {French} carpoolers and non-carpoolers: {Which} factors
+  contribute the most to carpooling?
+\newblock {\em Transportation Research Part D: Transport and Environment},
+  42:1--15, January 2016.
+
+\bibitem[Dio]{dionneblablacar2018}
+Daniel Dionne.
+\newblock {BlaBlaCar} monopolise le covoiturage : et la libre concurrence,
+  alors ?
+
+\bibitem[GLS96]{gendreautabu1996}
+Michel Gendreau, Gilbert Laporte, and Rene Seguin.
+\newblock A tabu search heuristic for the vehicle routing problem with
+  stochastic demands and customers.
+\newblock {\em Operations Research}, 44(3):469--477, 1996.
+
+\bibitem[Guo12]{guometaheuristics2012}
+Yuhan Guo.
+\newblock {\em Metaheuristics for solving large size long-term car pooling
+  problem and an extension}.
+\newblock Artois, November 2012.
+
+\bibitem[HHJL08]{hohybrid2008}
+William Ho, George T.~S. Ho, Ping Ji, and Henry C.~W. Lau.
+\newblock A hybrid genetic algorithm for the multi-depot vehicle routing
+  problem.
+\newblock {\em Engineering Applications of Artificial Intelligence},
+  21(4):548--557, June 2008.
+
+\bibitem[HJL15]{huanggenetic-algorithm-based2015}
+Shih-Chia Huang, Ming-Kai Jiau, and Chih-Hsiang Lin.
+\newblock A genetic-algorithm-based approach to solve carpool service problems
+  in cloud computing.
+\newblock {\em IEEE Transactions on Intelligent Transportation Systems},
+  16(1):352--364, 2015.
+
+\bibitem[HYB00]{huangmodels2000}
+Hai-Jun Huang, Hai Yang, and Michael G.~H. Bell.
+\newblock The models and economics of carpools.
+\newblock {\em Ann Reg Sci}, 34(1):55--68, March 2000.
+
+\bibitem[KA15]{karaoglanmemetic2015}
+Ismail Karaoglan and Fulya Altiparmak.
+\newblock A memetic algorithm for the capacitated location-routing problem with
+  mixed backhauls.
+\newblock {\em Computers \& Operations Research}, 55:200--216, March 2015.
+
+\bibitem[Kar18]{karimicapacitated2018}
+Hossein Karimi.
+\newblock The capacitated hub covering location-routing problem for
+  simultaneous pickup and delivery systems.
+\newblock {\em Computers \& Industrial Engineering}, 116:47--58, February 2018.
+
+\bibitem[Kot04]{kotharigenghis-multiagent2004}
+Amit~B. Kothari.
+\newblock Genghis-a multiagent carpooling system.
+\newblock {\em Bath: Department of Computer Science, University of Bath}, 2004.
+
+\bibitem[LHCY08]{laucontributions2008}
+J.~Lau, W.~T. Hung, C.~S. Cheung, and D.~Yuen.
+\newblock Contributions of roadside vehicle emissions to general air quality in
+  {Hong} {Kong}.
+\newblock {\em Transportation Research Part D: Transport and Environment},
+  13(1):19--26, January 2008.
+
+\bibitem[LL03]{limetaheuristic2003}
+Haibing Li and Andrew Lim.
+\newblock A metaheuristic for the pickup and delivery problem with time
+  windows.
+\newblock {\em International Journal on Artificial Intelligence Tools},
+  12(02):173--186, 2003.
+
+\bibitem[MCH04]{maniezzoants2004}
+Vittorio Maniezzo, Antonella Carbonaro, and Hanno Hildmann.
+\newblock An {ANTS} heuristic for the long—term car pooling problem.
+\newblock In {\em New optimization techniques in engineering}, pages 411--430.
+  Springer, 2004.
+
+\bibitem[ML04]{mazzeoant2004}
+Silvia Mazzeo and Irene Loiseau.
+\newblock An {Ant} {Colony} {Algorithm} for the {Capacitated} {Vehicle}
+  {Routing}.
+\newblock {\em Electronic Notes in Discrete Mathematics}, 18:181--186, December
+  2004.
+
+\bibitem[OB04]{onwubolunew2004}
+Godfrey~C. Onwubolu and B.~V. Babu.
+\newblock {\em New {Optimization} {Techniques} in {Engineering}}.
+\newblock Studies in {Fuzziness} and {Soft} {Computing}. Springer-Verlag,
+  Berlin Heidelberg, 2004.
+
+\bibitem[PDH08]{parraghsurvey2008}
+Sophie Parragh, Karl Doerner, and Richard Hartl.
+\newblock A survey on pickup and delivery problems: {Part} {II}:
+  {Transportation} between pickup and delivery locations.
+\newblock {\em Journal für Betriebswirtschaft}, 58:81--117, June 2008.
+
+\bibitem[PHDR04]{polacekvariable2004}
+Michael Polacek, Richard~F. Hartl, Karl Doerner, and Marc Reimann.
+\newblock A {Variable} {Neighborhood} {Search} for the {Multi} {Depot}
+  {Vehicle} {Routing} {Problem} with {Time} {Windows}.
+\newblock {\em J Heuristics}, 10(6):613--627, December 2004.
+
+\bibitem[Rus95]{russellhybrid1995}
+Robert~A. Russell.
+\newblock Hybrid {Heuristics} for the {Vehicle} {Routing} {Problem} with {Time}
+  {Windows}.
+\newblock {\em Transportation Science}, 29(2):156--166, May 1995.
+
+\bibitem[Sag74]{sagnerimpact1974}
+James~S. Sagner.
+\newblock The impact of the energy crisis on {American} cities based on
+  dispersion of employment, utilization of transit, and car pooling.
+\newblock {\em Transportation Research}, 8(4):307--316, October 1974.
+
+\bibitem[Str07]{stradeterminants2007}
+Stephen Stradling.
+\newblock Determinants of {Car} {Dependence} {Threats} from {Car} {Traffic} to
+  the {Quality} of {Urban} {Life}, 2007.
+
+\bibitem[VCG{\etalchar{+}}12]{vidalhybrid2012}
+Thibaut Vidal, Teodor~Gabriel Crainic, Michel Gendreau, Nadia Lahrichi, and
+  Walter Rei.
+\newblock A hybrid genetic algorithm for multidepot and periodic vehicle
+  routing problems.
+\newblock {\em Operations Research}, 60(3):611--624, 2012.
+
+\bibitem[Web08]{noauthoroccupancy2008}
+Web.
+\newblock Occupancy rates of passenger vehicles, 2008.
+
+\bibitem[Web16]{noauthorkaros2016}
+Web.
+\newblock Karos, comment ça marche ? - {Le} {Parisien}, 2016.
+
+\bibitem[Web17]{noauthorblablalines2017}
+Web.
+\newblock \#{Covoiturage} domicile-travail {BlaBlaLines} arrive à {Paris} et
+  en {Ile}-de-{France}, 2017.
+
+\bibitem[Web18]{noauthorgreve2018}
+Web.
+\newblock Covoiturage gratuit en ile-de-{France} pendant les jours de greve !,
+  2018.
+
+\bibitem[Woh70]{wohlmethodology1970}
+Martin Wohl.
+\newblock A {METHODOLOGY} {FOR} {FORECASTING} {PEAK} {AND} {OFF}-{PEAK}
+  {TRAVEL} {VOLUMES}.
+\newblock {\em Highway Research Record}, (322), 1970.
+
+\bibitem[YC11]{yanoptimization2011}
+Shangyao Yan and Chun-Ying Chen.
+\newblock An optimization model and a solution algorithm for the many-to-many
+  car pooling problem.
+\newblock {\em Ann Oper Res}, 191(1):37--71, November 2011.
+
+\end{thebibliography}

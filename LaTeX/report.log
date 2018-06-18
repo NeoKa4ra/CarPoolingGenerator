@@ -1,0 +1,2175 @@
+This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6630 64-bit)  (format=lualatex 2018.6.12)  18 JUN 2018 19:27
+ restricted system commands enabled.
+**report.tex
+(./report.tex
+LaTeX2e <2017-04-15>
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using cache: C:/Users/navarrro/AppData/Local/MiKTeX/2.9/luatex-cache/g
+eneric)
+luaotfload | conf : Root cache directory is C:/Users/navarrro/AppData/Local/MiKT
+eX/2.9/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/luatex
+/luaotfload/fontloader-2017-02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is C:/Users/navarrro/AppData/Local/MiKT
+eX/2.9/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 1.134 seconds
+Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/memoir/memoir.c
+ls"
+Document Class: memoir 2018/04/04 v3.7g configurable book, report, article docum
+ent class
+\onelineskip=\skip41
+\lxvchars=\skip42
+\xlvchars=\skip43
+\@memcnta=\count79
+\c@@memmarkcntra=\count80
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifpd
+f.sty"
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ifetex/ifetex.s
+ty"
+Package: ifetex 2018/03/31 v1.2a ifetex
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/plain/ifetex/ifetex.t
+ex"))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/ifxetex/ifxet
+ex.sty"
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/iflu
+atex.sty"
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+)
+\stockheight=\skip44
+\stockwidth=\skip45
+\trimtop=\skip46
+\trimedge=\skip47
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/memoir/mem12.cl
+o"
+File: mem12.clo 2010/10/19 v0.4b memoir class 12pt size option
+luaotfload | db : Font names database loaded from C:/Users/navarrro/AppData/Loca
+l/MiKTeX/2.9/luatex-cache/generic/names/luaotfload-names.luc(load luc: C:/Users/
+navarrro/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts/otl/lmroman12-regul
+ar.luc))
+\binding=\skip48
+\spinemargin=\skip49
+\foremargin=\skip50
+\uppermargin=\skip51
+\lowermargin=\skip52
+\headdrop=\skip53
+\normalrulethickness=\skip54
+\mem@maxheadheight=\skip55
+\mem@maxfootheight=\skip56
+\headwidth=\skip57
+\c@storedpagenumber=\count81
+\memPD=\dimen102
+\m@mabparskip=\skip58
+\thanksmarkwidth=\skip59
+\thanksmarksep=\skip60
+\droptitle=\skip61
+\c@book=\count82
+\c@part=\count83
+\c@chapter=\count84
+\c@section=\count85
+\c@subsection=\count86
+\c@subsubsection=\count87
+\c@paragraph=\count88
+\c@subparagraph=\count89
+\beforechapskip=\skip62
+\midchapskip=\skip63
+\afterchapskip=\skip64
+\chapindent=\skip65
+\bottomsectionskip=\skip66
+\secindent=\skip67
+\beforesecskip=\skip68
+\aftersecskip=\skip69
+\subsecindent=\skip70
+\beforesubsecskip=\skip71
+\aftersubsecskip=\skip72
+\subsubsecindent=\skip73
+\beforesubsubsecskip=\skip74
+\aftersubsubsecskip=\skip75
+\paraindent=\skip76
+\beforeparaskip=\skip77
+\afterparaskip=\skip78
+\subparaindent=\skip79
+\beforesubparaskip=\skip80
+\aftersubparaskip=\skip81
+\pfbreakskip=\skip82
+\c@@ppsavesec=\count90
+\c@@ppsaveapp=\count91
+\ragrparindent=\dimen103
+\everylistparindent=\dimen104
+\parsepi=\skip83
+\topsepi=\skip84
+\itemsepi=\skip85
+\parsepii=\skip86
+\topsepii=\skip87
+\topsepiii=\skip88
+\itemsepii=\skip89
+\itemsepiii=\skip90
+\partopsepii=\skip91
+\partopsepiii=\skip92
+\m@msavetopsep=\skip93
+\m@msavepartopsep=\skip94
+\@enLab=\toks14
+\abstitleskip=\skip95
+\absleftindent=\skip96
+\abs@leftindent=\dimen105
+\absrightindent=\skip97
+\absparindent=\skip98
+\absparsep=\skip99
+\c@vslineno=\count92
+\c@poemline=\count93
+\c@modulo@vs=\count94
+\c@memfvsline=\count95
+\vleftskip=\skip100
+\vrightskip=\skip101
+\stanzaskip=\skip102
+\versewidth=\skip103
+\vgap=\skip104
+\vindent=\skip105
+\vleftmargin=\dimen106
+\c@verse=\count96
+\c@chrsinstr=\count97
+\beforepoemtitleskip=\skip106
+\afterpoemtitleskip=\skip107
+\c@poem=\count98
+\beforePoemTitleskip=\skip108
+\midPoemTitleskip=\skip109
+\afterPoemTitleskip=\skip110
+\col@sep=\dimen107
+\extrarowheight=\dimen108
+\NC@list=\toks15
+\extratabsurround=\skip111
+\backup@length=\skip112
+\TX@col@width=\dimen109
+\TX@old@table=\dimen110
+\TX@old@col=\dimen111
+\TX@target=\dimen112
+\TX@delta=\dimen113
+\TX@cols=\count99
+\TX@ftn=\toks16
+\heavyrulewidth=\dimen114
+\lightrulewidth=\dimen115
+\cmidrulewidth=\dimen116
+\belowrulesep=\dimen117
+\belowbottomsep=\dimen118
+\aboverulesep=\dimen119
+\abovetopsep=\dimen120
+\cmidrulesep=\dimen121
+\cmidrulekern=\dimen122
+\defaultaddspace=\dimen123
+\@cmidla=\count100
+\@cmidlb=\count101
+\@aboverulesep=\dimen124
+\@belowrulesep=\dimen125
+\@thisruleclass=\count102
+\@lastruleclass=\count103
+\@thisrulewidth=\dimen126
+\ctableftskip=\skip113
+\ctabrightskip=\skip114
+\abovecolumnspenalty=\count104
+\@linestogo=\count105
+\@cellstogo=\count106
+\@cellsincolumn=\count107
+\crtok=\toks17
+\@mincolumnwidth=\dimen127
+\c@newflo@tctr=\count108
+\mem@margin@floatbox=\box26
+\@contcwidth=\skip115
+\@contindw=\skip116
+\abovecaptionskip=\skip117
+\belowcaptionskip=\skip118
+\subfloattopskip=\skip119
+\subfloatcapskip=\skip120
+\subfloatcaptopadj=\skip121
+\subfloatbottomskip=\skip122
+\subfloatlabelskip=\skip123
+\subfloatcapmargin=\dimen128
+\c@@contsubnum=\count109
+\m@mscap@capbox=\box27
+\m@mscap@fbox=\box28
+\sidecapsep=\dimen129
+\sidecapwidth=\dimen130
+\m@m@tempdima=\dimen131
+\m@mscapraise=\dimen132
+\sidecapraise=\dimen133
+\m@mscapmainwidth=\dimen134
+\m@mscaplkern=\dimen135
+\beforeepigraphskip=\skip124
+\afterepigraphskip=\skip125
+\epigraphwidth=\skip126
+\epigraphrule=\skip127
+LaTeX Info: Redefining \em on input line 7578.
+LaTeX Info: Redefining \emph on input line 7586.
+\tocentryskip=\skip128
+\tocbaseline=\skip129
+\cftparskip=\skip130
+\cftbeforebookskip=\skip131
+\cftbookindent=\dimen136
+\cftbooknumwidth=\dimen137
+\cftbeforepartskip=\skip132
+\cftpartindent=\skip133
+\cftpartnumwidth=\skip134
+\cftbeforechapterskip=\skip135
+\cftchapterindent=\skip136
+\cftchapternumwidth=\skip137
+\cftbeforesectionskip=\skip138
+\cftsectionindent=\skip139
+\cftsectionnumwidth=\skip140
+\cftbeforesubsectionskip=\skip141
+\cftsubsectionindent=\skip142
+\cftsubsectionnumwidth=\skip143
+\cftbeforesubsubsectionskip=\skip144
+\cftsubsubsectionindent=\skip145
+\cftsubsubsectionnumwidth=\skip146
+\cftbeforeparagraphskip=\skip147
+\cftparagraphindent=\skip148
+\cftparagraphnumwidth=\skip149
+\cftbeforesubparagraphskip=\skip150
+\cftsubparagraphindent=\skip151
+\cftsubparagraphnumwidth=\skip152
+\prechapterprecisshift=\dimen138
+\c@maxsecnumdepth=\count110
+\bibindent=\dimen139
+\bibitemsep=\skip153
+\indexcolsep=\skip154
+\indexrule=\skip155
+\indexmarkstyle=\toks18
+\@indexbox=\insert199
+\glossarycolsep=\dimen140
+\glossaryrule=\dimen141
+\sideparvshift=\skip156
+\sideins=\insert198
+\sidebartopsep=\skip157
+\sidebarhsep=\skip158
+\sidebarvsep=\skip159
+\sidebarwidth=\skip160
+\footmarkwidth=\skip161
+\footmarksep=\skip162
+\footparindent=\skip163
+\footinsdim=\skip164
+\footinsv@r=\insert197
+\@mpfootinsv@r=\insert196
+\m@m@k=\count111
+\m@m@h=\dimen142
+\m@mipn@skip=\skip165
+(load luc: C:/Users/navarrro/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts
+/otl/lmroman10-regular.luc)
+\sidefootins=\insert195
+\sidefootadjust=\skip166
+\sidefootheight=\skip167
+\sidefoothsep=\skip168
+\sidefootvsep=\skip169
+\sidefootwidth=\skip170
+\m@mdownsf=\skip171
+\c@sidefootnote=\count112
+\sidefootmarkwidth=\skip172
+\sidefootmarksep=\skip173
+\sidefootparindent=\skip174
+\c@pagenote=\count113
+\c@pagenoteshadow=\count114
+\mem@pn@lastkern=\skip175
+\every@verbatim=\toks19
+\afterevery@verbatim=\toks20
+\verbatim@line=\toks21
+\tab@position=\count115
+\verbatim@in@stream=\read1
+\verbatimindent=\skip176
+\verbatim@out=\write3
+\bvboxsep=\skip177
+\c@memfbvline=\count116
+\c@bvlinectr=\count117
+\bvnumlength=\skip178
+\fb@frw=\dimen143
+\fb@frh=\dimen144
+\FrameRule=\dimen145
+\FrameSep=\dimen146
+\c@cp@cntr=\count118
+LaTeX Info: Redefining \: on input line 12100.
+LaTeX Info: Redefining \! on input line 12102.
+\c@ism@mctr=\count119
+\c@xsm@mctr=\count120
+\c@csm@mctr=\count121
+\c@ksm@mctr=\count122
+\c@xksm@mctr=\count123
+\c@cksm@mctr=\count124
+\c@msm@mctr=\count125
+\c@xmsm@mctr=\count126
+\c@cmsm@mctr=\count127
+\c@bsm@mctr=\count128
+\c@workm@mctr=\count129
+\c@sheetsequence=\count130
+\c@lastsheet=\count131
+\c@lastpage=\count132
+\c@figure=\count133
+\c@lofdepth=\count134
+\cftbeforefigureskip=\skip179
+\cftfigureindent=\skip180
+\cftfigurenumwidth=\skip181
+\c@table=\count135
+\c@lotdepth=\count136
+\cftbeforetableskip=\skip182
+\cfttableindent=\skip183
+\cfttablenumwidth=\skip184
+Package abstract [2008/07/23] emulated by memoir.
+Package appendix [2008/07/23] emulated by memoir.
+Package array [2016/10/06] emulated by memoir.
+Package booktabs [2016/05/16] emulated by memoir.
+Package ccaption [2008/07/23] emulated by memoir.
+Package changepage [2008/07/23] emulated by memoir.
+Package chngcntr [2008/07/23] emulated by memoir.
+Package chngpage [2008/07/23] emulated by memoir.
+Package crop emulated by memoir.
+Package dcolumn [2008/07/23] emulated by memoir.
+Package delarray [2014/10/28] emulated by memoir.
+Package enumerate [2008/07/23] emulated by memoir.
+Package epigraph [2008/07/23] emulated by memoir.
+Package ifmtarg [2008/07/23] emulated by memoir.
+Package index [2008/07/23] emulated by memoir.
+Package makeidx [2008/07/23] emulated by memoir.
+Package moreverb [2008/07/23] emulated by memoir.
+Package mparhack [2008/07/23] emulated by memoir.
+Package needspace [2008/07/23] emulated by memoir.
+Package newfile [2008/07/23] emulated by memoir.
+Package nextpage [2008/07/23] emulated by memoir.
+Package pagenote [2008/07/23] emulated by memoir.
+Package parskip [2008/07/23] emulated by memoir.
+Package patchcmd [2008/07/23] emulated by memoir.
+Package setspace [2008/07/23] emulated by memoir.
+Package shortvrb [2008/07/23] emulated by memoir.
+Package showidx [2008/07/23] emulated by memoir.
+Package tabularx [2016/02/03] emulated by memoir.
+Package titleref [2008/07/23] emulated by memoir.
+Package titling [2008/07/23] emulated by memoir.
+Package tocbibind [2008/07/23] emulated by memoir.
+Package tocloft [2008/07/23] emulated by memoir.
+Package tocvsec2 [2008/07/23] emulated by memoir.
+Package verbatim [2008/07/23] emulated by memoir.
+Package verse [2008/07/23] emulated by memoir.
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgf/frontendlay
+er/tikz.sty"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgf/basiclayer/
+pgf.sty"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgf/utilities/p
+gfrcs.sty"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/utilities
+/pgfutil-common.tex"
+\pgfutil@everybye=\toks22
+\pgfutil@tempdima=\dimen147
+\pgfutil@tempdimb=\dimen148
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/utilities
+/pgfutil-common-lists.tex"))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/utilities
+/pgfutil-latex.def"
+\pgfutil@abb=\box29
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ms/everyshi.sty
+"
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/utilities
+/pgfrcs.code.tex"
+Package: pgfrcs 2015/08/07 v3.0.1a (rcs-revision 1.31)
+))
+Package: pgf 2015/08/07 v3.0.1a (rcs-revision 1.15)
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgf/basiclayer/
+pgfcore.sty"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphi
+cx.sty"
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/keyval
+.sty"
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks23
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/graphi
+cs.sty"
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics/trig.s
+ty"
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/gr
+aphics.cfg"
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 99.
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-def/lu
+atex.def"
+File: luatex.def 2018/01/08 v1.0l Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen149
+\Gin@req@width=\dimen150
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgf/systemlayer
+/pgfsys.sty"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/systemlay
+er/pgfsys.code.tex"
+Package: pgfsys 2014/07/09 v3.0.1a (rcs-revision 1.48)
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/utilities
+/pgfkeys.code.tex"
+\pgfkeys@pathtoks=\toks24
+\pgfkeys@temptoks=\toks25
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/utilities
+/pgfkeysfiltered.code.tex"
+\pgfkeys@tmptoks=\toks26
+))
+\pgf@x=\dimen151
+\pgf@y=\dimen152
+\pgf@xa=\dimen153
+\pgf@ya=\dimen154
+\pgf@xb=\dimen155
+\pgf@yb=\dimen156
+\pgf@xc=\dimen157
+\pgf@yc=\dimen158
+\w@pgf@writea=\write4
+\r@pgf@reada=\read2
+\c@pgf@counta=\count137
+\c@pgf@countb=\count138
+\c@pgf@countc=\count139
+\c@pgf@countd=\count140
+\t@pgf@toka=\toks27
+\t@pgf@tokb=\toks28
+\t@pgf@tokc=\toks29
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/systemlay
+er/pgf.cfg"
+File: pgf.cfg 2008/05/14  (rcs-revision 1.7)
+)
+Driver file for pgf: pgfsys-luatex.def
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/systemlay
+er/pgfsys-luatex.def"
+File: pgfsys-luatex.def 2014/10/11  (rcs-revision 1.35)
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/systemlay
+er/pgfsys-common-pdf.def"
+File: pgfsys-common-pdf.def 2013/10/10  (rcs-revision 1.13)
+)))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/systemlay
+er/pgfsyssoftpath.code.tex"
+File: pgfsyssoftpath.code.tex 2013/09/09  (rcs-revision 1.9)
+\pgfsyssoftpath@smallbuffer@items=\count141
+\pgfsyssoftpath@bigbuffer@items=\count142
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/systemlay
+er/pgfsysprotocol.code.tex"
+File: pgfsysprotocol.code.tex 2006/10/16  (rcs-revision 1.4)
+))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/xcolor/xcolor.s
+ty"
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/graphics-cfg/co
+lor.cfg"
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcore.code.tex"
+Package: pgfcore 2010/04/11 v3.0.1a (rcs-revision 1.7)
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfm
+ath.code.tex"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfm
+athcalc.code.tex"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfm
+athutil.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfm
+athparser.code.tex"
+\pgfmath@dimen=\dimen159
+\pgfmath@count=\count143
+\pgfmath@box=\box30
+\pgfmath@toks=\toks30
+\pgfmath@stack@operand=\toks31
+\pgfmath@stack@operation=\toks32
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfm
+athfunctions.code.tex"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfm
+athfunctions.basic.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfm
+athfunctions.trigonometric.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfm
+athfunctions.random.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfm
+athfunctions.comparison.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfm
+athfunctions.base.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfm
+athfunctions.round.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfm
+athfunctions.misc.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfm
+athfunctions.integerarithmetics.code.tex")))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfm
+athfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count144
+))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcorepoints.code.tex"
+File: pgfcorepoints.code.tex 2013/10/07  (rcs-revision 1.27)
+\pgf@picminx=\dimen160
+\pgf@picmaxx=\dimen161
+\pgf@picminy=\dimen162
+\pgf@picmaxy=\dimen163
+\pgf@pathminx=\dimen164
+\pgf@pathmaxx=\dimen165
+\pgf@pathminy=\dimen166
+\pgf@pathmaxy=\dimen167
+\pgf@xx=\dimen168
+\pgf@xy=\dimen169
+\pgf@yx=\dimen170
+\pgf@yy=\dimen171
+\pgf@zx=\dimen172
+\pgf@zy=\dimen173
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcorepathconstruct.code.tex"
+File: pgfcorepathconstruct.code.tex 2013/10/07  (rcs-revision 1.29)
+\pgf@path@lastx=\dimen174
+\pgf@path@lasty=\dimen175
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcorepathusage.code.tex"
+File: pgfcorepathusage.code.tex 2014/11/02  (rcs-revision 1.24)
+\pgf@shorten@end@additional=\dimen176
+\pgf@shorten@start@additional=\dimen177
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcorescopes.code.tex"
+File: pgfcorescopes.code.tex 2015/05/08  (rcs-revision 1.46)
+\pgfpic=\box31
+\pgf@hbox=\box32
+\pgf@layerbox@main=\box33
+\pgf@picture@serial@count=\count145
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcoregraphicstate.code.tex"
+File: pgfcoregraphicstate.code.tex 2014/11/02  (rcs-revision 1.12)
+\pgflinewidth=\dimen178
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcoretransformations.code.tex"
+File: pgfcoretransformations.code.tex 2015/08/07  (rcs-revision 1.20)
+\pgf@pt@x=\dimen179
+\pgf@pt@y=\dimen180
+\pgf@pt@temp=\dimen181
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcorequick.code.tex"
+File: pgfcorequick.code.tex 2008/10/09  (rcs-revision 1.3)
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcoreobjects.code.tex"
+File: pgfcoreobjects.code.tex 2006/10/11  (rcs-revision 1.2)
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcorepathprocessing.code.tex"
+File: pgfcorepathprocessing.code.tex 2013/09/09  (rcs-revision 1.9)
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcorearrows.code.tex"
+File: pgfcorearrows.code.tex 2015/05/14  (rcs-revision 1.43)
+\pgfarrowsep=\dimen182
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcoreshade.code.tex"
+File: pgfcoreshade.code.tex 2013/07/15  (rcs-revision 1.15)
+\pgf@max=\dimen183
+\pgf@sys@shading@range@num=\count146
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcoreimage.code.tex"
+File: pgfcoreimage.code.tex 2013/07/15  (rcs-revision 1.18)
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcoreexternal.code.tex"
+File: pgfcoreexternal.code.tex 2014/07/09  (rcs-revision 1.21)
+\pgfexternal@startupbox=\box34
+))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcorelayers.code.tex"
+File: pgfcorelayers.code.tex 2013/07/18  (rcs-revision 1.7)
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcoretransparency.code.tex"
+File: pgfcoretransparency.code.tex 2013/09/30  (rcs-revision 1.5)
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/basiclaye
+r/pgfcorepatterns.code.tex"
+File: pgfcorepatterns.code.tex 2013/11/07  (rcs-revision 1.5)
+)))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/modules/p
+gfmoduleshapes.code.tex"
+File: pgfmoduleshapes.code.tex 2014/03/21  (rcs-revision 1.35)
+\pgfnodeparttextbox=\box35
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/modules/p
+gfmoduleplot.code.tex"
+File: pgfmoduleplot.code.tex 2015/08/03  (rcs-revision 1.13)
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgf/compatibili
+ty/pgfcomp-version-0-65.sty"
+Package: pgfcomp-version-0-65 2007/07/03 v3.0.1a (rcs-revision 1.7)
+\pgf@nodesepstart=\dimen184
+\pgf@nodesepend=\dimen185
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgf/compatibili
+ty/pgfcomp-version-1-18.sty"
+Package: pgfcomp-version-1-18 2007/07/23 v3.0.1a (rcs-revision 1.1)
+))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgf/utilities/p
+gffor.sty"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgf/utilities/p
+gfkeys.sty"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/utilities
+/pgfkeys.code.tex"))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgf/math/pgfmat
+h.sty"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfm
+ath.code.tex"))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/utilities
+/pgffor.code.tex"
+Package: pgffor 2013/12/13 v3.0.1a (rcs-revision 1.25)
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/math/pgfm
+ath.code.tex")
+\pgffor@iter=\dimen186
+\pgffor@skip=\dimen187
+\pgffor@stack=\toks33
+\pgffor@toks=\toks34
+))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/frontendl
+ayer/tikz/tikz.code.tex"
+Package: tikz 2015/08/07 v3.0.1a (rcs-revision 1.151)
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/libraries
+/pgflibraryplothandlers.code.tex"
+File: pgflibraryplothandlers.code.tex 2013/08/31 v3.0.1a (rcs-revision 1.20)
+\pgf@plot@mark@count=\count147
+\pgfplotmarksize=\dimen188
+)
+\tikz@lastx=\dimen189
+\tikz@lasty=\dimen190
+\tikz@lastxsaved=\dimen191
+\tikz@lastysaved=\dimen192
+\tikzleveldistance=\dimen193
+\tikzsiblingdistance=\dimen194
+\tikz@figbox=\box36
+\tikz@figbox@bg=\box37
+\tikz@tempbox=\box38
+\tikz@tempbox@bg=\box39
+\tikztreelevel=\count148
+\tikznumberofchildren=\count149
+\tikznumberofcurrentchild=\count150
+\tikz@fig@count=\count151
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/modules/p
+gfmodulematrix.code.tex"
+File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
+\pgfmatrixcurrentrow=\count152
+\pgfmatrixcurrentcolumn=\count153
+\pgf@matrix@numberofcolumns=\count154
+)
+\tikz@expandcount=\count155
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/frontendl
+ayer/tikz/libraries/tikzlibrarytopaths.code.tex"
+File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
+)))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/tools/layout.st
+y"
+Package: layout 2014/10/28 v1.2c Show layout parameters
+\oneinch=\count156
+\cnt@paperwidth=\count157
+\cnt@paperheight=\count158
+\cnt@hoffset=\count159
+\cnt@voffset=\count160
+\cnt@textheight=\count161
+\cnt@textwidth=\count162
+\cnt@topmargin=\count163
+\cnt@oddsidemargin=\count164
+\cnt@evensidemargin=\count165
+\cnt@headheight=\count166
+\cnt@headsep=\count167
+\cnt@marginparsep=\count168
+\cnt@marginparwidth=\count169
+\cnt@marginparpush=\count170
+\cnt@footskip=\count171
+\fheight=\count172
+\ref@top=\count173
+\ref@hoffset=\count174
+\ref@voffset=\count175
+\ref@head=\count176
+\ref@body=\count177
+\ref@foot=\count178
+\ref@margin=\count179
+\ref@marginwidth=\count180
+\ref@marginpar=\count181
+\Interval=\count182
+\ExtraYPos=\count183
+\PositionX=\count184
+\PositionY=\count185
+\ArrowLength=\count186
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/geometry/geomet
+ry.sty"
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/ifvt
+ex.sty"
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+\Gm@cnth=\count187
+\Gm@cntv=\count188
+\c@Gm@tempcnt=\count189
+\Gm@bindingoffset=\dimen256
+\Gm@wd@mp=\dimen257
+\Gm@odd@mp=\dimen258
+\Gm@even@mp=\dimen259
+\Gm@layoutwidth=\dimen260
+\Gm@layoutheight=\dimen261
+\Gm@layouthoffset=\dimen262
+\Gm@layoutvoffset=\dimen263
+\Gm@dimlist=\toks35
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/geometry/geomet
+ry.cfg"))
+
+Class memoir Warning: You are using the caption package with the memoir class. T
+o prepare we will now reset all captioning macros and configurations to kernel d
+efaults, and then let the caption package take over. Please remember to use
+ the caption package interfaces in order to
+ configure your captions.
+
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption
+.sty"
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/caption
+3.sty"
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen264
+\captionmargin@=\dimen265
+\captionwidth=\dimen266
+\caption@tempdima=\dimen267
+\caption@indent=\dimen268
+\caption@parindent=\dimen269
+\caption@hangindent=\dimen270
+)
+\c@ContinuedFloat=\count190
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/caption/subcapt
+ion.sty"
+Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
+\c@subfigure=\count191
+\c@subtable=\count192
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/float/float.sty
+"
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count193
+\float@exts=\toks36
+\float@box=\box40
+\@float@everytoks=\toks37
+\@floatcapt=\box41
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsfonts/amsfon
+ts.sty"
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\@emptytoks=\toks38
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsmath
+.sty"
+Package: amsmath 2017/09/02 v2.17a AMS math features
+\@mathmargin=\skip185
+
+For additional information on amsmath, use the `?' option.
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amstext
+.sty"
+Package: amstext 2000/06/29 v2.01 AMS text
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsgen.
+sty"
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks39
+\ex@=\dimen271
+))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsbsy.
+sty"
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen272
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsmath/amsopn.
+sty"
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count194
+LaTeX Info: Redefining \frac on input line 213.
+\uproot@=\count266
+\leftroot@=\count267
+LaTeX Info: Redefining \overline on input line 375.
+\classnum@=\count268
+\DOTSCASE@=\count269
+LaTeX Info: Redefining \ldots on input line 472.
+LaTeX Info: Redefining \dots on input line 475.
+LaTeX Info: Redefining \cdots on input line 596.
+\Mathstrutbox@=\box42
+\strutbox@=\box43
+\big@size=\dimen273
+LaTeX Font Info:    Redeclaring font encoding OML on input line 712.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 713.
+\macc@depth=\count270
+\c@MaxMatrixCols=\count271
+\dotsspace@=\muskip10
+\c@parentequation=\count272
+\dspbrk@lvl=\count273
+\tag@help=\toks40
+\row@=\count274
+\column@=\count275
+\maxfields@=\count276
+\andhelp@=\toks41
+\eqnshift@=\dimen274
+\alignsep@=\dimen275
+\tagshift@=\dimen276
+\tagwidth@=\dimen277
+\totwidth@=\dimen278
+\lineht@=\dimen279
+\@envbody=\toks42
+\multlinegap=\skip186
+\multlinetaggap=\skip187
+\mathdisplay@stack=\toks43
+LaTeX Info: Redefining \[ on input line 2817.
+LaTeX Info: Redefining \] on input line 2818.
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsfonts/amssym
+b.sty"
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/jknappen/mathrs
+fs.sty"
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgfplots/pgfplo
+tstable.sty"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/pgfp
+lots.revision.tex")
+Package: pgfplotstable 2018/03/28 v1.16 Table typesetting and Pretty-printing (1
+.16)
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/pgfplots/pgfplo
+ts.sty"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/pgfp
+lots.revision.tex")
+Package: pgfplots 2018/03/28 v1.16 Data Visualization (1.16)
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/pgfp
+lots.code.tex"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/pgfp
+lotscore.code.tex"
+Package pgfplots info on input line 124: Initializing with LUA version Lua 5.2
+\pgfplots@luabackend@table=\catcodetable5
+\t@pgfplots@toka=\toks44
+\t@pgfplots@tokb=\toks45
+\t@pgfplots@tokc=\toks46
+\pgfplots@tmpa=\dimen280
+\c@pgfplots@coordindex=\count277
+\c@pgfplots@scanlineindex=\count278
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/sys/
+pgfplotssysgeneric.code.tex"))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/libs
+/pgfplotslibrary.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/oldp
+gfcompatib/pgfplotsoldpgfsupp_loader.code.tex"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/libraries
+/pgflibraryfpu.code.tex")
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/oldp
+gfcompatib/pgfplotsoldpgfsupp_pgflibraryfpu.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/oldp
+gfcompatib/pgfplotsoldpgfsupp_pgfmathfloat.code.tex"
+\c@pgfmathroundto@lastzeros=\count279
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/libraries
+/luamath/pgflibraryluamath.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/oldp
+gfcompatib/pgfplotsoldpgfsupp_pgflibraryluamath.code.tex")
+Package pgfplots info on input line 273: luamath library shipped with pgf 3.0.1a
+ is outdated; using a substitute shipped with pgfplots
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/oldp
+gfcompatib/pgfplotsoldpgfsupp_leq.code.tex"))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/util
+/pgfplotsutil.code.tex"
+Package pgfplots info on input line 82: Found new luatex: initializing lua comma
+nds instead of write18 (shell-escape)
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/list
+structure/pgfplotsliststructure.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/list
+structure/pgfplotsliststructureext.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/list
+structure/pgfplotsarray.code.tex"
+\c@pgfplotsarray@tmp=\count280
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/list
+structure/pgfplotsmatrix.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/numt
+able/pgfplotstableshared.code.tex"
+\c@pgfplotstable@counta=\count281
+\t@pgfplotstable@a=\toks47
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/list
+structure/pgfplotsdeque.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/util
+/pgfplotsbinary.code.tex"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/util
+/pgfplotsbinary.data.code.tex"))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/util
+/pgfplotsutil.verb.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/libs
+/pgflibrarypgfplots.surfshading.code.tex"
+\c@pgfplotslibrarysurf@no=\count282
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/sys/
+pgflibrarypgfplots.surfshading.pgfsys-luatex.def")))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/util
+/pgfplotscolormap.code.tex"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/util
+/pgfplotscolor.code.tex"))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/pgfp
+lotsstackedplots.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/pgfp
+lotsplothandlers.code.tex"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/pgfp
+lotsmeshplothandler.code.tex"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/pgfp
+lotsmeshplotimage.code.tex")))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/pgfp
+lots.scaling.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/pgfp
+lotscoordprocessing.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/pgfp
+lots.errorbars.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/pgfp
+lots.markers.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/pgfp
+lotsticks.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/pgfp
+lots.paths.code.tex")
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/frontendl
+ayer/tikz/libraries/tikzlibrarydecorations.code.tex"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/modules/p
+gfmoduledecorations.code.tex"
+\pgfdecoratedcompleteddistance=\dimen281
+\pgfdecoratedremainingdistance=\dimen282
+\pgfdecoratedinputsegmentcompleteddistance=\dimen283
+\pgfdecoratedinputsegmentremainingdistance=\dimen284
+\pgf@decorate@distancetomove=\dimen285
+\pgf@decorate@repeatstate=\count283
+\pgfdecorationsegmentamplitude=\dimen286
+\pgfdecorationsegmentlength=\dimen287
+)
+\tikz@lib@dec@box=\box44
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/frontendl
+ayer/tikz/libraries/tikzlibrarydecorations.pathmorphing.code.tex"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/libraries
+/decorations/pgflibrarydecorations.pathmorphing.code.tex"))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/frontendl
+ayer/tikz/libraries/tikzlibrarydecorations.pathreplacing.code.tex"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/libraries
+/decorations/pgflibrarydecorations.pathreplacing.code.tex"))
+\pgfplots@numplots=\count284
+\pgfplots@xmin@reg=\dimen288
+\pgfplots@xmax@reg=\dimen289
+\pgfplots@ymin@reg=\dimen290
+\pgfplots@ymax@reg=\dimen291
+\pgfplots@zmin@reg=\dimen292
+\pgfplots@zmax@reg=\dimen293
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/frontendl
+ayer/tikz/libraries/tikzlibraryplotmarks.code.tex"
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgf/libraries
+/pgflibraryplotmarks.code.tex"
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+)))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/numt
+able/pgfplotstable.code.tex"
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/pgfplots/numt
+able/pgfplotstable.coltype.code.tex")))
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hyperr
+ef.sty"
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobs
+ub-hyperref.sty"
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/hobs
+ub-generic.sty"
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package hobsub Info: Skipping package `ifluatex' (already loaded).
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: luatex-loader 2016/05/16 v0.6 Lua module loader (HO)
+
+(C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/scripts/oberdiek/oberdiek.l
+uatex.lua)
+Package: pdftexcmds 2018/01/21 v0.26 Utility functions of pdfTeX for LuaTeX (HO)
+
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks48
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package atveryend Info: \enddocument detected (standard20110627).
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/auxhoo
+k.sty"
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/kvopti
+ons.sty"
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen294
+\Hy@linkcounter=\count285
+\Hy@pagecounter=\count286
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/pd1enc
+.def"
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count287
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/00miktex/hyperr
+ef.cfg"
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count288
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/url/url.sty"
+\Urlmuskip=\muskip11
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen295
+\Fld@menulength=\count289
+\Field@Width=\dimen296
+\Fld@charsize=\dimen297
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring OFF on input line 6389.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count290
+\c@Item=\count291
+\c@Hfootnote=\count292
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/memoir/memhfixc
+.sty"
+Package: memhfixc 2013/05/30 v1.17 nameref/hyperref package fixes for memoir cla
+ss
+\c@memhycontfloat=\count293
+\c@Hpagenote=\count294
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/hluate
+x.def"
+File: hluatex.def 2018/02/06 v6.86b Hyperref driver for luaTeX
+\Fld@listcount=\count295
+\c@bookmark@seq@number=\count296
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/rerunf
+ilecheck.sty"
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
+2.
+)
+\Hy@SectionHShift=\skip188
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/ltxmisc/relsize
+.sty"
+Package: relsize 2003/07/04 ver 3.1
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/helvet.s
+ty"
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+) (./report.aux
+
+LaTeX Warning: Label `fig:var wt' multiply defined.
+
+
+LaTeX Warning: Label `fig:var wt' multiply defined.
+
+
+LaTeX Warning: Label `fig:var wt' multiply defined.
+
+
+LaTeX Warning: Label `fig:var wt' multiply defined.
+
+
+LaTeX Warning: Label `fig:var wt' multiply defined.
+
+
+LaTeX Warning: Label `fig:var wt' multiply defined.
+
+
+LaTeX Warning: Label `fig:var wt' multiply defined.
+
+
+LaTeX Warning: Label `fig:var wt' multiply defined.
+
+)
+\openout1 = report.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 83.
+LaTeX Font Info:    ... okay on input line 83.
+ ABD: EveryShipout initializing macros
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/context/base/supp-pdf
+.mkii"
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count297
+\scratchdimen=\dimen298
+\scratchbox=\box45
+\nofMPsegments=\count298
+\nofMParguments=\count299
+\everyMPshowfont=\toks49
+\MPscratchCnt=\count300
+\MPscratchDim=\dimen299
+\MPnumerator=\count301
+\makeMPintoPDFobject=\count302
+\everyMPtoPDFconversion=\toks50
+)
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/epstop
+df-base.sty"
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/oberdiek/grfext
+.sty"
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 43
+8.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG
+,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+)
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(85.35826pt, 702.78308pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=702.78308pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-21.28552pt
+* \headheight=14.5pt
+* \headsep=19.8738pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=92.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=12.0pt plus 4.0pt minus 4.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package pgfplots notification 'compat/show suggested version=true': document has
+ been generated with the most recent feature set (\pgfplotsset{compat=1.16}).
+
+\AtBeginShipoutBox=\box46
+Package hyperref Info: Link coloring OFF on input line 83.
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/hyperref/namere
+f.sty"
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/generic/oberdiek/gett
+itlestring.sty"
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count303
+)
+Redoing nameref's sectioning
+Redoing nameref's label
+LaTeX Info: Redefining \nameref on input line 83.
+LaTeX Info: Redefining \ref on input line 83.
+LaTeX Info: Redefining \pageref on input line 83.
+LaTeX Info: Redefining \nameref on input line 83.
+(./report.out) (./report.out)
+\@outlinefile=\write5
+
+\openout5 = report.out
+<img/l_uga.jpg, id=113, 142.5325pt x 122.4575pt>
+File: img/l_uga.jpg Graphic file (type jpg)
+<use img/l_uga.jpg>
+Package luatex.def Info: img/l_uga.jpg  used on input line 84.
+(luatex.def)             Requested size: 84.28047pt x 72.40796pt.
+<img/l_ensimag.pdf, id=114, 141.57994pt x 90.35707pt>
+File: img/l_ensimag.pdf Graphic file (type pdf)
+<use img/l_ensimag.pdf>
+Package luatex.def Info: img/l_ensimag.pdf  used on input line 84.
+(luatex.def)             Requested size: 113.46068pt x 72.40796pt.
+(load luc: C:/Users/navarrro/AppData/Local/MiKTeX/2.9/luatex-cache/generic/fonts
+/otl/lmromancaps10-regular.luc)(load luc: C:/Users/navarrro/AppData/Local/MiKTeX
+/2.9/luatex-cache/generic/fonts/otl/lmroman17-regular.luc)
+LaTeX Font Info:    Try loading font information for TU+phv on input line 84.
+LaTeX Font Info:    No file TUphv.fd. on input line 84.
+
+
+LaTeX Font Warning: Font shape `TU/phv/m/n' undefined
+(Font)              using `TU/lmr/m/n' instead on input line 84.
+
+
+LaTeX Font Warning: Font shape `TU/phv/bx/n' undefined
+(Font)              using `TU/phv/m/n' instead on input line 84.
+
+
+LaTeX Font Warning: Font shape `TU/phv/bx/sc' undefined
+(Font)              using `TU/phv/bx/n' instead on input line 84.
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 84.
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsfonts/umsa.f
+d"
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 84.
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/amsfonts/umsb.f
+d"
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 84.
+
+("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/jknappen/ursfs.
+fd"
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+) [1
+
+
+{C:/Users/navarrro/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}<./img/l_ug
+a.jpg><./img/l_ensimag.pdf>] [2
+
+](load luc: C:/Users/navarrro/AppData/Local/MiKTeX/2.9/luatex-cache/generic/font
+s/otl/lmroman10-bold.luc)(load luc: C:/Users/navarrro/AppData/Local/MiKTeX/2.9/l
+uatex-cache/generic/fonts/otl/lmroman12-bold.luc)
+warning  (pdf backend): ignoring duplicate destination with the name 'page.i'
+[1]
+warning  (pdf backend): ignoring duplicate destination with the name 'page.ii'
+[2
+
+] (./report.toc) [1
+
+] [2
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3
+
+]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+[5] [6] [7] [8] [9
+
+
+] [10] [11]
+<img/i_table.png, id=326, 397.485pt x 210.7875pt>
+File: img/i_table.png Graphic file (type png)
+<use img/i_table.png>
+Package luatex.def Info: img/i_table.png  used on input line 473.
+(luatex.def)             Requested size: 437.23485pt x 231.86696pt.
+ [12<./img/i_table.png>] [13] [14
+
+] [15
+
+]
+Underfull \vbox (badness 2221) has occurred while \output is active []
+
+ [16]
+[17]
+Underfull \vbox (badness 7667) has occurred while \output is active []
+
+ [18]
+[19] [20]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [21](load luc: C:/Users/navarrro/AppData/Local/MiKTeX/2.9/luatex-cache/generic/
+fonts/otl/lmroman12-italic.luc) [22]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [23]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [24]
+[25] [26
+
+] [27
+
+] [28]
+<img/i_grenoble.png, id=484, 481.04718pt x 356.83313pt>
+File: img/i_grenoble.png Graphic file (type png)
+<use img/i_grenoble.png>
+Package luatex.def Info: img/i_grenoble.png  used on input line 1600.
+(luatex.def)             Requested size: 481.046pt x 356.83224pt.
+ [29<./img/i_grenoble.png>]
+<img/i_umlproblemdata.png, id=496, 609.27625pt x 400.49625pt>
+File: img/i_umlproblemdata.png Graphic file (type png)
+<use img/i_umlproblemdata.png>
+Package luatex.def Info: img/i_umlproblemdata.png  used on input line 1659.
+(luatex.def)             Requested size: 426.49046pt x 280.34546pt.
+ [30]
+Underfull \vbox (badness 1509) has occurred while \output is active []
+
+ [31<./img/i_umlproblemdata.png>] [32] [33] [34]
+<img/i_flowchartlpvariation.png, id=539, 507.8975pt x 925.4575pt>
+File: img/i_flowchartlpvariation.png Graphic file (type png)
+<use img/i_flowchartlpvariation.png>
+Package luatex.def Info: img/i_flowchartlpvariation.png  used on input line 1810
+.
+(luatex.def)             Requested size: 304.74086pt x 555.2788pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [35]
+<img/i_flowchartpbvariation.png, id=547, 507.8975pt x 925.4575pt>
+File: img/i_flowchartpbvariation.png Graphic file (type png)
+<use img/i_flowchartpbvariation.png>
+Package luatex.def Info: img/i_flowchartpbvariation.png  used on input line 1822
+.
+(luatex.def)             Requested size: 304.74086pt x 555.2788pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [36<./img/i_flowchartlpvariation.png>] [37<./img/i_flowchartpbvariation.png>] 
+[38
+
+](load luc: C:/Users/navarrro/AppData/Local/MiKTeX/2.9/luatex-cache/generic/font
+s/otl/lmmono12-regular.luc)
+PGFPlots: reading {data/Performances/Random/VariationTimeWindows/resRW-WH-20-80-
+200-VarWT10.txt}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (1).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (2).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (3).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (4).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (5).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (6).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (7).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (8).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (9).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (10).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (11).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (12).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (13).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (14).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (15).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (16).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (17).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (18).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (19).txt"}
+
+Overfull \hbox (7.41122pt too wide) in paragraph at lines 1880--1881
+ [][] 
+ []
+
+PGFPlots: reading {data/Performances/Random/VariationTimeWindows/resRW-WH-20-80-
+200-VarWT10.txt}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (1).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (2).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (3).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (4).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (5).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (6).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (7).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (8).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (9).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (10).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (11).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (12).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (13).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (14).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (15).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (16).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (17).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (18).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationTimeWindows/resRW-WH-20-80
+-200-VarWT10 (19).txt"}
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [39
+
+]
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationTimeWindows/10/r
+esRCW-WH-10-40-200-VarWT10.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (9).txt"}
+
+Overfull \hbox (7.40988pt too wide) in paragraph at lines 1937--1938
+ [][] 
+ []
+
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationTimeWindows/10/r
+esRCW-WH-10-40-200-VarWT10.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/10/
+resRCW-WH-10-40-200-VarWT10 (9).txt"}
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationTimeWindows/15/r
+esRCW-WH-15-60-200-VarWT15.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (9).txt"}
+
+Overfull \hbox (7.414pt too wide) in paragraph at lines 1984--1985
+ [][] 
+ []
+
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationTimeWindows/15/r
+esRCW-WH-15-60-200-VarWT15.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/15/
+resRCW-WH-15-60-200-VarWT15 (9).txt"}
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [40]
+PGFPlots: reading {data/Performances/Random/VariationDeviationPercentage/resRW-W
+H-20-80-200-VarPerDev10.txt}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (1).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (2).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (3).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (4).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (5).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (6).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (7).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (8).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (9).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (10).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (11).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (12).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (13).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (14).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (15).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (16).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (17).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (18).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (19).txt"}
+
+Overfull \hbox (7.414pt too wide) in paragraph at lines 2050--2051
+ [][] 
+ []
+
+PGFPlots: reading {data/Performances/Random/VariationDeviationPercentage/resRW-W
+H-20-80-200-VarPerDev10.txt}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (1).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (2).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (3).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (4).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (5).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (6).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (7).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (8).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (9).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (10).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (11).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (12).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (13).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (14).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (15).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (16).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (17).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (18).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
+WH-20-80-200-VarPerDev10 (19).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (9).txt"}
+
+Overfull \hbox (13.41048pt too wide) in paragraph at lines 2106--2107
+ [][] 
+ []
+
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationPercent
+age/10/resRCW-WH-10-40-200-VarPerDev10.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/10/resRCW-WH-10-40-200-VarPerDev10 (9).txt"}
+[41]
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationPercent
+age/15/resRCW-WH-15-60-200-VarPerDev15.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (9).txt"}
+
+Overfull \hbox (7.41327pt too wide) in paragraph at lines 2152--2153
+ [][] 
+ []
+
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationPercent
+age/15/resRCW-WH-15-60-200-VarPerDev15.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (9).txt"}
+PGFPlots: reading {data/Performances/Random/VariationDeviationValue/resRW-WH-20-
+80-200-VarDevVal10.txt}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (1).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (2).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (3).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (4).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (5).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (6).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (7).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (8).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (9).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (10).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (11).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (12).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (13).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (14).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (15).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (16).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (17).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (18).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (19).txt"}
+
+Overfull \hbox (7.41144pt too wide) in paragraph at lines 2219--2220
+ [][] 
+ []
+
+PGFPlots: reading {data/Performances/Random/VariationDeviationValue/resRW-WH-20-
+80-200-VarDevVal10.txt}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (1).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (2).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (3).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (4).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (5).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (6).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (7).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (8).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (9).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (10).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (11).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (12).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (13).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (14).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (15).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (16).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (17).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (18).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (19).txt"}
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [42]
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationValue/1
+0/resRCW-WH-10-40-200-VarDevVal10.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (9).txt"}
+
+Overfull \hbox (7.41382pt too wide) in paragraph at lines 2275--2276
+ [][] 
+ []
+
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationValue/1
+0/resRCW-WH-10-40-200-VarDevVal10.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+10/resRCW-WH-10-40-200-VarDevVal10 (9).txt"}
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationValue/1
+5/resRCW-WH-15-60-200-VarDevVal15.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (9).txt"}
+
+Overfull \hbox (7.41144pt too wide) in paragraph at lines 2323--2324
+ [][] 
+ []
+
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationValue/1
+5/resRCW-WH-15-60-200-VarDevVal15.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+15/resRCW-WH-15-60-200-VarDevVal15 (9).txt"}
+[43]
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-W
+H-24-96-200-VarNUsers.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (9).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (10).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (11).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (12).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (13).txt"}
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-W
+H-22-88-200-VarNUsers.txt}
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-W
+H-25-100-200-VarNUsers.txt}
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-W
+H-27-108-200-VarNUsers.txt}
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-W
+H-29-116-200-VarNUsers.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-27-108-200-VarNUsers (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-25-100-200-VarNUsers (1).txt"}
+
+Overfull \hbox (14.96284pt too wide) in paragraph at lines 2387--2388
+ [][] 
+ []
+
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-W
+H-24-96-200-VarNUsers.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (9).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (10).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (11).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (12).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-24-96-200-VarNUsers (13).txt"}
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-W
+H-22-88-200-VarNUsers.txt}
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-W
+H-25-100-200-VarNUsers.txt}
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-W
+H-27-108-200-VarNUsers.txt}
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-W
+H-29-116-200-VarNUsers.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-27-108-200-VarNUsers (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-25-100-200-VarNUsers (1).txt"}
+
+Overfull \hbox (3.21297pt too wide) in paragraph at lines 2417--2418
+ [][] 
+ []
+
+[44] [45] [46
+
+] [47
+
+] [48
+
+] (./report.bbl
+bibitemlist
+[49
+
+
+] [50]) [51] [52
+
+]
+\tf@toc=\write6
+
+\openout6 = report.toc
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2479.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2479.
+ (./report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2479.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2479.
+Package rerunfilecheck Info: File `report.out' has not changed.
+(rerunfilecheck)             Checksum: FB5F1FAAA460201053405057014D7DB3;1797.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were multiply-defined labels.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2479.
+)
+
+Here is how much of LuaTeX's memory you used:
+ 35280 strings out of 494447
+ 745115,3417909 words of node,token memory allocated
+ 1243 words of node memory still in use:
+   5 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 37 attribute, 185 glue_spec, 37 att
+ribute_list, 2 write nodes
+   avail lists: 1:3,2:167250,3:81404,4:534,5:300,6:61,7:4326,8:89,9:1054,10:20,1
+1:357
+ 36465 multiletter control sequences out of 65536+200000
+ 71 fonts using 5068951 bytes
+ 78i,14n,136p,1970b,2162s stack positions out of 5000i,500n,10000p,200000b,50000s
+<c:/users/navarrro/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lm
+mono12-regular.otf><c:/users/navarrro/appdata/local/programs/miktex 2.9/fonts/op
+entype/public/lm/lmroman12-italic.otf><c:/users/navarrro/appdata/local/programs/
+miktex 2.9/fonts/opentype/public/lm/lmroman10-regular.otf><c:/users/navarrro/app
+data/local/programs/miktex 2.9/fonts/opentype/public/lm/lmroman12-bold.otf><c:/u
+sers/navarrro/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lmroman
+10-bold.otf><c:/users/navarrro/appdata/local/programs/miktex 2.9/fonts/opentype/
+public/lm/lmroman17-regular.otf><c:/users/navarrro/appdata/local/programs/miktex
+ 2.9/fonts/opentype/public/lm/lmroman12-regular.otf><c:/users/navarrro/appdata/l
+ocal/programs/miktex 2.9/fonts/opentype/public/lm/lmromancaps10-regular.otf><C:/
+Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
+cmex10.pfb><C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmmi12.pfb><C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/f
+onts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/navarrro/AppData/Local/Program
+s/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/navarrro/AppData
+/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/nav
+arrro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
+b><C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmsy8.pfb><C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
+/public/amsfonts/symbols/msbm10.pfb>
+Output written on report.pdf (56 pages, 1745114 bytes).
+
+PDF statistics: 744 PDF objects out of 1000 (max. 8388607)
+ 220 named destinations out of 1000 (max. 131072)
+ 232 words of extra memory for PDF output out of 10000 (max. 100000000)
+

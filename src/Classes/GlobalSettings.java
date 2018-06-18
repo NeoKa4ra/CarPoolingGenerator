@@ -6,15 +6,15 @@ public class GlobalSettings {
 	// LaunchesTimes
 	private int nLaunches;
 	// Execution time
-	private int execTimeMax;
-	private int minutesByExecutionMax;
+	private int execInstanceTimeMax;
+	private int execTotalTimeMax;
 	// Suffix of the res file
 	private String fileSuffix;
 
 	public GlobalSettings(int nL, int eTM, int mBEM, String fS) {
 		this.nLaunches = nL;
-		this.execTimeMax = eTM;
-		this.minutesByExecutionMax = mBEM;
+		this.execInstanceTimeMax = eTM;
+		this.execTotalTimeMax = mBEM;
 		this.fileSuffix = fS;
 	}
 	// GETTERS
@@ -24,11 +24,11 @@ public class GlobalSettings {
 	}
 
 	public int getETM() {
-		return this.execTimeMax;
+		return this.execInstanceTimeMax;
 	}
 
 	public int getMBEM() {
-		return this.minutesByExecutionMax;
+		return this.execTotalTimeMax;
 	}
 
 	public String getFS() {

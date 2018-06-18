@@ -48,8 +48,6 @@ public class FilePath {
 		this.path += "-";
 		this.path += FS.getN();
 		this.path += "-";
-		this.path += (FS.getN()*4);
-		this.path += "-";
 		this.path += FS.getRDMR();
 		this.path += "-";
 		this.path += FS.getSuffix();

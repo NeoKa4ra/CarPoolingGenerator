@@ -21,6 +21,7 @@ public class TESTFile {
 			try {
 				writer.write(instance.getVertices() + "\n" + instance.getCostMatrices() + "\n" + instance.getHours()
 						+ "\n" + instance.getDrivers() + "\n" + instance.getPassengers());
+				str = instance.getVertices() + "\n" + instance.getCostMatrices() + "\n" + instance.getHours() + "\n" + instance.getDrivers() + "\n" + instance.getPassengers();
 			} finally {
 				writer.close();
 			}

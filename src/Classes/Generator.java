@@ -36,22 +36,23 @@ public class Generator {
 	public static InstanceSettings tempIS;
 	public static Instant start = null;
 
-	public Generator(GlobalSettings GS, InstanceSettings IS, LPSettings LPS, LPVariationsSettings LPVS) {
+	public Generator(GlobalSettings GS, InstanceSettings IS, LPSettings LPS, LPVariationsSettings LPVS, int swap) {
 		// **************** EXPERIMENTATIONS **************** //
 		for (int i = 0; i < GS.getNR(); i++) {
 			// ************ VARIATIONS ************ //
 			tempNUsers = IS.getNU();
 			tempAdvance = LPS.getWTA();
 			tempWaitingTime = LPS.getWTR();
-			tempDeviationPercentage = (int) LPS.getDP() * 100 - 100; 
+			tempDeviationPercentage = (int) LPS.getDP() * 100 - 100;
 			tempDeviationValue = LPS.getDV();
-			
-			// ********* CONSTANT INSTANCIATIONS ********* //
-			tempIS = new InstanceSettings(tempNUsers, IS.getWM(), IS.getMM(), IS.getRR());
-			instance = new Instance(tempIS);
-			FS = new FileSettings(tempNUsers, tempIS, Constants.TEST, GS.getFS());
-			new TESTFile(instance, FS);
-			
+
+			if (swap == Constants.LP) {
+				// ********* CONSTANT INSTANCIATIONS LP ********* //
+				tempIS = new InstanceSettings(tempNUsers, IS.getWM(), IS.getMM(), IS.getRR());
+				instance = new Instance(tempIS);
+				FS = new FileSettings(tempNUsers, tempIS, Constants.TEST, GS.getFS());
+				TESTFile tf = new TESTFile(instance, FS);
+			}
 			// Save the current values
 			varyingValues = new LinkedList<LinkedList<Integer>>();
 			everyResults = new LinkedList<LinkedList<Double>>();
@@ -59,7 +60,14 @@ public class Generator {
 			do {
 				tempVaryingValues = new LinkedList<Integer>();
 				tempEveryResults = new LinkedList<Double>();
-				
+
+				if (swap == Constants.USERS) {
+					// ********* CONSTANT INSTANCIATIONS USERS ********* //
+					tempIS = new InstanceSettings(tempNUsers, IS.getWM(), IS.getMM(), IS.getRR());
+					instance = new Instance(tempIS);
+					FS = new FileSettings(tempNUsers, tempIS, Constants.TEST, GS.getFS());
+					new TESTFile(instance, FS);
+				}
 				// To execute the LP
 				LP = new LPWithReturn(instance,
 						new LPSettings(tempAdvance, tempWaitingTime, tempDeviationPercentage, tempDeviationValue));
@@ -83,7 +91,8 @@ public class Generator {
 				tempDeviationValue += LPVS.getvDV();
 				System.out.println("O : " + LP.getRes().getObjective() + " ET : " + LP.getRes().getExecTime());
 			} while (LP.getRes().getExecTime() <= GS.getETM()
-					&& (Duration.between(start, Instant.now()).compareTo(Duration.ofMinutes(GS.getMBEM())) < 0) && tempNUsers<23);
+					&& (Duration.between(start, Instant.now()).compareTo(Duration.ofMinutes(GS.getMBEM())) < 0)
+					&& tempNUsers < 23);
 
 			FS = new FileSettings(tempNUsers, IS, Constants.RES, GS.getFS());
 			new RESFile(everyResults, varyingValues, FS);

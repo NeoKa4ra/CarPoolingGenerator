@@ -18,16 +18,17 @@ public class Drivers {
 		this.multiplicator = (float) 1.5;
 	}
 
-	public Drivers(CostMatrices tM) {
-		this.v = tM.getV();
+	public Drivers(CostMatrices cM) {
+		this.v = cM.getV();
 		Initialisation();
 		Random randomGenerator = new Random();
 		for (int i = 0; i < nPotentialDrivers; i++) {
 			this.capacity[i] = 2 + randomGenerator.nextInt(3);
-			this.G[i] = (int) (tM.A()[i][i + v.getOriginsW()] * this.multiplicator);
+			this.G[i] = (int) (cM.A()[i][i + v.getOriginsW()] * this.multiplicator);
+			System.out.println(cM.A()[i][i + v.getOriginsW()]);
 		}
 		for (int i = 0; i < v.getOriginsH(); i++) {
-			this.R[i] = (int) (tM.R()[i][i + v.getOriginsH()] * this.multiplicator);
+			this.R[i] = (int) (cM.R()[i][i + v.getOriginsH()] * this.multiplicator);
 		}
 	}
 
