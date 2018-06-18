@@ -22,11 +22,11 @@ public class Main {
 		// varyDeviationPercentage, varyDeviationValue)
 		LPVariationsSettings LPVS = null;
 
-		int nRuns = 10;
+		int nRuns = 20;
 		int execTimeMax = 300;
-		int nUsers = 10;
+		int nUsers = 20;
 		int wayMode = Constants.WH;
-		int matrixMode = Constants.RCW;
+		int matrixMode = Constants.RW;
 		int rdmRange = 200;
 
 		// TEST
@@ -51,33 +51,9 @@ public class Main {
 		new Generator(GS, IS, LPS, LPVS);
 		
 		// OTHERRRRRRRRRRRRRRRRR
-		nUsers = 15;
 
 		// TEST
-		GS = new GlobalSettings(nRuns, execTimeMax, 6, "VarPerDev15");
-		IS = new InstanceSettings(nUsers, wayMode, matrixMode, rdmRange);
-		LPS = new LPSettings(50, 25, 0, 0);
-		LPVS = new LPVariationsSettings(0, 0, 0, 1, 0);
-		new Generator(GS, IS, LPS, LPVS);
-
-		// TEST
-		GS = new GlobalSettings(nRuns, execTimeMax, 6, "VarDevVal15");
-		IS = new InstanceSettings(nUsers, wayMode, matrixMode, rdmRange);
-		LPS = new LPSettings(50, 25, 0, 0);
-		LPVS = new LPVariationsSettings(0, 0, 0, 0, 1);
-		new Generator(GS, IS, LPS, LPVS);
-
-		// TEST
-		GS = new GlobalSettings(nRuns, execTimeMax, 6, "VarWT15");
-		IS = new InstanceSettings(nUsers, wayMode, matrixMode, rdmRange);
-		LPS = new LPSettings(0, 0, 20, 10);
-		LPVS = new LPVariationsSettings(0, 1, 1, 0, 0);
-		new Generator(GS, IS, LPS, LPVS);
-		
-		// OTHERRRRRRRRRRRRRRRRR
-
-		// TEST
-		GS = new GlobalSettings(nRuns, 3600, 60, "VarNUsers");
+		GS = new GlobalSettings(nRuns, 600, 60, "VarNUsers");
 		IS = new InstanceSettings(5, wayMode, matrixMode, rdmRange);
 		LPS = new LPSettings(50, 25, 20, 10);
 		LPVS = new LPVariationsSettings(1, 0, 0, 0, 0);

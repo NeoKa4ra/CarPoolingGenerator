@@ -8,8 +8,8 @@ public class Instance {
 	private Drivers d;
 	private Passengers p;
 
-	public Instance(int nPersons, InstanceSettings IS) {
-		this.n = nPersons;
+	public Instance(InstanceSettings IS) {
+		this.n = IS.getNU();
 		// Generation of the characteristics of the scenario
 		this.v = new Vertices(n, IS.getWM());
 		// System.out.println(vertices);

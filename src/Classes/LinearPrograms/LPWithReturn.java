@@ -19,8 +19,8 @@ public class LPWithReturn {
 	private Passengers p;
 	LPResults results;
 
-	public LPWithReturn(int nPersons, Instance instance, LPSettings var) {
-		this.n = nPersons;
+	public LPWithReturn(Instance instance, LPSettings var) {
+		this.n = instance.getnPersons();
 		this.drivers = instance.getDrivers();
 		this.C = instance.getCostMatrices();
 		this.hours = instance.getHours();

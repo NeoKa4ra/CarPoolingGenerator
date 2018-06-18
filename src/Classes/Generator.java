@@ -33,6 +33,7 @@ public class Generator {
 	public static int tempDeviationPercentage;
 	public static int tempDeviationValue;
 
+	public static InstanceSettings tempIS;
 	public static Instant start = null;
 
 	public Generator(GlobalSettings GS, InstanceSettings IS, LPSettings LPS, LPVariationsSettings LPVS) {
@@ -44,10 +45,13 @@ public class Generator {
 			tempWaitingTime = LPS.getWTR();
 			tempDeviationPercentage = (int) LPS.getDP() * 100 - 100;
 			tempDeviationValue = LPS.getDV();
+			
 			// ********* CONSTANT INSTANCIATIONS ********* //
-			instance = new Instance(tempNUsers, IS);
-			FS = new FileSettings(tempNUsers, IS, Constants.TEST, GS.getFS());
+			tempIS = new InstanceSettings(tempNUsers, IS.getWM(), IS.getMM(), IS.getRR());
+			instance = new Instance(tempIS);
+			FS = new FileSettings(tempNUsers, tempIS, Constants.TEST, GS.getFS());
 			new TESTFile(instance, FS);
+			
 			// Save the current values
 			varyingValues = new LinkedList<LinkedList<Integer>>();
 			everyResults = new LinkedList<LinkedList<Double>>();
@@ -55,8 +59,10 @@ public class Generator {
 			do {
 				tempVaryingValues = new LinkedList<Integer>();
 				tempEveryResults = new LinkedList<Double>();
+				
 				// To execute the LP
-				LP = new LPWithReturn(tempNUsers, instance, new LPSettings(tempAdvance, tempWaitingTime, tempDeviationPercentage, tempDeviationValue));
+				LP = new LPWithReturn(instance,
+						new LPSettings(tempAdvance, tempWaitingTime, tempDeviationPercentage, tempDeviationValue));
 				// Add here every varying value you want
 				tempVaryingValues.add(Integer.valueOf(tempNUsers));
 				tempVaryingValues.add(Integer.valueOf(tempAdvance));
@@ -77,7 +83,7 @@ public class Generator {
 				tempDeviationValue += LPVS.getvDV();
 				System.out.println("O : " + LP.getRes().getObjective() + " ET : " + LP.getRes().getExecTime());
 			} while (LP.getRes().getExecTime() <= GS.getETM()
-					&& (Duration.between(start, Instant.now()).compareTo(Duration.ofMinutes(GS.getMBEM())) < 0));
+					&& (Duration.between(start, Instant.now()).compareTo(Duration.ofMinutes(GS.getMBEM())) < 0) && tempNUsers<23);
 
 			FS = new FileSettings(tempNUsers, IS, Constants.RES, GS.getFS());
 			new RESFile(everyResults, varyingValues, FS);
