@@ -181,13 +181,45 @@ public class CostMatrices {
 	// ****************** RANDOM CITIES POINT CLOUD SAME WORK ***************//
 	public CostMatrices(Vertices vertices, int mode, int range, int nbCities, int nbWorks) {
 		Initialize(vertices, range);
-		switch (mode) {
-		case Constants.RCPCSW:
-			CitiesGeneration(nbCities);
-			WorkplacesGeneration(nbWorks);
-			ShuffleWorkplacePoints();
-			SamePlaces();
-			break;
+		if (nbCities > 0) {
+			switch (mode) {
+			case Constants.RCPCSW:
+				CitiesGeneration(nbCities);
+				WorkplacesGeneration(nbWorks);
+				ShuffleWorkplacePoints();
+				SamePlaces();
+				break;
+			}
+		} else {
+			int choice = 0;
+			LinkedList<Point> Cities = new LinkedList<Point>();
+			LinkedList<Point> Workplaces = new LinkedList<Point>();
+			Workplaces.add(new Point(0, 0)); // GRENOBLE
+			switch (choice) {
+			case 0:
+				Cities.add(new Point(-3, 5)); // VOIRON
+				Cities.add(new Point(-1, -4)); // VIF
+				Cities.add(new Point(4, 4)); // CROLLES
+				break;
+			case 1:
+				Cities.add(new Point(-3, 5)); // VOIRON
+				Cities.add(new Point(-5, 1)); // VINAY
+				Cities.add(new Point(-2, 7)); // ST LAURENT DU PONT
+				break;
+			case 2:
+				Cities.add(new Point(10, 10)); // PONTCHARRA
+				Cities.add(new Point(7, 7)); // LE TOUVET
+				Cities.add(new Point(4, 4)); // CROLLES
+				break;
+			case 3:
+				Cities.add(new Point(10, 10)); // VIZILLE
+				Cities.add(new Point(7, 7)); // PONT DE CLAIX
+				Cities.add(new Point(4, 4)); // VIF
+				break;
+			}
+			CitiesGeneration(Cities);
+			WorkplacesGeneration(Workplaces);
+			DifferentPlaces(20, 5); // SAME PLACES ?!
 		}
 	}
 
@@ -224,6 +256,46 @@ public class CostMatrices {
 			}
 		}
 		creatednbWorks = 0;
+	}
+
+	private void WorkplacesGeneration(LinkedList<Point> workplaces) {
+		ListIterator<Point> workplacesIT = workplaces.listIterator();
+		int creatednbWorks = 0;
+		for (int i = n; i < 2 * n; i++) { // Generation of the homes
+			if (i % (n / workplaces.size()) == 0 && creatednbWorks < workplaces.size()) {
+				creatednbWorks++;
+				Points[i] = workplacesIT.next();
+			} else {
+				Points[i] = (Point) Points[i - 1].clone();
+			}
+		}
+		creatednbWorks = 0;
+	}
+
+	private void CitiesGeneration(LinkedList<Point> Cities) {
+		ListIterator<Point> citiesIT = Cities.listIterator();
+		int distanceInterCity = 10;
+		Point prevPoint = null;
+		int createdCities = 0;
+		for (int i = 0; i < n; i++) { // Generation of the homes
+			if (i % (n / Cities.size()) == 0 && createdCities < Cities.size()) {
+				createdCities++;
+				Points[i] = citiesIT.next();
+				prevPoint = (Point) Points[i].clone();
+			} else {
+				int x;
+				int y;
+				do {
+					x = (int) (randomGenerator.nextInt((2 * distanceInterCity - 1)) + prevPoint.getX()
+							- distanceInterCity);
+					y = (int) (randomGenerator.nextInt((2 * distanceInterCity - 1)) + prevPoint.getY()
+							- distanceInterCity);
+				} while (Math.sqrt(
+						Math.pow(x - prevPoint.getX(), 2) + Math.pow(y - prevPoint.getY(), 2)) <= distanceInterCity);
+				Points[i] = new Point(x, y);
+			}
+		}
+		createdCities = 0;
 	}
 
 	private void CitiesGeneration(int nbCities) {
@@ -304,6 +376,56 @@ public class CostMatrices {
 				eveningM[i][j + n] = tmpIJN[j][i];
 				eveningM[i + n][j] = tmpINJ[j][i];
 				eveningM[i + n][j + n] = tmpIJ[j][i];
+			}
+		}
+	}
+
+	public void DifferentPlaces(int probScdWork, int probScdHome) {
+		int pSW;
+		int pSH;
+		int number = 0;
+		for (int i = 0; i < 2 * n; i++) {
+			for (int j = i; j < 2 * n; j++) {
+				number = (int) Math.sqrt(Math.pow(Points[i].getX() - Points[j].getX(), 2)
+						+ Math.pow(Points[i].getY() - Points[j].getY(), 2));
+				this.morningM[i][j] = number;
+				this.morningM[j][i] = number;
+				if (i == j) {
+					this.morningM[i][j] = diagonal;
+				}
+			}
+		}
+		int[][] tmpIJ = new int[n][n];
+		int[][] tmpIJN = new int[n][n];
+		int[][] tmpINJ = new int[n][n];
+		int[][] tmpINJN = new int[n][n];
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				tmpIJ[i][j] = morningM[i][j];
+				tmpIJN[i][j] = morningM[i][j + n];
+				tmpINJ[i][j] = morningM[i + n][j];
+				tmpINJN[i][j] = morningM[i + n][j + n];
+			}
+		}
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				eveningM[i][j] = tmpINJN[j][i];
+				pSW = randomGenerator.nextInt(100);
+				if (pSW > probScdWork) {
+					eveningM[i][j + n] = tmpIJN[j][i];
+					eveningM[i + n][j] = tmpINJ[j][i];
+				} else {
+
+				}
+				pSH = randomGenerator.nextInt(100);
+				if (pSH > probScdHome) {
+					eveningM[i + n][j + n] = tmpIJ[j][i];
+				} else {// REFLECHIS !
+					Point tempP = new Point(randomGenerator.nextInt(10 - 1) + tmpIJ[j][i],randomGenerator.nextInt(10 - 1) + tmpIJ[j][i]);
+					number = (int) Math.sqrt(Math.pow(Points[i].getX() - Points[j].getX(), 2)
+							+ Math.pow(Points[i].getY() - Points[j].getY(), 2));
+					eveningM[i + n][j + n] = 1;
+				}
 			}
 		}
 	}
