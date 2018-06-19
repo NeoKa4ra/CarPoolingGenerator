@@ -1885,7 +1885,7 @@ it fits with people who periodically do the same circuit.
 			\begin{tikzpicture}
 				\begin{axis}[
 					xlabel=Allowed waiting time(\% of an hour),
-					ylabel=Objective value]
+					ylabel=Execution time]
 					\addplot table [x=P2, y=$x2$]{data/Performances/Random/VariationTimeWindows/resRW-WH-20-80-200-VarWT10.txt};
 					%\addlegendentry{$x1$ series}
 					\addplot table [x=P2, y=$x2$]{data/Performances/Random/VariationTimeWindows/resRW-WH-20-80-200-VarWT10 (1).txt};
@@ -1911,8 +1911,8 @@ it fits with people who periodically do the same circuit.
 			\end{tikzpicture}
 			\caption{Execution time}
 		\end{subfigure}
-		\caption{Varying the waiting time random}
-		\label{fig:var wt}
+		\caption{Vary the time windows with all random and with 20 users}
+		\label{fig:Vary the time windows with all random and with 20 users}
 	\end{figure}
 	
 	\begin{figure}[H]
@@ -1942,7 +1942,7 @@ it fits with people who periodically do the same circuit.
 			\begin{tikzpicture}
 				\begin{axis}[
 					xlabel=Allowed waiting time(\% of an hour),
-					ylabel=Objective value]
+					ylabel=Execution time]
 					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/10/resRCW-WH-10-40-200-VarWT10.txt};
 					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/10/resRCW-WH-10-40-200-VarWT10 (1).txt};
 					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/10/resRCW-WH-10-40-200-VarWT10 (2).txt};
@@ -1956,9 +1956,9 @@ it fits with people who periodically do the same circuit.
 				\end{axis}
 			\end{tikzpicture}
 			\caption{Execution time}
-		\end{subfigure}%
-		\caption{Varying the waiting time random}
-		\label{fig:var wt}
+		\end{subfigure}
+		\caption{Vary the time windows with random close homes and with 10 users}
+		\label{fig:Vary the time windows with random close homes and with 10 users}
 	\end{figure}
 
 
@@ -1989,7 +1989,7 @@ it fits with people who periodically do the same circuit.
 			\begin{tikzpicture}
 				\begin{axis}[
 					xlabel=Allowed waiting time(\% of an hour),
-					ylabel=Objective value]
+					ylabel=Execution time]
 					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/15/resRCW-WH-15-60-200-VarWT15.txt};
 					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/15/resRCW-WH-15-60-200-VarWT15 (1).txt};
 					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/15/resRCW-WH-15-60-200-VarWT15 (2).txt};
@@ -2003,10 +2003,77 @@ it fits with people who periodically do the same circuit.
 				\end{axis}
 			\end{tikzpicture}
 			\caption{Execution time}
-		\end{subfigure}%
-		\caption{Varying the waiting time random}
-		\label{fig:var wt}
+		\end{subfigure}
+		\caption{Vary the time windows with random close homes and with 15 users}
+		\label{fig:Vary the time windows with random close homes and with 15 users}
 	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					xlabel=Allowed waiting time(\% of an hour),
+					ylabel=Objective value]
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT.txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (1).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (2).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (3).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (4).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (5).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (6).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (7).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (8).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (9).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (10).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (11).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (12).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (13).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (14).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (15).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (16).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (17).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (18).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (19).txt};
+				\end{axis}
+			\end{tikzpicture}
+			\caption{Objective}
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					xlabel=Allowed waiting time(\% of an hour),
+					ylabel=Execution time]
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT.txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (1).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (2).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (3).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (4).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (5).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (6).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (7).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (8).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (9).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (10).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (11).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (12).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (13).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (14).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (15).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (16).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (17).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (18).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationTimeWindows/19/resRCW-WH-19-200-VarWT (19).txt};
+				\end{axis}
+			\end{tikzpicture}
+			\caption{Execution time}
+		\end{subfigure}
+		\caption{Vary the time windows with random close homes and with 19 users}
+		\label{fig:Vary the time windows with random close homes and with 19 users}
+	\end{figure}
+
 
 	\subsection{Analysis}
 	
@@ -2024,7 +2091,7 @@ it fits with people who periodically do the same circuit.
 			\centering
 			\begin{tikzpicture}
 				\begin{axis}[
-					xlabel=Allowed waiting time(\% of an hour),
+					xlabel=Allowed percentage of deviation,
 					ylabel=Objective value]
 					\addplot table [x=P4 ,y=$x1$]{data/Performances/Random/VariationDeviationPercentage/resRW-WH-20-80-200-VarPerDev10.txt};
 					\addplot table [x=P4 ,y=$x1$]{data/Performances/Random/VariationDeviationPercentage/resRW-WH-20-80-200-VarPerDev10 (1).txt};
@@ -2054,8 +2121,8 @@ it fits with people who periodically do the same circuit.
 			\centering
 			\begin{tikzpicture}
 				\begin{axis}[
-					xlabel=Allowed waiting time(\% of an hour),
-					ylabel=Objective value]
+					xlabel=Allowed percentage of deviation,
+					ylabel=Execution time]
 					\addplot table [x=P4 ,y=$x2$]{data/Performances/Random/VariationDeviationPercentage/resRW-WH-20-80-200-VarPerDev10.txt};
 					\addplot table [x=P4 ,y=$x2$]{data/Performances/Random/VariationDeviationPercentage/resRW-WH-20-80-200-VarPerDev10 (1).txt};
 					\addplot table [x=P4 ,y=$x2$]{data/Performances/Random/VariationDeviationPercentage/resRW-WH-20-80-200-VarPerDev10 (2).txt};
@@ -2079,9 +2146,9 @@ it fits with people who periodically do the same circuit.
 				\end{axis}
 			\end{tikzpicture}
 			\caption{Execution time}
-		\end{subfigure}%
-		\caption{Varying the waiting time random}
-		\label{fig:var wt}
+		\end{subfigure}
+		\caption{Vary the deviation percentage with all random and with 20 users}
+		\label{fig:Vary the deviation percentage with all random and with 20 users}
 	\end{figure}
 
 
@@ -2092,7 +2159,7 @@ it fits with people who periodically do the same circuit.
 			\centering
 			\begin{tikzpicture}
 				\begin{axis}[
-					xlabel=Allowed waiting time(\% of an hour),
+					xlabel=Allowed percentage of deviation,
 					ylabel=Objective value]
 					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/10/resRCW-WH-10-40-200-VarPerDev10 (1).txt};
 					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/10/resRCW-WH-10-40-200-VarPerDev10 (2).txt};
@@ -2110,8 +2177,8 @@ it fits with people who periodically do the same circuit.
 			\centering
 			\begin{tikzpicture}
 				\begin{axis}[
-					xlabel=Allowed waiting time(\% of an hour),
-					ylabel=Execution time(s)]
+					xlabel=Allowed percentage of deviation,
+					ylabel=Execution time]
 	 	 	 	 	\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/10/resRCW-WH-10-40-200-VarPerDev10.txt};
 	 	 	 	 	\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/10/resRCW-WH-10-40-200-VarPerDev10 (1).txt};
 	 	 	 	 	\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/10/resRCW-WH-10-40-200-VarPerDev10 (2).txt};
@@ -2126,8 +2193,8 @@ it fits with people who periodically do the same circuit.
 			\end{tikzpicture}
 			\caption{Execution time}
 		\end{subfigure}
-		\caption{Varying the waiting time3}
-		\label{fig:var pd}
+		\caption{Vary the deviation percentage with random close homes and with 10 users}
+		\label{fig:Vary the deviation percentage with random close homes and with 10 users}
 	\end{figure}
 	
 	\begin{figure}[H]
@@ -2136,7 +2203,7 @@ it fits with people who periodically do the same circuit.
 			\centering
 			\begin{tikzpicture}
 				\begin{axis}[
-					xlabel=Allowed waiting time(\% of an hour),
+					xlabel=Allowed percentage of deviation,
 					ylabel=Objective value]
 					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/15/resRCW-WH-15-60-200-VarPerDev15.txt};
 					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/15/resRCW-WH-15-60-200-VarPerDev15 (1).txt};
@@ -2156,8 +2223,8 @@ it fits with people who periodically do the same circuit.
 			\centering
 			\begin{tikzpicture}
 				\begin{axis}[
-					xlabel=Allowed waiting time(\% of an hour),
-					ylabel=Objective value]
+					xlabel=Allowed percentage of deviation,
+					ylabel=Execution time]
 					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/15/resRCW-WH-15-60-200-VarPerDev15.txt};
 					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/15/resRCW-WH-15-60-200-VarPerDev15 (1).txt};
 					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/15/resRCW-WH-15-60-200-VarPerDev15 (2).txt};
@@ -2171,18 +2238,84 @@ it fits with people who periodically do the same circuit.
 				\end{axis}
 			\end{tikzpicture}
 			\caption{Execution time}
-		\end{subfigure}%
-		\caption{Varying the waiting time random}
-		\label{fig:var wt}
+		\end{subfigure}
+		\caption{Vary the deviation percentage with random close homes and with 15 users}
+		\label{fig:Vary the deviation percentage with random close homes and with 15 users}
 	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					xlabel=Allowed percentage of deviation,
+					ylabel=Objective value]
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev.txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (1).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (2).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (3).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (4).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (5).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (6).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (7).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (8).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (9).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (10).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (11).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (12).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (13).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (14).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (15).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (16).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (17).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (18).txt};
+					\addplot table [x=P4 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (19).txt};
+				\end{axis}
+			\end{tikzpicture}
+			\caption{Objective}
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					xlabel=Allowed percentage of deviation,
+					ylabel=Execution time]
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev.txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (1).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (2).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (3).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (4).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (5).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (6).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (7).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (8).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (9).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (10).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (11).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (12).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (13).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (14).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (15).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (16).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (17).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (18).txt};
+					\addplot table [x=P4 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationPercentage/19/resRCW-WH-19-200-VarPerDev (19).txt};
+				\end{axis}
+			\end{tikzpicture}
+			\caption{Execution time}
+		\end{subfigure}
+		\caption{Vary the deviation percentage with random close homes and with 19 users}
+		\label{fig:Vary the deviation percentage with random close homes and with 19 users}
+	\end{figure}
+
 
 	
 
 	\subsection{Analysis}
 	
 	%%%%%%%%%%%%%%%%%%%%%%%%% DEVIATION VALUE %%%%%%%%%%%%%%%%%%%%%%
-	\section{Name of the experiment3}
-	\subsection{Varying the deviation's value of the travel allowed}
+	\section{Varying the deviation's value of the travel allowed}
 	\subsection{Benchmarks}
 	\subsection{Configuration}
 	\subsection{Results}
@@ -2193,7 +2326,7 @@ it fits with people who periodically do the same circuit.
 			\centering
 			\begin{tikzpicture}
 				\begin{axis}[
-					xlabel=Allowed waiting time(\% of an hour),
+					xlabel=Allowed deviation value,
 					ylabel=Objective value]
 					\addplot table [x=P5 ,y=$x1$]{data/Performances/Random/VariationDeviationValue/resRW-WH-20-80-200-VarDevVal10.txt};
 					\addplot table [x=P5 ,y=$x1$]{data/Performances/Random/VariationDeviationValue/resRW-WH-20-80-200-VarDevVal10 (1).txt};
@@ -2223,8 +2356,8 @@ it fits with people who periodically do the same circuit.
 			\centering
 			\begin{tikzpicture}
 				\begin{axis}[
-					xlabel=Allowed waiting time(\% of an hour),
-					ylabel=Objective value]
+					xlabel=Allowed deviation value,
+					ylabel=Execution time]
 					\addplot table [x=P5 ,y=$x2$]{data/Performances/Random/VariationDeviationValue/resRW-WH-20-80-200-VarDevVal10.txt};
 					\addplot table [x=P5 ,y=$x2$]{data/Performances/Random/VariationDeviationValue/resRW-WH-20-80-200-VarDevVal10 (1).txt};
 					\addplot table [x=P5 ,y=$x2$]{data/Performances/Random/VariationDeviationValue/resRW-WH-20-80-200-VarDevVal10 (2).txt};
@@ -2249,8 +2382,8 @@ it fits with people who periodically do the same circuit.
 			\end{tikzpicture}
 			\caption{Execution time}
 		\end{subfigure}%
-		\caption{Varying the waiting time random}
-		\label{fig:var wt}
+		\caption{Vary the deviation value with all random and with 20 users}
+		\label{fig:Vary the deviation value with all random and with 20 users}
 	\end{figure}
 	
 	\begin{figure}[H]
@@ -2259,7 +2392,7 @@ it fits with people who periodically do the same circuit.
 			\centering
 			\begin{tikzpicture}
 				\begin{axis}[
-					xlabel=Allowed waiting time(\% of an hour),
+					xlabel=Allowed deviation value,
 					ylabel=Objective value]
 					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/10/resRCW-WH-10-40-200-VarDevVal10.txt};
 					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/10/resRCW-WH-10-40-200-VarDevVal10 (1).txt};
@@ -2279,8 +2412,8 @@ it fits with people who periodically do the same circuit.
 			\centering
 			\begin{tikzpicture}
 				\begin{axis}[
-					xlabel=Allowed waiting time(\% of an hour),
-					ylabel=Objective value]
+					xlabel=Allowed deviation value,
+					ylabel=Execution time]
 					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/10/resRCW-WH-10-40-200-VarDevVal10.txt};
 					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/10/resRCW-WH-10-40-200-VarDevVal10 (1).txt};
 					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/10/resRCW-WH-10-40-200-VarDevVal10 (2).txt};
@@ -2294,9 +2427,9 @@ it fits with people who periodically do the same circuit.
 				\end{axis}
 			\end{tikzpicture}
 			\caption{Execution time}
-		\end{subfigure}%
-		\caption{Varying the waiting time random}
-		\label{fig:var wt}
+		\end{subfigure}
+		\caption{Vary the deviation value with random close homes and with 10 users}
+		\label{fig:Vary the deviation value with random close homes and with 10 users}
 	\end{figure}
 
 
@@ -2307,7 +2440,7 @@ it fits with people who periodically do the same circuit.
 			\centering
 			\begin{tikzpicture}
 				\begin{axis}[
-					xlabel=Allowed waiting time(\% of an hour),
+					xlabel=Allowed deviation value,
 					ylabel=Objective value]
 	 	 	 	 	\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/15/resRCW-WH-15-60-200-VarDevVal15.txt};
 	 	 	 	 	\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/15/resRCW-WH-15-60-200-VarDevVal15 (1).txt};
@@ -2327,8 +2460,8 @@ it fits with people who periodically do the same circuit.
 			\centering
 			\begin{tikzpicture}
 				\begin{axis}[
-					xlabel=Allowed waiting time(\% of an hour),
-					ylabel=Objective value]
+					xlabel=Allowed deviation value,
+					ylabel=Execution time]
 	 	 	 	 	\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/15/resRCW-WH-15-60-200-VarDevVal15.txt};
 	 	 	 	 	\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/15/resRCW-WH-15-60-200-VarDevVal15 (1).txt};
 	 	 	 	 	\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/15/resRCW-WH-15-60-200-VarDevVal15 (2).txt};
@@ -2343,17 +2476,148 @@ it fits with people who periodically do the same circuit.
 			\end{tikzpicture}
 			\caption{Execution time}
 		\end{subfigure}
-		\caption{Varying the waiting time random}
-		\label{fig:var wt}
+		\caption{Vary the deviation value with random close homes and with 15 users}
+		\label{fig:Vary the deviation value with random close homes and with 15 users}
+	\end{figure}
+	
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					xlabel=Allowed deviation value,
+					ylabel=Objective value]
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal.txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (1).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (2).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (3).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (4).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (5).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (6).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (7).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (8).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (9).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (10).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (11).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (12).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (13).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (14).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (15).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (16).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (17).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (18).txt};
+					\addplot table [x=P5 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (19).txt};
+				\end{axis}
+			\end{tikzpicture}
+			\caption{Objective}
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					xlabel=Allowed deviation value,
+					ylabel=Execution time]
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal.txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (1).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (2).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (3).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (4).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (5).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (6).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (7).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (8).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (9).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (10).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (11).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (12).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (13).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (14).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (15).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (16).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (17).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (18).txt};
+					\addplot table [x=P5 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationDeviationValue/19/resRCW-WH-19-200-VarDevVal (19).txt};
+				\end{axis}
+			\end{tikzpicture}
+			\caption{Execution time}
+		\end{subfigure}
+		\caption{Vary the deviation value with random close homes and with 19 users}
+		\label{fig:Vary the deviation value with random close homes and with 19 users}
 	\end{figure}
 	\subsection{Analysis}
 	
 	%%%%%%%%%%%%%%%%%%%%% NUMBER OF USERS %%%%%%%%%%%%%%%%%%%%%%
-	\section{Name of the experiment4}
-	\subsection{Varying the number of users}
+	\section{Varying the number of users}
 	\subsection{Benchmarks}
 	\subsection{Configuration}
 	\subsection{Results}
+	
+	\begin{figure}[H]
+		\centering
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					xlabel=Number of users,
+					ylabel=Objective value]
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers.txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (1).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (2).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (3).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (4).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (5).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (6).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (7).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (8).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (9).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (10).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (11).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (12).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (13).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (14).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (15).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (16).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (17).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (18).txt};
+					\addplot table [x=P1 ,y=$x1$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (19).txt};
+				\end{axis}
+			\end{tikzpicture}
+			\caption{Objective}
+		\end{subfigure}%
+		\begin{subfigure}{.5\textwidth}
+			\centering
+			\begin{tikzpicture}
+				\begin{axis}[
+					xlabel=Number of users,
+					ylabel=Execution time]
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers.txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (1).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (2).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (3).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (4).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (5).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (6).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (7).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (8).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (9).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (10).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (11).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (12).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (13).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (14).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (15).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (16).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (17).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (18).txt};
+					\addplot table [x=P1 ,y=$x2$]{data/Performances/Random/VariationNbUsers/resRW-WH-23-200-VarNUsers (19).txt};
+				\end{axis}
+			\end{tikzpicture}
+			\caption{Execution time}
+		\end{subfigure}
+		\caption{Vary users all random}
+		\label{fig:Vary users all random}
+	\end{figure}
 
 	\begin{figure}[H]
 		\centering
@@ -2361,7 +2625,7 @@ it fits with people who periodically do the same circuit.
 			\centering
 			\begin{tikzpicture}
 				\begin{axis}[
-					xlabel=Allowed waiting time(\% of an hour),
+					xlabel=Number of users,
 					ylabel=Objective value]
 					\addplot table [x=P1 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-24-96-200-VarNUsers.txt};
 					\addplot table [x=P1 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-24-96-200-VarNUsers (1).txt};
@@ -2383,6 +2647,14 @@ it fits with people who periodically do the same circuit.
 					\addplot table [x=P1 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-29-116-200-VarNUsers.txt};
 					\addplot table [x=P1 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-27-108-200-VarNUsers (1).txt};
 					\addplot table [x=P1 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-25-100-200-VarNUsers (1).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-23-200-VarNUsers.txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-23-200-VarNUsers (1).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-23-200-VarNUsers (2).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-23-200-VarNUsers (3).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-23-200-VarNUsers (4).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-23-200-VarNUsers (5).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-23-200-VarNUsers (6).txt};
+					\addplot table [x=P2 ,y=$x1$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-22-200-VarNUsers.txt};
 				\end{axis}
 			\end{tikzpicture}
 			\caption{Objective}
@@ -2391,8 +2663,8 @@ it fits with people who periodically do the same circuit.
 			\centering
 			\begin{tikzpicture}
 				\begin{axis}[
-					xlabel=Allowed waiting time(\% of an hour),
-					ylabel=Objective value]
+					xlabel=Number of users,
+					ylabel=Execution time]
 					\addplot table [x=P1 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-24-96-200-VarNUsers.txt};
 					\addplot table [x=P1 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-24-96-200-VarNUsers (1).txt};
 					\addplot table [x=P1 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-24-96-200-VarNUsers (2).txt};
@@ -2413,12 +2685,20 @@ it fits with people who periodically do the same circuit.
 					\addplot table [x=P1 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-29-116-200-VarNUsers.txt};
 					\addplot table [x=P1 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-27-108-200-VarNUsers (1).txt};
 					\addplot table [x=P1 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-25-100-200-VarNUsers (1).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-23-200-VarNUsers.txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-23-200-VarNUsers (1).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-23-200-VarNUsers (2).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-23-200-VarNUsers (3).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-23-200-VarNUsers (4).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-23-200-VarNUsers (5).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-23-200-VarNUsers (6).txt};
+					\addplot table [x=P2 ,y=$x2$]{data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-22-200-VarNUsers.txt};
 				\end{axis}
 			\end{tikzpicture}
 			\caption{Execution time}
-		\end{subfigure}%
-		\caption{Varying the waiting time random}
-		\label{fig:var wt}
+		\end{subfigure}
+		\caption{Vary the users random close homes}
+		\label{fig:Vary the users random close homes}
 	\end{figure}
 
 
@@ -2437,6 +2717,80 @@ it fits with people who periodically do the same circuit.
 	\subsection{Configuration}
 	\subsection{Results}
 	\subsection{Analysis}
+	\begin{figure}[H]
+		\centering
+		\begin{tikzpicture}
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (1)at(7.3,3.0) {1};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (2)at(3.8,8.7) {2};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (3)at(8.5,3.0) {3};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (4)at(8.5,3.1) {4};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (5)at(5.4,7.2) {5};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (6)at(3.7,8.9) {6};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (7)at(4.2,7.3) {7};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (8)at(4.7,8.2) {8};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (9)at(7.7,4.0) {9};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (10)at(3.8,8.7) {10};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (11)at(8.5,3.3) {11};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (12)at(6.7,3.6) {12};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (13)at(6.9,3.1) {13};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (14)at(3.8,8.7) {14};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (15)at(5.4,7.4) {15};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (16)at(7.2,3.1) {16};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (17)at(6.8,3.0) {17};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (18)at(7.9,3.0) {18};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (19)at(3.8,8.7) {19};
+			\node[draw,circle,fill=gray!25,label=above:{$$}] (20)at(3.7,7.3) {20};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W1)at(9.1,6.2) {W\_1};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W2)at(4.0,6.7) {W\_2};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W3)at(9.1,6.2) {W\_3};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W4)at(4.0,6.7) {W\_4};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W5)at(4.0,6.7) {W\_5};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W6)at(4.0,6.7) {W\_6};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W7)at(4.0,6.7) {W\_7};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W8)at(9.1,6.2) {W\_8};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W9)at(4.0,6.7) {W\_9};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W10)at(9.1,6.2) {W\_10};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W11)at(4.0,6.7) {W\_11};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W12)at(4.0,6.7) {W\_12};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W13)at(9.1,6.2) {W\_13};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W14)at(9.1,6.2) {W\_14};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W15)at(9.1,6.2) {W\_15};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W16)at(4.0,6.7) {W\_16};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W17)at(4.0,6.7) {W\_17};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W18)at(9.1,6.2) {W\_18};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W19)at(9.1,6.2) {W\_19};
+			\node[draw,rectangle,rounded corners=1pt,fill=gray!100,label=above:{$$}] (W20)at(9.1,6.2) {W\_20};
+			\draw[->,>=stealth] (2) -- (7);
+			\draw[->,>=stealth] (7) -- (W7);
+			\draw[->,>=stealth] (W7) -- (W2);
+			\draw[->,>=stealth] (3) -- (W3);
+			\draw[->,>=stealth] (4) -- (11);
+			\draw[->,>=stealth] (11) -- (W11);
+			\draw[->,>=stealth] (W11) -- (W4);
+			\draw[->,>=stealth] (5) -- (W5);
+			\draw[->,>=stealth] (6) -- (W6);
+			\draw[->,>=stealth] (8) -- (W8);
+			\draw[->,>=stealth] (9) -- (W9);
+			\draw[->,>=stealth] (10) -- (15);
+			\draw[->,>=stealth] (15) -- (W15);
+			\draw[->,>=stealth] (W15) -- (W10);
+			\draw[->,>=stealth] (12) -- (W12);
+			\draw[->,>=stealth] (1) -- (W1);
+			\draw[->,>=stealth] (13) -- (1);
+			\draw[->,>=stealth] (W1) -- (W13);
+			\draw[->,>=stealth] (14) -- (W14);
+			\draw[->,>=stealth] (16) -- (17);
+			\draw[->,>=stealth] (17) -- (W17);
+			\draw[->,>=stealth] (W17) -- (W16);
+			\draw[->,>=stealth] (18) -- (W18);
+			\draw[->,>=stealth] (19) -- (W19);
+			\draw[->,>=stealth] (20) -- (W20);
+		\end{tikzpicture}
+		\caption{Graph}
+		\label{fig:Graph}
+	\end{figure}
+
+
 	Variation sur travel max, sur les waiting times, sur le nombre d'users.
 	
 	Tests data generees aleatoire scenarii

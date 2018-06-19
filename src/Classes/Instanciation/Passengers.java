@@ -7,14 +7,14 @@ public class Passengers {
 	private Vertices v;
 
 	private void Initialisation() {
-		this.nPassengers = new int[this.v.getOriginsW() + this.v.getDestinationW()];
+		this.nPassengers = new int[this.v.getPersons() + this.v.getPersons()];
 	}
 
 	public Passengers(Vertices vertices) {
 		this.v = vertices;
 		Initialisation();
-		for (int i = 0; i < (this.v.getOriginsW() + this.v.getDestinationW()); i++) {
-			this.nPassengers[i] = (i<this.v.getOriginsW())?1:-1;
+		for (int i = 0; i < (this.v.getPersons() + this.v.getPersons()); i++) {
+			this.nPassengers[i] = (i<this.v.getPersons())?1:-1;
 		}
 	}
 
@@ -22,11 +22,11 @@ public class Passengers {
 		this.v = vertices;
 		Initialisation();
 		Random randomGenerator = new Random();
-		for (int i = 0; i < this.v.getVertices(); i++) {
+		for (int i = 0; i < this.v.getPersons(); i++) {
 			this.nPassengers[i] = 1 + randomGenerator.nextInt(range);
 		}
-		for (int i = 0; i < (this.v.getOriginsW() + this.v.getDestinationW()); i++) {
-			this.nPassengers[i] = (i<this.v.getOriginsW())?1 + randomGenerator.nextInt(range):(-1)*this.nPassengers[i-this.v.getOriginsW()];
+		for (int i = 0; i < (this.v.getPersons() + this.v.getPersons()); i++) {
+			this.nPassengers[i] = (i<this.v.getPersons())?1 + randomGenerator.nextInt(range):(-1)*this.nPassengers[i-this.v.getPersons()];
 		}
 	}
 
@@ -34,9 +34,9 @@ public class Passengers {
 	public String toString() {
 		String str = "//NUMBER OF PARTICIPANTS ON EACH VERTEX\n";
 		str += "nPassagers=[";
-		for (int i = 0; i < (this.v.getOriginsW() + this.v.getDestinationW()); i++) {
+		for (int i = 0; i < (this.v.getPersons() + this.v.getPersons()); i++) {
 			str += this.nPassengers[i];
-			if (i !=  (this.v.getOriginsW() + this.v.getDestinationW()) - 1) {
+			if (i !=  (this.v.getPersons() + this.v.getPersons()) - 1) {
 				str += ",";
 			}
 		}

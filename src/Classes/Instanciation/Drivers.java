@@ -4,43 +4,16 @@ import java.util.Random;
 
 public class Drivers {
 	private int[] capacity;
-	private int[] G;
-	private int[] R;
 	private int nPotentialDrivers;
-	private float multiplicator;
 	private Vertices v;
-
-	private void Initialisation() {
-		this.nPotentialDrivers = v.getOriginsW();
-		this.capacity = new int[nPotentialDrivers];
-		this.G = new int[nPotentialDrivers];
-		this.R = new int[nPotentialDrivers];
-		this.multiplicator = (float) 1.5;
-	}
 
 	public Drivers(CostMatrices cM) {
 		this.v = cM.getV();
-		Initialisation();
+		this.nPotentialDrivers = v.getPersons();
+		this.capacity = new int[nPotentialDrivers];
 		Random randomGenerator = new Random();
 		for (int i = 0; i < nPotentialDrivers; i++) {
 			this.capacity[i] = 2 + randomGenerator.nextInt(3);
-			this.G[i] = (int) (cM.A()[i][i + v.getOriginsW()] * this.multiplicator);
-			System.out.println(cM.A()[i][i + v.getOriginsW()]);
-		}
-		for (int i = 0; i < v.getOriginsH(); i++) {
-			this.R[i] = (int) (cM.R()[i][i + v.getOriginsH()] * this.multiplicator);
-		}
-	}
-
-	public Drivers(TimeMatrices tM, int capacite) {
-		this.v = tM.getV();
-		Initialisation();
-		for (int i = 0; i < v.getOriginsW(); i++) {
-			this.capacity[i] = capacite;
-			this.G[i] = (int) (tM.getMW()[i][i + v.getOriginsW()] * (1.5));
-		}
-		for (int i = 0; i < v.getOriginsH(); i++) {
-			this.R[i] = (int) (tM.getMH()[i][i + v.getOriginsH()] * this.multiplicator);
 		}
 	}
 
@@ -56,37 +29,10 @@ public class Drivers {
 			}
 		}
 		str += "];\n";
-		str += "//Maximal travel time of the driver\n";
-		str += "G=[";
-		for (int i = 0; i < nPotentialDrivers; i++) {
-			str += this.G[i];
-			if (i != nPotentialDrivers - 1) {
-				str += ",";
-			}
-		}
-		str += "];\n";
-		
-		str += "R=[";
-		for (int i = 0; i < nPotentialDrivers; i++) {
-			str += this.R[i];
-			if (i != nPotentialDrivers - 1) {
-				str += ",";
-			}
-		}
-		str += "];\n";
 		return str;
 	}
-	
+
 	public int[] getQ() {
 		return this.capacity.clone();
 	}
-	
-	public int[] getG() {
-		return this.G.clone();
-	}
-	
-	public int[] getR() {
-		return this.R.clone();
-	}
-
 }

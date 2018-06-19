@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6630 64-bit)  (format=lualatex 2018.6.12)  18 JUN 2018 19:27
+This is LuaTeX, Version 1.07.0 (MiKTeX 2.9.6630 64-bit)  (format=lualatex 2018.6.12)  19 JUN 2018 22:40
  restricted system commands enabled.
 **report.tex
 (./report.tex
@@ -33,7 +33,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 1.134 seconds
+luaotfload | main : initialization completed in 1.189 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 
 ("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/memoir/memoir.c
@@ -1188,32 +1188,7 @@ Package: relsize 2003/07/04 ver 3.1
 ("C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/tex/latex/psnfss/helvet.s
 ty"
 Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
-) (./report.aux
-
-LaTeX Warning: Label `fig:var wt' multiply defined.
-
-
-LaTeX Warning: Label `fig:var wt' multiply defined.
-
-
-LaTeX Warning: Label `fig:var wt' multiply defined.
-
-
-LaTeX Warning: Label `fig:var wt' multiply defined.
-
-
-LaTeX Warning: Label `fig:var wt' multiply defined.
-
-
-LaTeX Warning: Label `fig:var wt' multiply defined.
-
-
-LaTeX Warning: Label `fig:var wt' multiply defined.
-
-
-LaTeX Warning: Label `fig:var wt' multiply defined.
-
-)
+) (./report.aux)
 \openout1 = report.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 83.
@@ -1660,6 +1635,91 @@ resRCW-WH-15-60-200-VarWT15 (9).txt"}
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [40]
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationTimeWindows/19/r
+esRCW-WH-19-200-VarWT.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (9).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (10).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (11).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (12).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (13).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (14).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (15).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (16).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (17).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (18).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (19).txt"}
+
+Overfull \hbox (7.60439pt too wide) in paragraph at lines 2040--2041
+ [][] 
+ []
+
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationTimeWindows/19/r
+esRCW-WH-19-200-VarWT.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (9).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (10).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (11).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (12).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (13).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (14).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (15).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (16).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (17).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (18).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationTimeWindows/19/
+resRCW-WH-19-200-VarWT (19).txt"}
 PGFPlots: reading {data/Performances/Random/VariationDeviationPercentage/resRW-W
 H-20-80-200-VarPerDev10.txt}
 PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
@@ -1701,7 +1761,7 @@ WH-20-80-200-VarPerDev10 (18).txt"}
 PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
 WH-20-80-200-VarPerDev10 (19).txt"}
 
-Overfull \hbox (7.414pt too wide) in paragraph at lines 2050--2051
+Overfull \hbox (7.414pt too wide) in paragraph at lines 2117--2118
  [][] 
  []
 
@@ -1745,6 +1805,10 @@ PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
 WH-20-80-200-VarPerDev10 (18).txt"}
 PGFPlots: reading {"data/Performances/Random/VariationDeviationPercentage/resRW-
 WH-20-80-200-VarPerDev10 (19).txt"}
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [41]
 PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
 tage/10/resRCW-WH-10-40-200-VarPerDev10 (1).txt"}
 PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
@@ -1762,7 +1826,7 @@ tage/10/resRCW-WH-10-40-200-VarPerDev10 (7).txt"}
 PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
 tage/10/resRCW-WH-10-40-200-VarPerDev10 (9).txt"}
 
-Overfull \hbox (13.41048pt too wide) in paragraph at lines 2106--2107
+Overfull \hbox (13.41048pt too wide) in paragraph at lines 2173--2174
  [][] 
  []
 
@@ -1786,141 +1850,234 @@ PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
 tage/10/resRCW-WH-10-40-200-VarPerDev10 (8).txt"}
 PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
 tage/10/resRCW-WH-10-40-200-VarPerDev10 (9).txt"}
-[41]
-PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationPercent
-age/15/resRCW-WH-15-60-200-VarPerDev15.txt}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (1).txt"}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (2).txt"}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (3).txt"}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (4).txt"}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (5).txt"}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (6).txt"}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (7).txt"}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (8).txt"}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (9).txt"}
-
-Overfull \hbox (7.41327pt too wide) in paragraph at lines 2152--2153
- [][] 
- []
-
-PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationPercent
-age/15/resRCW-WH-15-60-200-VarPerDev15.txt}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (1).txt"}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (2).txt"}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (3).txt"}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (4).txt"}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (5).txt"}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (6).txt"}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (7).txt"}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (8).txt"}
-PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
-tage/15/resRCW-WH-15-60-200-VarPerDev15 (9).txt"}
-PGFPlots: reading {data/Performances/Random/VariationDeviationValue/resRW-WH-20-
-80-200-VarDevVal10.txt}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (1).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (2).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (3).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (4).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (5).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (6).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (7).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (8).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (9).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (10).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (11).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (12).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (13).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (14).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (15).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (16).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (17).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (18).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (19).txt"}
-
-Overfull \hbox (7.41144pt too wide) in paragraph at lines 2219--2220
- [][] 
- []
-
-PGFPlots: reading {data/Performances/Random/VariationDeviationValue/resRW-WH-20-
-80-200-VarDevVal10.txt}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (1).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (2).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (3).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (4).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (5).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (6).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (7).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (8).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (9).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (10).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (11).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (12).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (13).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (14).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (15).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (16).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (17).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (18).txt"}
-PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
--80-200-VarDevVal10 (19).txt"}
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [42]
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationPercent
+age/15/resRCW-WH-15-60-200-VarPerDev15.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (9).txt"}
+
+Overfull \hbox (7.41327pt too wide) in paragraph at lines 2219--2220
+ [][] 
+ []
+
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationPercent
+age/15/resRCW-WH-15-60-200-VarPerDev15.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/15/resRCW-WH-15-60-200-VarPerDev15 (9).txt"}
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationPercent
+age/19/resRCW-WH-19-200-VarPerDev.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (9).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (10).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (11).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (12).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (13).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (14).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (15).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (16).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (17).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (18).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (19).txt"}
+
+Overfull \hbox (13.33261pt too wide) in paragraph at lines 2275--2276
+ [][] 
+ []
+
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationPercent
+age/19/resRCW-WH-19-200-VarPerDev.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (9).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (10).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (11).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (12).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (13).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (14).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (15).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (16).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (17).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (18).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationPercen
+tage/19/resRCW-WH-19-200-VarPerDev (19).txt"}
+
+Overfull \hbox (1.58981pt too wide) in paragraph at lines 2305--2306
+ [][] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [43]
+PGFPlots: reading {data/Performances/Random/VariationDeviationValue/resRW-WH-20-
+80-200-VarDevVal10.txt}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (1).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (2).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (3).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (4).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (5).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (6).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (7).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (8).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (9).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (10).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (11).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (12).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (13).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (14).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (15).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (16).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (17).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (18).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (19).txt"}
+
+Overfull \hbox (7.41144pt too wide) in paragraph at lines 2352--2353
+ [][] 
+ []
+
+PGFPlots: reading {data/Performances/Random/VariationDeviationValue/resRW-WH-20-
+80-200-VarDevVal10.txt}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (1).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (2).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (3).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (4).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (5).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (6).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (7).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (8).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (9).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (10).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (11).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (12).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (13).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (14).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (15).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (16).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (17).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (18).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationDeviationValue/resRW-WH-20
+-80-200-VarDevVal10 (19).txt"}
 PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationValue/1
 0/resRCW-WH-10-40-200-VarDevVal10.txt}
 PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
@@ -1942,7 +2099,7 @@ PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
 PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
 10/resRCW-WH-10-40-200-VarDevVal10 (9).txt"}
 
-Overfull \hbox (7.41382pt too wide) in paragraph at lines 2275--2276
+Overfull \hbox (7.41382pt too wide) in paragraph at lines 2408--2409
  [][] 
  []
 
@@ -1966,6 +2123,10 @@ PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
 10/resRCW-WH-10-40-200-VarDevVal10 (8).txt"}
 PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
 10/resRCW-WH-10-40-200-VarDevVal10 (9).txt"}
+
+Underfull \vbox (badness 5119) has occurred while \output is active []
+
+ [44]
 PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationValue/1
 5/resRCW-WH-15-60-200-VarDevVal15.txt}
 PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
@@ -1987,7 +2148,7 @@ PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
 PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
 15/resRCW-WH-15-60-200-VarDevVal15 (9).txt"}
 
-Overfull \hbox (7.41144pt too wide) in paragraph at lines 2323--2324
+Overfull \hbox (7.41144pt too wide) in paragraph at lines 2456--2457
  [][] 
  []
 
@@ -2011,7 +2172,180 @@ PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
 15/resRCW-WH-15-60-200-VarDevVal15 (8).txt"}
 PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
 15/resRCW-WH-15-60-200-VarDevVal15 (9).txt"}
-[43]
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationValue/1
+9/resRCW-WH-19-200-VarDevVal.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (9).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (10).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (11).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (12).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (13).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (14).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (15).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (16).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (17).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (18).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (19).txt"}
+
+Overfull \hbox (7.40775pt too wide) in paragraph at lines 2512--2513
+ [][] 
+ []
+
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationDeviationValue/1
+9/resRCW-WH-19-200-VarDevVal.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (6).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (7).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (8).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (9).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (10).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (11).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (12).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (13).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (14).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (15).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (16).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (17).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (18).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationDeviationValue/
+19/resRCW-WH-19-200-VarDevVal (19).txt"}
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [45]
+PGFPlots: reading {data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Var
+NUsers.txt}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (1).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (2).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (3).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (4).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (5).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (6).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (7).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (8).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (9).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (10).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (11).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (12).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (13).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (14).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (15).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (16).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (17).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (18).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (19).txt"}
+
+Overfull \hbox (7.40921pt too wide) in paragraph at lines 2585--2586
+ [][] 
+ []
+
+PGFPlots: reading {data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Var
+NUsers.txt}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (1).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (2).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (3).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (4).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (5).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (6).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (7).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (8).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (9).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (10).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (11).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (12).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (13).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (14).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (15).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (16).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (17).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (18).txt"}
+PGFPlots: reading {"data/Performances/Random/VariationNbUsers/resRW-WH-23-200-Va
+rNUsers (19).txt"}
 PGFPlots: reading {data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-W
 H-24-96-200-VarNUsers.txt}
 PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
@@ -2052,8 +2386,24 @@ PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
 WH-27-108-200-VarNUsers (1).txt"}
 PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
 WH-25-100-200-VarNUsers (1).txt"}
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-W
+H-23-200-VarNUsers.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-23-200-VarNUsers (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-23-200-VarNUsers (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-23-200-VarNUsers (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-23-200-VarNUsers (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-23-200-VarNUsers (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-23-200-VarNUsers (6).txt"}
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-W
+H-22-200-VarNUsers.txt}
 
-Overfull \hbox (14.96284pt too wide) in paragraph at lines 2387--2388
+Overfull \hbox (7.41327pt too wide) in paragraph at lines 2659--2660
  [][] 
  []
 
@@ -2097,54 +2447,74 @@ PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
 WH-27-108-200-VarNUsers (1).txt"}
 PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
 WH-25-100-200-VarNUsers (1).txt"}
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-W
+H-23-200-VarNUsers.txt}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-23-200-VarNUsers (1).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-23-200-VarNUsers (2).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-23-200-VarNUsers (3).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-23-200-VarNUsers (4).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-23-200-VarNUsers (5).txt"}
+PGFPlots: reading {"data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-
+WH-23-200-VarNUsers (6).txt"}
+PGFPlots: reading {data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-W
+H-22-200-VarNUsers.txt}
 
-Overfull \hbox (3.21297pt too wide) in paragraph at lines 2417--2418
- [][] 
- []
+Underfull \vbox (badness 5908) has occurred while \output is active []
 
-[44] [45] [46
+ [46]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [47
+ [47]
+[48] [49
 
-] [48
+
+] [50
 
 ] (./report.bbl
 bibitemlist
-[49
+[51
 
 
-] [50]) [51] [52
+] [52]) [53] [54
 
 ]
 \tf@toc=\write6
 
 \openout6 = report.toc
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2479.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2479.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2833.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2833.
  (./report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2479.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2479.
-Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: FB5F1FAAA460201053405057014D7DB3;1797.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2833.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2833.
 
+
+Package rerunfilecheck Warning: File `report.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `report.out':
+(rerunfilecheck)             Before: 8E7C56C22FEF20AFE52E2324F763FD3D;1797
+(rerunfilecheck)             After:  69D4D2459BF90C99586DFCC9153C146A;1829.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2479.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2833.
 )
 
 Here is how much of LuaTeX's memory you used:
- 35280 strings out of 494447
- 745115,3417909 words of node,token memory allocated
+ 36749 strings out of 494447
+ 745114,3417909 words of node,token memory allocated
  1243 words of node memory still in use:
    5 hlist, 2 vlist, 2 rule, 2 glue, 1 kern, 37 attribute, 185 glue_spec, 37 att
 ribute_list, 2 write nodes
-   avail lists: 1:3,2:167250,3:81404,4:534,5:300,6:61,7:4326,8:89,9:1054,10:20,1
+   avail lists: 1:4,2:167244,3:81404,4:871,5:300,6:61,7:4326,8:89,9:1054,10:20,1
 1:357
- 36465 multiletter control sequences out of 65536+200000
+ 36873 multiletter control sequences out of 65536+200000
  71 fonts using 5068951 bytes
  78i,14n,136p,1970b,2162s stack positions out of 5000i,500n,10000p,200000b,50000s
 <c:/users/navarrro/appdata/local/programs/miktex 2.9/fonts/opentype/public/lm/lm
@@ -2167,9 +2537,9 @@ arrro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pf
 b><C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
 ts/cm/cmsy8.pfb><C:/Users/navarrro/AppData/Local/Programs/MiKTeX 2.9/fonts/type1
 /public/amsfonts/symbols/msbm10.pfb>
-Output written on report.pdf (56 pages, 1745114 bytes).
+Output written on report.pdf (58 pages, 1901710 bytes).
 
-PDF statistics: 744 PDF objects out of 1000 (max. 8388607)
- 220 named destinations out of 1000 (max. 131072)
+PDF statistics: 756 PDF objects out of 1000 (max. 8388607)
+ 225 named destinations out of 1000 (max. 131072)
  232 words of extra memory for PDF output out of 10000 (max. 100000000)
 

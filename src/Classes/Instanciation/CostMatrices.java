@@ -1,6 +1,8 @@
 package Classes.Instanciation;
 
 import java.awt.Point;
+import java.util.LinkedList;
+import java.util.ListIterator;
 import java.util.Random;
 
 import Classes.Constants;
@@ -10,30 +12,32 @@ public class CostMatrices {
 	private int eveningM[][];
 	private int rdmRange = 10;
 	private int rdmCloseRange = 1;
+	private int n;
+	private Random randomGenerator;
 	Vertices v;
 	private int diagonal = 0;
+	Point[] Points;
+
+	public void Initialize(Vertices vertices, int range) {
+		randomGenerator = new Random();
+		this.v = vertices;
+		this.n = v.getPersons();
+		this.rdmRange = (int) range / 2;
+		this.morningM = new int[n + n][n + n];
+		this.eveningM = new int[n + n][n + n];
+		this.Points = new Point[4 * v.getPersons()];
+	}
 
 	// Generate a random matrix[n][n] and the range r of the random numbers
 	public CostMatrices(Vertices vertices, int mode, int range) {
-		Random randomGenerator = new Random();
-		this.v = vertices;
-		this.rdmRange = (int) range / 2;
-		this.morningM = new int[this.v.getOriginsW() + this.v.getDestinationW()][this.v.getOriginsW()
-				+ this.v.getDestinationW()];
-		this.eveningM = new int[this.v.getOriginsH() + this.v.getDestinationH()][this.v.getOriginsH()
-				+ this.v.getDestinationH()];
-
-		// For the close work and houses
-		int percentageClosure = 5;
-		this.rdmCloseRange = (percentageClosure * range / 100) > 1 ? (percentageClosure * range / 100) : 1;
+		Initialize(vertices, range);
 		int rdmNumber = 0;
-		Point[] V = new Point[4*v.nPersons];
 
 		// Generates a scenario following the mode given
 		switch (mode) {
 		case Constants.RW: // random matrix to go to work
-			for (int i = 0; i < this.v.getOriginsW() + this.v.getDestinationW(); i++) {
-				for (int j = i; j < this.v.getOriginsW() + this.v.getDestinationW(); j++) {
+			for (int i = 0; i < n + n; i++) {
+				for (int j = i; j < n + n; j++) {
 					if (i == j) {
 						this.morningM[i][j] = diagonal;
 					} else {
@@ -45,9 +49,8 @@ public class CostMatrices {
 					}
 				}
 			}
-
-			for (int i = 0; i < this.v.getOriginsH() + this.v.getDestinationH(); i++) {
-				for (int j = i; j < this.v.getOriginsH() + this.v.getDestinationH(); j++) {
+			for (int i = 0; i < n + n; i++) {
+				for (int j = i; j < n + n; j++) {
 					if (i == j) {
 						this.eveningM[i][j] = diagonal;
 					} else {
@@ -62,15 +65,15 @@ public class CostMatrices {
 			break;
 
 		case Constants.RCW: // random matrix with close houses and close works
-			for (int i = 0; i < this.v.getOriginsW() + this.v.getDestinationW(); i++) {
-				for (int j = i; j < this.v.getOriginsW() + this.v.getDestinationW(); j++) {
+			for (int i = 0; i < n + n; i++) {
+				for (int j = i; j < n + n; j++) {
 					if (i == j) {
 						this.morningM[i][j] = diagonal;
 					} else {
-						if (i < v.getOriginsW() && j < v.getOriginsW()) {
+						if (i < v.getPersons() && j < v.getPersons()) {
 							// Vertices from homes to homes
 							rdmNumber = randomGenerator.nextInt(rdmCloseRange) + 1;
-						} else if (i >= v.getOriginsW() && j >= v.getOriginsW()) {
+						} else if (i >= v.getPersons() && j >= v.getPersons()) {
 							// Vertices from works to works
 							rdmNumber = randomGenerator.nextInt(rdmCloseRange) + 1;
 						} else {
@@ -82,15 +85,15 @@ public class CostMatrices {
 				}
 			}
 
-			for (int i = 0; i < this.v.getOriginsH() + this.v.getDestinationH(); i++) {
-				for (int j = i; j < this.v.getOriginsH() + this.v.getDestinationH(); j++) {
+			for (int i = 0; i < n + n; i++) {
+				for (int j = i; j < n + n; j++) {
 					if (i == j) {
 						this.eveningM[i][j] = diagonal;
 					} else {
-						if (i < v.getOriginsH() && j < v.getOriginsH()) {
+						if (i < v.getPersons() && j < v.getPersons()) {
 							// Vertices from homes to homes
 							rdmNumber = randomGenerator.nextInt(rdmCloseRange) + 1;
-						} else if (i >= v.getOriginsH() && j >= v.getOriginsH()) {
+						} else if (i >= v.getPersons() && j >= v.getPersons()) {
 							// Vertices from works to works
 							rdmNumber = randomGenerator.nextInt(rdmCloseRange) + 1;
 						} else {
@@ -104,15 +107,15 @@ public class CostMatrices {
 			break;
 
 		case Constants.RSW: // random matrix with the same work
-			for (int i = 0; i < this.v.getOriginsW() + this.v.getDestinationW(); i++) {
-				for (int j = i; j < this.v.getOriginsW() + this.v.getDestinationW(); j++) {
+			for (int i = 0; i < n + n; i++) {
+				for (int j = i; j < n + n; j++) {
 					if (i == j) {
 						this.morningM[i][j] = diagonal;
 					} else {
-						if (i < v.getOriginsW() && j < v.getOriginsW()) {
+						if (i < v.getPersons() && j < v.getPersons()) {
 							// Vertices from homes to homes
 							rdmNumber = rdmRange + randomGenerator.nextInt(rdmRange - 1) + 1;
-						} else if (i >= v.getOriginsW() && j >= v.getOriginsW()) {
+						} else if (i >= v.getPersons() && j >= v.getPersons()) {
 							// Vertices from works to works
 							rdmNumber = 0;
 						} else {
@@ -124,15 +127,15 @@ public class CostMatrices {
 				}
 			}
 
-			for (int i = 0; i < this.v.getOriginsH() + this.v.getDestinationH(); i++) {
-				for (int j = i; j < this.v.getOriginsH() + this.v.getDestinationH(); j++) {
+			for (int i = 0; i < n + n; i++) {
+				for (int j = i; j < n + n; j++) {
 					if (i == j) {
 						this.eveningM[i][j] = diagonal;
 					} else {
-						if (i < v.getOriginsH() && j < v.getOriginsH()) {
+						if (i < v.getPersons() && j < v.getPersons()) {
 							// Vertices from works to works
 							rdmNumber = 0;
-						} else if (i >= v.getOriginsH() && j >= v.getOriginsH()) {
+						} else if (i >= v.getPersons() && j >= v.getPersons()) {
 							// Vertices from homes to homes
 							rdmNumber = rdmRange + randomGenerator.nextInt(rdmRange - 1) + 1;
 						} else {
@@ -147,72 +150,185 @@ public class CostMatrices {
 
 		// ************************ RANDOM POINT CLOUD *************************//
 		case Constants.RPC:
-			for (int i = 0; i < 4*this.v.getPersons(); i++) {
-				V[i] = new Point(randomGenerator.nextInt(rdmRange - 1) + 1,
+			for (int i = 0; i < 2 * n; i++) {
+				Points[i] = new Point(randomGenerator.nextInt(rdmRange - 1) + 1,
 						randomGenerator.nextInt(rdmRange - 1) + 1);
 			}
-
-			for (int i = 0; i < 2*this.v.getPersons(); i++) {
-				for (int j = i; j < 2*this.v.getPersons(); j++) {
-					if (i == j) {
-						this.morningM[i][j] = diagonal;
-					} else {
-
-						// Vertices from homes to homes
-						rdmNumber = (int) Math.sqrt(Math.pow(V[i].getX() - V[j].getX(), 2)
-								+ Math.pow(V[i].getY() - V[j].getY(), 2));
-						this.morningM[i][j] = rdmNumber;
-						this.morningM[j][i] = rdmNumber;
-					}
-				}
-			}
-
-			for (int i = 0; i < 2*this.v.getOriginsH(); i++) {
-				for (int j = i; j < 2*this.v.getOriginsH(); j++) {
-					if (i == j) {
-						this.eveningM[i][j] = diagonal;
-					} else {
-
-						// Vertices from homes to homes
-						rdmNumber = (int) Math.sqrt(Math.pow(V[i+2*this.v.getPersons()].getX() - V[j+2*this.v.getPersons()].getX(), 2)
-								+ Math.pow(V[i+2*this.v.getPersons()].getY() - V[j+2*this.v.getPersons()].getY(), 2));
-						this.eveningM[i][j] = rdmNumber;
-						this.eveningM[j][i] = rdmNumber;
-					}
-				}
-			}
+			SamePlaces();
 			break;
 
-		default: // random matrix to go to work
-			for (int i = 0; i < this.v.getOriginsW() + this.v.getDestinationW(); i++) {
-				for (int j = i; j < this.v.getOriginsW() + this.v.getDestinationW(); j++) {
-					if (i == j) {
-						this.morningM[i][j] = diagonal;
-					} else {
-						// to get a number between 1 and rdmRange
-						rdmNumber = rdmRange + randomGenerator.nextInt(rdmRange - 1) + 1;
-						// Symmetric matrix
-						this.morningM[i][j] = rdmNumber;
-						this.morningM[j][i] = rdmNumber;
-					}
-				}
-			}
+		default:
+			System.out.println("Matrix mode error");
+			break;
+		}
+	}
 
-			for (int i = 0; i < this.v.getOriginsH() + this.v.getDestinationH(); i++) {
-				for (int j = i; j < this.v.getOriginsH() + this.v.getDestinationH(); j++) {
-					if (i == j) {
-						this.eveningM[i][j] = diagonal;
-					} else {
-						// to get a number between 1 and rdmRange
-						rdmNumber = rdmRange + randomGenerator.nextInt(rdmRange - 1) + 1;
-						// Symmetric matrix
-						this.eveningM[i][j] = rdmNumber;
-						this.eveningM[j][i] = rdmNumber;
+	// ****************** RANDOM CITIES POINT CLOUD ********************//
+	public CostMatrices(Vertices vertices, int mode, int range, int nbCities) {
+		Initialize(vertices, range);
+		switch (mode) {
+		case Constants.RCPC:
+			CitiesGeneration(nbCities);
+			for (int i = n; i < 2 * n; i++) {// Generation of the workplaces
+				Points[i] = new Point(randomGenerator.nextInt(rdmRange - 1) + 1,
+						randomGenerator.nextInt(rdmRange - 1) + 1);
+			}
+			SamePlaces();
+			break;
+		}
+	}
+
+	// ****************** RANDOM CITIES POINT CLOUD SAME WORK ***************//
+	public CostMatrices(Vertices vertices, int mode, int range, int nbCities, int nbWorks) {
+		Initialize(vertices, range);
+		switch (mode) {
+		case Constants.RCPCSW:
+			CitiesGeneration(nbCities);
+			WorkplacesGeneration(nbWorks);
+			ShuffleWorkplacePoints();
+			SamePlaces();
+			break;
+		}
+	}
+
+	private void WorkplacesGeneration(int nbWorks) {
+		int distanceBetweenCities = 30;
+		LinkedList<Point> prevPoints = new LinkedList<Point>();
+		boolean nearAnotherCity = false;
+		int creatednbWorks = 0;
+		for (int i = n; i < 2 * n; i++) { // Generation of the homes
+			if (i % (n / nbWorks) == 0 && creatednbWorks < nbWorks) {
+				creatednbWorks++;
+				int nbIterations = 0;
+				do {
+					Points[i] = new Point(randomGenerator.nextInt(rdmRange - 1) + 1,
+							randomGenerator.nextInt(rdmRange - 1) + 1);
+					ListIterator<Point> prevPointsIT = prevPoints.listIterator();
+					nearAnotherCity = false;
+					while (prevPointsIT.hasNext() && !nearAnotherCity) {
+						Point temp = prevPointsIT.next();
+						if (Math.sqrt(Math.pow(Points[i].getX() - temp.getX(), 2)
+								+ Math.pow(Points[i].getY() - temp.getY(), 2)) <= distanceBetweenCities) {
+							nearAnotherCity = true;
+						} else {
+							nearAnotherCity = false;
+						}
 					}
+					if (nbIterations++ > 50) {
+						distanceBetweenCities = (distanceBetweenCities <= 0) ? 0 : distanceBetweenCities - 1;
+					}
+				} while (nearAnotherCity);
+				prevPoints.add((Point) Points[i].clone());
+			} else {
+				Points[i] = (Point) Points[i - 1].clone();
+			}
+		}
+		creatednbWorks = 0;
+	}
+
+	private void CitiesGeneration(int nbCities) {
+		int distanceBetweenCities = 30;
+		int distanceInterCity = 10;
+		LinkedList<Point> prevPoints = new LinkedList<Point>();
+		Point prevPoint = null;
+		boolean nearAnotherCity = false;
+		int createdCities = 0;
+		for (int i = 0; i < n; i++) { // Generation of the homes
+			if (i % (n / nbCities) == 0 && createdCities < nbCities) {
+				createdCities++;
+				int nbIterations = 0;
+				do {
+					Points[i] = new Point(randomGenerator.nextInt(rdmRange - 1) + 1,
+							randomGenerator.nextInt(rdmRange - 1) + 1);
+					ListIterator<Point> prevPointsIT = prevPoints.listIterator();
+					nearAnotherCity = false;
+					while (prevPointsIT.hasNext() && !nearAnotherCity) {
+						Point temp = prevPointsIT.next();
+						if (Math.sqrt(Math.pow(Points[i].getX() - temp.getX(), 2)
+								+ Math.pow(Points[i].getY() - temp.getY(), 2)) <= distanceBetweenCities) {
+							nearAnotherCity = true;
+						} else {
+							nearAnotherCity = false;
+						}
+					}
+					if (nbIterations++ > 50) {
+						distanceBetweenCities = (distanceBetweenCities <= 0) ? 0 : distanceBetweenCities - 1;
+					}
+				} while (nearAnotherCity);
+				prevPoints.add((Point) Points[i].clone());
+				prevPoint = (Point) Points[i].clone();
+			} else {
+				int x;
+				int y;
+				do {
+					x = (int) (randomGenerator.nextInt((2 * distanceInterCity - 1)) + prevPoint.getX()
+							- distanceInterCity);
+					y = (int) (randomGenerator.nextInt((2 * distanceInterCity - 1)) + prevPoint.getY()
+							- distanceInterCity);
+				} while (Math.sqrt(
+						Math.pow(x - prevPoint.getX(), 2) + Math.pow(y - prevPoint.getY(), 2)) <= distanceInterCity);
+				Points[i] = new Point(x, y);
+			}
+		}
+		createdCities = 0;
+	}
+
+	public void SamePlaces() {
+		int number = 0;
+		for (int i = 0; i < 2 * n; i++) {
+			for (int j = i; j < 2 * n; j++) {
+				number = (int) Math.sqrt(Math.pow(Points[i].getX() - Points[j].getX(), 2)
+						+ Math.pow(Points[i].getY() - Points[j].getY(), 2));
+				this.morningM[i][j] = number;
+				this.morningM[j][i] = number;
+				if (i == j) {
+					this.morningM[i][j] = diagonal;
 				}
 			}
 		}
+		int[][] tmpIJ = new int[n][n];
+		int[][] tmpIJN = new int[n][n];
+		int[][] tmpINJ = new int[n][n];
+		int[][] tmpINJN = new int[n][n];
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				tmpIJ[i][j] = morningM[i][j];
+				tmpIJN[i][j] = morningM[i][j + n];
+				tmpINJ[i][j] = morningM[i + n][j];
+				tmpINJN[i][j] = morningM[i + n][j + n];
+			}
+		}
+		for (int i = 0; i < n; i++) {
+			for (int j = 0; j < n; j++) {
+				eveningM[i][j] = tmpINJN[j][i];
+				eveningM[i][j + n] = tmpIJN[j][i];
+				eveningM[i + n][j] = tmpINJ[j][i];
+				eveningM[i + n][j + n] = tmpIJ[j][i];
+			}
+		}
+	}
 
+	private void ShuffleWorkplacePoints() {
+		// Shuffle the homes
+		for (int i = 1; i < n; i++) {
+			int j;
+			do {
+				j = randomGenerator.nextInt(i);
+			} while (j < 0 || j >= n);
+			Point temp = Points[i];
+			Points[i] = Points[j];
+			Points[j] = temp;
+		}
+		// Shuffle the workplaces
+		for (int i = n + 1; i < 2 * n; i++) {
+			int j;
+			do {
+				j = randomGenerator.nextInt(i) + n - 1;
+			} while (j >= 2 * n || j < n);
+			Point temp = Points[i];
+			Points[i] = Points[j];
+			Points[j] = temp;
+		}
 	}
 
 	// Print the matrix in the carpooling needed form
@@ -220,30 +336,30 @@ public class CostMatrices {
 		String str = "//ARCS\n";
 		str += "// C[1..2][i][j] = cost to travel from i to j to work\n";
 		str += "C=[[\n";
-		for (int i = 0; i < this.v.getOriginsW() + this.v.getDestinationW(); i++) {
+		for (int i = 0; i < n + n; i++) {
 			str += '[';
-			for (int j = 0; j < this.v.getOriginsW() + this.v.getDestinationW(); j++) {
+			for (int j = 0; j < n + n; j++) {
 				str += this.morningM[i][j];
-				if (j != this.v.getOriginsW() + this.v.getDestinationW() - 1) {
+				if (j != n + n - 1) {
 					str += ", ";
 				}
 			}
-			if (i != this.v.getOriginsW() + this.v.getDestinationW() - 1) {
+			if (i != n + n - 1) {
 				str += "],\n";
 			} else {
 				str += "]\n";
 			}
 		}
 		str += "],[\n";
-		for (int i = 0; i < this.v.getOriginsH() + this.v.getDestinationH(); i++) {
+		for (int i = 0; i < n + n; i++) {
 			str += '[';
-			for (int j = 0; j < this.v.getOriginsH() + this.v.getDestinationH(); j++) {
+			for (int j = 0; j < n + n; j++) {
 				str += this.eveningM[i][j];
-				if (j != this.v.getOriginsH() + this.v.getDestinationH() - 1) {
+				if (j != n + n - 1) {
 					str += ", ";
 				}
 			}
-			if (i != this.v.getOriginsH() + this.v.getDestinationH() - 1) {
+			if (i != n + n - 1) {
 				str += "],\n";
 			} else {
 				str += "]\n";
@@ -272,5 +388,9 @@ public class CostMatrices {
 
 	public int getDiagonal() {
 		return this.diagonal;
+	}
+
+	public Point[] getPoints() {
+		return this.Points;
 	}
 }

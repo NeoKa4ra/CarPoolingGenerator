@@ -50,29 +50,27 @@
 \contentsline {subsection}{\numberline {5.2.1}Benchmarks}{39}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Configuration}{39}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Results}{39}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Analysis}{41}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Varying the deviation's percentage of the travel allowed}{41}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Benchmarks}{41}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Configuration}{41}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Results}{41}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}Analysis}{43}{subsection.5.3.4}
-\contentsline {section}{\numberline {5.4}Name of the experiment3}{43}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Varying the deviation's value of the travel allowed}{43}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Benchmarks}{43}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Configuration}{43}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Results}{43}{subsection.5.4.4}
-\contentsline {subsection}{\numberline {5.4.5}Analysis}{44}{subsection.5.4.5}
-\contentsline {section}{\numberline {5.5}Name of the experiment4}{44}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Varying the number of users}{44}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Benchmarks}{44}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Configuration}{44}{subsection.5.5.3}
-\contentsline {subsection}{\numberline {5.5.4}Results}{44}{subsection.5.5.4}
-\contentsline {subsection}{\numberline {5.5.5}Analysis}{45}{subsection.5.5.5}
-\contentsline {section}{\numberline {5.6}Name of the experiment}{45}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Benchmarks}{45}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}Configuration}{45}{subsection.5.6.2}
-\contentsline {subsection}{\numberline {5.6.3}Results}{45}{subsection.5.6.3}
-\contentsline {subsection}{\numberline {5.6.4}Analysis}{45}{subsection.5.6.4}
-\contentsline {chapter}{Conclusion and perspectives}{47}{chapter*.63}
-\contentsline {chapter}{Bibliography}{49}{chapter*.64}
-\contentsline {chapter}{Bibliography}{51}{chapter*.64}
+\contentsline {subsection}{\numberline {5.2.4}Analysis}{42}{subsection.5.2.4}
+\contentsline {section}{\numberline {5.3}Varying the deviation's percentage of the travel allowed}{42}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Benchmarks}{42}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Configuration}{42}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Results}{42}{subsection.5.3.3}
+\contentsline {subsection}{\numberline {5.3.4}Analysis}{44}{subsection.5.3.4}
+\contentsline {section}{\numberline {5.4}Varying the deviation's value of the travel allowed}{44}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Benchmarks}{44}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Configuration}{44}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Results}{44}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Analysis}{46}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Varying the number of users}{46}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Benchmarks}{46}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Configuration}{46}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Results}{46}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}Analysis}{47}{subsection.5.5.4}
+\contentsline {section}{\numberline {5.6}Name of the experiment}{47}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Benchmarks}{47}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Configuration}{48}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}Results}{48}{subsection.5.6.3}
+\contentsline {subsection}{\numberline {5.6.4}Analysis}{48}{subsection.5.6.4}
+\contentsline {chapter}{Conclusion and perspectives}{49}{chapter*.68}
+\contentsline {chapter}{Bibliography}{51}{chapter*.69}
+\contentsline {chapter}{Bibliography}{53}{chapter*.69}

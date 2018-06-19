@@ -13,7 +13,7 @@ public class FilePath {
 		} else if (FS.getM() == Constants.RES) {
 			this.path = "P:\\Travaux\\Modelisation\\Results\\res";
 		}
-		
+
 		switch (FS.getMM()) {
 		case Constants.RW: // random matrix to go to work
 			this.path += "RW";
@@ -27,22 +27,16 @@ public class FilePath {
 			this.path += "RSW";
 			break;
 
-		case Constants.RxSW:
-			this.path += "RxSW";
+		case Constants.RPC:
+			this.path += "RPC";
 			break;
-		}
-		switch (FS.getWM()) {
-		case Constants.W:
-			this.path += "-W";
+
+		case Constants.RCPC:
+			this.path += "RCPC";
 			break;
-		case Constants.WH:
-			this.path += "-WH";
-			break;
-		case Constants.WS:
-			this.path += "-WS";
-			break;
-		case Constants.WHS:
-			this.path += "-WHS";
+
+		case Constants.RCPCSW:
+			this.path += "RCPCSW";
 			break;
 		}
 		this.path += "-";
