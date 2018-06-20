@@ -9,7 +9,7 @@ import ilog.concert.IloNumVar;
 import ilog.cplex.IloCplex;
 
 
-public class LPWithReturn {
+public class LP {
 	private int n;
 	private int[] drivers;
 	private Matrice C;
@@ -17,7 +17,7 @@ public class LPWithReturn {
 	private int[] p;
 	LPResults results;
 
-	public LPWithReturn(Instance instance, LPSettings var) {
+	public LP(Instance instance, LPSettings var) {
 		this.n = instance.getnPersons();
 		this.drivers = instance.getQ();
 		this.C = instance.getCostMatrices();

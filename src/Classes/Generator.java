@@ -9,10 +9,11 @@ import Classes.FileManagement.TESTFile;
 import Classes.Instanciation.HoursSettings;
 import Classes.Instanciation.Instance;
 import Classes.Instanciation.MatriceSettings;
+import Classes.LinearPrograms.LP;
+import Classes.LinearPrograms.LPOneWay;
 import Classes.LinearPrograms.LPResults;
 import Classes.LinearPrograms.LPSettings;
 import Classes.LinearPrograms.LPVariationsSettings;
-import Classes.LinearPrograms.LPWithReturn;
 
 public class Generator {
 	// ****************** OBJECTS CREATION ****************** //
@@ -25,7 +26,8 @@ public class Generator {
 	public static LinkedList<Double> tempEveryResults = null;
 	public Instance instance = null;
 	public static LPSettings var = null;
-	public LPWithReturn LP = null;
+	public LP LPWT = null; // LP With Return
+	public LPOneWay LPOW = null;
 	// ************ VARIATIONS ************ //
 	public static int tempNUsers;
 	public static int tempAdvance;
@@ -37,19 +39,19 @@ public class Generator {
 
 	public Generator(GlobalSettings GS, MatriceSettings MS, HoursSettings HS, LPSettings LPS,
 			LPVariationsSettings LPVS) {
-
+		int initialN = MS.getN();
 		// **************** EXPERIMENTATIONS **************** //
 		for (int i = 0; i < GS.getNR(); i++) {
 			// ************ VARIATIONS ************ //
-			tempNUsers = MS.getN();
+			tempNUsers = initialN;
 			tempAdvance = LPS.getWTA();
 			tempWaitingTime = LPS.getWTR();
-			tempDeviationPercentage = (int) LPS.getDP() * 100 - 100;
+			tempDeviationPercentage = (int) (LPS.getDP() * 100) - 100;
 			tempDeviationValue = LPS.getDV();
 
-			if (GS.getMode() == Constants.LP || GS.getMode() == Constants.SINGLERUN) {
+			if (GS.getModeInstance() == Constants.GSI || GS.getModeInstance() == Constants.GSR) {
 				// ********* CONSTANT INSTANCIATIONS LP ********* //
-				instance = new Instance(MS, HS);
+				instance = new Instance(tempNUsers, MS, HS);
 				new TESTFile(instance, MS, GS.getFS());
 			}
 			// Save the current values
@@ -59,14 +61,13 @@ public class Generator {
 			do {
 				tempVaryingValues = new LinkedList<Integer>();
 				tempEveryResults = new LinkedList<Double>();
-
-				if (GS.getMode() == Constants.USERS) {
+				if (GS.getModeInstance() == Constants.GDI) {
 					// ********* CONSTANT INSTANCIATIONS USERS ********* //
-					instance = new Instance(MS, HS);
+					instance = new Instance(tempNUsers, MS, HS);
 					new TESTFile(instance, MS, GS.getFS());
 				}
 				// To execute the LP
-				LP = new LPWithReturn(instance,
+				LPWT = new LP(instance,
 						new LPSettings(tempAdvance, tempWaitingTime, tempDeviationPercentage, tempDeviationValue));
 				// Add here every varying value you want
 				tempVaryingValues.add(Integer.valueOf(tempNUsers));
@@ -75,8 +76,8 @@ public class Generator {
 				tempVaryingValues.add(Integer.valueOf(tempDeviationPercentage));
 				tempVaryingValues.add(Integer.valueOf(tempDeviationValue));
 				// Add here every results you want
-				tempEveryResults.add(LP.getRes().getObjective());
-				tempEveryResults.add(LP.getRes().getExecTime());
+				tempEveryResults.add(LPWT.getRes().getObjective());
+				tempEveryResults.add(LPWT.getRes().getExecTime());
 				// Save the current values
 				varyingValues.add(tempVaryingValues);
 				everyResults.add(tempEveryResults);
@@ -86,10 +87,10 @@ public class Generator {
 				tempWaitingTime += LPVS.getVWT();
 				tempDeviationPercentage += LPVS.getVDP();
 				tempDeviationValue += LPVS.getvDV();
-				System.out.println("O : " + LP.getRes().getObjective() + " ET : " + LP.getRes().getExecTime());
-			} while (LP.getRes().getExecTime() <= GS.getETM()
+				System.out.println("O : " + LPWT.getRes().getObjective() + " ET : " + LPWT.getRes().getExecTime());
+			} while (LPWT.getRes().getExecTime() <= GS.getETM()
 					&& (Duration.between(start, Instant.now()).compareTo(Duration.ofMinutes(GS.getMBEM())) < 0)
-					&& tempNUsers < 20 && !GS.getSingleRun());
+					&& tempNUsers < GS.getNMaxUsers() && !GS.getSingleRun());
 
 			new RESFile(everyResults, varyingValues, MS, GS.getFS());
 		}
@@ -97,7 +98,7 @@ public class Generator {
 
 	// GETTERS
 	public LPResults getResults() {
-		return this.LP.getRes();
+		return this.LPWT.getRes();
 	}
 
 	public Instance getInstance() {

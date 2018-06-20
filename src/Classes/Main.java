@@ -11,22 +11,16 @@ import Classes.LinearPrograms.LPVariationsSettings;
 public class Main {
 
 	public static void main(String[] args) {
-		// Usage : GlobalSettings(nRuns, execTimeMax, minutesByExecutionMax, fileSuffix)
 		GlobalSettings GS = null;
-
-		// RW : Random matrix; RCW : close together; RSW : RxSW :
 		MatriceSettings MS = null;
 		HoursSettings HS = null;
-
-		// Usage : LPSettings(advance, waitingTime, deviationPercentage, deviationValue)
 		LPSettings LPS = null;
-
-		// Usage : LPVariationsSettings(varyNUsers, varyAdvance, varyWaitingTime,
-		// varyDeviationPercentage, varyDeviationValue)
 		LPVariationsSettings LPVS = null;
+		Generator g = null;
 
 		// Matrix settings
 		int choice = 0;
+		
 		LinkedList<Point> cities = new LinkedList<Point>();
 		LinkedList<Point> workplaces = new LinkedList<Point>();
 		workplaces.add(new Point(0, 0)); // GRENOBLE
@@ -47,42 +41,47 @@ public class Main {
 			cities.add(new Point(4, 4)); // CROLLES
 			break;
 		case 3:
-			cities.add(new Point(10, 10)); // VIZILLE
-			cities.add(new Point(7, 7)); // PONT DE CLAIX
-			cities.add(new Point(4, 4)); // VIF
+			cities.add(new Point(1, -5)); // VIZILLE
+			cities.add(new Point(-1, -3)); // PONT DE CLAIX
+			cities.add(new Point(-2, -6)); // VIF
 			break;
 		}
 
-		// SINGLE RUN
-		int nUsers = 15;
-		GS = new GlobalSettings(Constants.SINGLERUN, 1, 300, 6, "SingleRun");
-		MS = new MatriceSettings(Constants.MCPWP, nUsers, 200, cities, workplaces, 20, 5);
-		HS = new HoursSettings(Constants.HW, nUsers);
+		int nUsers = 25;
+		// Usage:(modeLP,modeInstance,numberofRun,execInstanceTimeMax,execTotalTimeMax,nMaxUsers,suffix)
+		GS = new GlobalSettings(Constants.GLPWR, Constants.GSR, 1, 300, 6, 12, "varyUsersWR");
+		// (matrixMode,nbPersons,matrixRange,citiesList,workplacesList,probScdWork,probScdHome)
+		MS = new MatriceSettings(Constants.MCPWP, nUsers, 200, cities, workplaces,0,0);
+		// Usage:(nPersons,morningHour,morningHourRange,eveningHour,eveningHourRange)
+		HS = new HoursSettings(nUsers, 790, 25, 1600, 500);
+		// Usage:LPSettings(advance, waitingTime, deviationPercentage, deviationValue)
 		LPS = new LPSettings(50, 25, 20, 5);
+		// (varyNUsers,varyAdvance,varyWaitingTime,varyDeviationPercentage,varyDeviationValue)
 		LPVS = new LPVariationsSettings(0, 0, 0, 0, 0);
-		Generator g = new Generator(GS, MS, HS, LPS, LPVS);
+		g = new Generator(GS, MS, HS, LPS, LPVS);
 		new GraphPrinter(g.getInstance().getCostMatrices(), g.getResults());
+		new GraphPrinterReturn(g.getInstance().getCostMatrices(), g.getResults());
+		
+/*
+		// Usage:(modeLP,modeInstance,numberofRun,execInstanceTimeMax,execTotalTimeMax,nMaxUsers,suffix)
+		GS = new GlobalSettings(Constants.GLPOW, Constants.GDI, 10, 300, 6, 12, "varyUsersOW");
+		// (matrixMode,nbPersons,matrixRange,citiesList,workplacesList,probScdWork,probScdHome)
+		MS = new MatriceSettings(Constants.MCPWP, nUsers, 200, cities, workplaces, 20, 5);
+		// Usage:(nPersons,morningHour,morningHourRange,eveningHour,eveningHourRange)
+		HS = new HoursSettings(nUsers, 900, 100, 1500, 100);
+		// Usage:LPSettings(advance, waitingTime, deviationPercentage, deviationValue)
+		LPS = new LPSettings(50, 25, 20, 5);
+		// (varyNUsers,varyAdvance,varyWaitingTime,varyDeviationPercentage,varyDeviationValue)
+		LPVS = new LPVariationsSettings(1, 0, 0, 0, 0);
+		g = new Generator(GS, MS, HS, LPS, LPVS);
+		// new GraphPrinter(g.getInstance().getCostMatrices(), g.getResults());
+*/
+		// Print latex data
+		// P1: NBUSERS P2&P3: WAITING TIME P4: PERCENTAGE P5: DEVIATION VALUE
+		int nbFiles = 5;
+		String xAxis = "P1";
+		String filePath = "data/couples/resMCPWP-10-200-varyUsersOW";
 
-		if (false) {
-			// USERS TEST
-			GS = new GlobalSettings(Constants.USERS, 1, 600, 60, "VarNUsers");
-			LPS = new LPSettings(50, 25, 20, 10);
-			LPVS = new LPVariationsSettings(1, 0, 0, 0, 0);
-			new Generator(GS, MS, HS, LPS, LPVS);
-
-			// USERS TEST
-			GS = new GlobalSettings(Constants.LP, 1, 600, 60, "VarNUsers");
-			LPS = new LPSettings(50, 25, 20, 10);
-			LPVS = new LPVariationsSettings(0, 1, 0, 0, 0);
-			new Generator(GS, MS, HS, LPS, LPVS);
-
-			// Print latex data
-			// P1: NBUSERS P2&P3: WAITING TIME P4: PERCENTAGE P5: DEVIATION VALUE
-			int nbFiles = 7;
-			String xAxis = "P2";
-			String filePath = "data/Performances/RandomCloseHouses/VariationNbUsers/resRCW-WH-23-200-VarNUsers";
-
-			new LatexDataPrinter(nbFiles, xAxis, filePath);
-		}
+		//new LatexDataPrinter(nbFiles, xAxis, filePath);
 	}
 }

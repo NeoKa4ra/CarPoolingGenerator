@@ -95,4 +95,8 @@ public class MatriceSettings {
 	public int getPScdHome() {
 		return this.pScdHome;
 	}
+	
+	public void setN(int nb) {
+		this.n = nb;
+	}
 }

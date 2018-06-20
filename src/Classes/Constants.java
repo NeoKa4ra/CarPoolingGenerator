@@ -9,16 +9,11 @@ public class Constants {
 	public final static int MCPW = 4; // random cities with same random works point cloud
 	public final static int MCPWP = 5;// ** Matrix Cities and Workplaces given with probabilities **//
 
-	// ****************** HOURS MODE ****************** //
-	public final static int HW = 0; // NEARLY MORNING RANDOM EVENING
-	public final static int HS = 1; // SAME HOURS
-
-	// ****************** FILE MODE ****************** //
-	public final static int TEST = 0;
-	public final static int RES = 1;
-
 	// ****************** GENERATOR ****************** //
-	public final static int LP = 0;
-	public final static int USERS = 1;
-	public final static int SINGLERUN = 2;
+	public final static int GSI = 0; // Generator same instance
+	public final static int GDI = 1;// Generator different instance
+	public final static int GSR = 2; // Generator Single Run
+	
+	public final static int GLPOW = 0; // Generator same instance
+	public final static int GLPWR = 1;// Generator different instance
 }

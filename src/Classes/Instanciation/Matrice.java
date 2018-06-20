@@ -23,8 +23,8 @@ public class Matrice {
 		randomGenerator = new Random();
 		this.MS = ms;
 		this.n = MS.getN();
-		this.morningM = new int[n + n][n + n];
-		this.eveningM = new int[n + n][n + n];
+		this.morningM = new int[2 * n][2 * n];
+		this.eveningM = new int[2 * n][2 * n];
 		this.Points = new Point[4 * n];
 
 		int rdmNumber = 0;
@@ -91,6 +91,14 @@ public class Matrice {
 				Points[i] = new Point(randomGenerator.nextInt(MS.getMaxRange() - 1) + 1,
 						randomGenerator.nextInt(MS.getMaxRange() - 1) + 1);
 			}
+			returnGeneration();
+			CrowFliesDistance();
+			break;
+
+		case Constants.MCPW:// ** Matrix Cities and Workplaces **//
+			CitiesGeneration(MS.getCities(), MS.getNbCities());
+			WorkplacesGeneration(MS.getWorkplaces(), MS.getNbWorks());
+			ShuffleWorkplacePoints();
 			returnGeneration();
 			CrowFliesDistance();
 			break;
@@ -162,7 +170,6 @@ public class Matrice {
 	}
 
 	private void WorkplacesGeneration(LinkedList<Point> workplaces, int nbWorks) {
-		ListIterator<Point> workplacesIT = workplaces.listIterator();
 		int creatednbWorks = 0;
 		int distanceBetweenCities = 30;
 		LinkedList<Point> prevPoints = new LinkedList<Point>();
@@ -196,6 +203,7 @@ public class Matrice {
 				}
 			}
 		} else {
+			ListIterator<Point> workplacesIT = workplaces.listIterator();
 			for (int i = n; i < 2 * n; i++) { // Generation of the homes
 				if (i % (n / workplaces.size()) == 0 && creatednbWorks < workplaces.size()) {
 					creatednbWorks++;
@@ -209,7 +217,7 @@ public class Matrice {
 	}
 
 	private void CitiesGeneration(LinkedList<Point> Cities, int nbCities) {
-		ListIterator<Point> citiesIT = Cities.listIterator();
+
 		Point prevPoint = null;
 		int createdCities = 0;
 		LinkedList<Point> prevPoints = new LinkedList<Point>();
@@ -254,7 +262,11 @@ public class Matrice {
 			}
 			createdCities = 0;
 		} else {
+			ListIterator<Point> citiesIT = Cities.listIterator();
+			boolean placeAlreadyTaken;
+			int nbIt;
 			for (int i = 0; i < n; i++) { // Generation of the homes
+				nbIt = 0;
 				if (i % (n / Cities.size()) == 0 && createdCities < Cities.size()) {
 					createdCities++;
 					Points[i] = citiesIT.next();
@@ -263,12 +275,23 @@ public class Matrice {
 					int x;
 					int y;
 					do {
+						if (nbIt++ == 50) {
+							distanceInterCity++;
+						}
 						x = (int) (randomGenerator.nextInt((2 * distanceInterCity - 1)) + prevPoint.getX()
 								- distanceInterCity);
 						y = (int) (randomGenerator.nextInt((2 * distanceInterCity - 1)) + prevPoint.getY()
 								- distanceInterCity);
-					} while (Math.sqrt(Math.pow(x - prevPoint.getX(), 2)
-							+ Math.pow(y - prevPoint.getY(), 2)) <= distanceInterCity);
+						placeAlreadyTaken = false;
+						for (int k = 0; k < i; k++) {
+							if (Math.sqrt(
+									Math.pow(x - Points[k].getX(), 2) + Math.pow(y - Points[k].getY(), 2)) <= 0.5) {
+								placeAlreadyTaken = true;
+							}
+						}
+					} while (Math.sqrt(
+							Math.pow(x - prevPoint.getX(), 2) + Math.pow(y - prevPoint.getY(), 2)) <= distanceInterCity
+							|| placeAlreadyTaken);
 					Points[i] = new Point(x, y);
 				}
 			}
