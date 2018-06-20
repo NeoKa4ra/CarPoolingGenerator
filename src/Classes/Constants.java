@@ -2,16 +2,16 @@ package Classes;
 
 public class Constants {
 	// ****************** MATRIX MODE ****************** //
-	public final static int RW = 0; // random matrix to go to work
-	public final static int RCW = 1; // random matrix with close houses and close works
-	public final static int RSW = 2; // random matrix with the same work
-	public final static int RPC = 4; // random point cloud
-	public final static int RCPC = 5; // random point cloud
-	public final static int RCPCSW = 6; // random point cloud
+	public final static int MM = 0; // random matrix to go to work
+	public final static int MC = 1; // random matrix with close houses and close works
+	public final static int MP = 2; // random point cloud
+	public final static int MCP = 3; // random cities point cloud
+	public final static int MCPW = 4; // random cities with same random works point cloud
+	public final static int MCPWP = 5;// ** Matrix Cities and Workplaces given with probabilities **//
 
 	// ****************** HOURS MODE ****************** //
-	public final static int NMRE = 0; // NEARLY MORNING RANDOM EVENING
-	public final static int SH = 1; // SAME HOURS
+	public final static int HW = 0; // NEARLY MORNING RANDOM EVENING
+	public final static int HS = 1; // SAME HOURS
 
 	// ****************** FILE MODE ****************** //
 	public final static int TEST = 0;

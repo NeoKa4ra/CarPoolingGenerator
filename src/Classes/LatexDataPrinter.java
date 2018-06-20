@@ -1,8 +1,8 @@
 package Classes;
 
-public class PrintLatexData {
+public class LatexDataPrinter {
 
-	public PrintLatexData(int nbFiles, String xAxis, String filePath) {
+	public LatexDataPrinter(int nbFiles, String xAxis, String filePath) {
 		System.out.println("\\begin{figure}[H]");
 		System.out.println("\t\t\\centering");
 		System.out.println("\t\t\\begin{subfigure}{.5\\textwidth}");

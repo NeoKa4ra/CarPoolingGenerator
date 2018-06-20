@@ -1,81 +1,79 @@
 package Classes.Instanciation;
 
-import Classes.Constants;
+import java.util.Random;
 
 public class Instance {
 	private int n;
-	private Vertices v;
-	private CostMatrices c;
+	private Matrice c;
 	private Hours h;
-	private Drivers d;
-	private Passengers p;
+	private int[] capacity;
+	private int[] nPassengers;
 
-	public Instance(InstanceSettings IS) {
-		this.n = IS.getNU();
-		// Generation of the characteristics of the scenario
-		this.v = new Vertices(n, IS.getMM());
-		// System.out.println(vertices);
+	public Instance(MatriceSettings MS, HoursSettings HS) {
+		this.n = MS.getN();
 
 		// Generation of the cost matrix
-		switch (IS.getMM()) {
-		case Constants.RW:
-			this.c = new CostMatrices(v, IS.getMM(), IS.getRR());
-			break;
-		case Constants.RCW:
-			this.c = new CostMatrices(v, IS.getMM(), IS.getRR());
-			break;
-		case Constants.RSW:
-			this.c = new CostMatrices(v, IS.getMM(), IS.getRR());
-			break;
-		case Constants.RPC:
-			this.c = new CostMatrices(v, IS.getMM(), IS.getRR());
-			break;
-		case Constants.RCPC:
-			this.c = new CostMatrices(v, IS.getMM(), IS.getRR(), IS.getMA()[1]);
-			break;
-		case Constants.RCPCSW:
-			this.c = new CostMatrices(v, IS.getMM(), IS.getRR(), IS.getMA()[1], IS.getMA()[2]);
-			break;
+		this.c = new Matrice(MS);
+		
+		// Generation of the hours
+		this.h = new Hours(HS);
+
+		this.nPassengers = new int[2*n];
+		for (int i = 0; i < 2*n; i++) {
+			this.nPassengers[i] = (i<n)?1:-1;
 		}
 
-		// Generation of the hours
-		this.h = new Hours(v, IS.getHM());
-		// System.out.println(hours);
-
-		// Generation of the drivers capacity and maximal travel time
-		this.d = new Drivers(c);
-		// System.out.println(drivers);
-
-		this.p = new Passengers(v);
-		// System.out.println(passengers);
+		this.capacity = new int[n];
+		Random randomGenerator = new Random();
+		for (int i = 0; i < n; i++) {
+			this.capacity[i] = 2 + randomGenerator.nextInt(3);
+		}
 	}
-
+	
 	public String toString() {
-		return this.v.toString() + this.c.toString() + this.h.toString() + this.d.toString() + this.p.toString();
+		String str = "//NUMBER OF VERTICES\n";
+		str += "n=" + n + "; //Number of vertices origin to work\n";
+		str = "//DRIVERS\n";
+		str += "//Capacity of the car\n";
+		str += "Q=[";
+		for (int i = 0; i < n; i++) {
+			str += this.capacity[i];
+			if (i != n - 1) {
+				str += ",";
+			}
+		}
+		str += "];\n";
+		str += "//NUMBER OF PARTICIPANTS ON EACH VERTEX\n";
+		str += "nPassagers=[";
+		for (int i = 0; i < 2*n; i++) {
+			str += this.nPassengers[i];
+			if (i !=  2*n - 1) {
+				str += ",";
+			}
+		}
+		str += "];\n";
+		return this.c.toString() + this.h.toString() + str;
 	}
 
 	// GETTERS
-	public Vertices getVertices() {
-		return this.v;
-	}
 
 	public int getnPersons() {
 		return this.n;
 	}
 
-	public CostMatrices getCostMatrices() {
+	public Matrice getCostMatrices() {
 		return this.c;
 	}
 
 	public Hours getHours() {
 		return this.h;
 	}
-
-	public Drivers getDrivers() {
-		return this.d;
+	
+	public int[] getQ() {
+		return this.capacity.clone();
 	}
-
-	public Passengers getPassengers() {
-		return this.p;
+	
+	public int[] getP() {
+		return this.nPassengers.clone();
 	}
 }

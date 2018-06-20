@@ -1,10 +1,8 @@
 package Classes.LinearPrograms;
 
-import Classes.Instanciation.CostMatrices;
-import Classes.Instanciation.Drivers;
+import Classes.Instanciation.Matrice;
 import Classes.Instanciation.Hours;
 import Classes.Instanciation.Instance;
-import Classes.Instanciation.Passengers;
 import ilog.concert.IloException;
 import ilog.concert.IloLinearNumExpr;
 import ilog.concert.IloNumVar;
@@ -13,18 +11,18 @@ import ilog.cplex.IloCplex;
 
 public class LPWithReturn {
 	private int n;
-	private Drivers drivers;
-	private CostMatrices C;
+	private int[] drivers;
+	private Matrice C;
 	private Hours hours;
-	private Passengers p;
+	private int[] p;
 	LPResults results;
 
 	public LPWithReturn(Instance instance, LPSettings var) {
 		this.n = instance.getnPersons();
-		this.drivers = instance.getDrivers();
+		this.drivers = instance.getQ();
 		this.C = instance.getCostMatrices();
 		this.hours = instance.getHours();
-		this.p = instance.getPassengers();
+		this.p = instance.getP();
 		try {
 			IloCplex cplex = new IloCplex();
 			
@@ -463,11 +461,11 @@ public class LPWithReturn {
 							IloLinearNumExpr expr = cplex.linearNumExpr();
 							expr.addTerm(1, q[k][i]);
 							expr.addTerm((-1), q[k][j]);
-							expr.addTerm(p.getP()[j], x[k][i][j]);
-							expr.addTerm(drivers.getQ()[k], x[k][i][j]);
-							expr.addTerm((-1) * p.getP()[i], x[k][j][i]);
-							expr.addTerm(drivers.getQ()[k], x[k][j][i]);
-							cplex.addLe(expr, drivers.getQ()[k]);
+							expr.addTerm(p[j], x[k][i][j]);
+							expr.addTerm(drivers[k], x[k][i][j]);
+							expr.addTerm((-1) * p[i], x[k][j][i]);
+							expr.addTerm(drivers[k], x[k][j][i]);
+							cplex.addLe(expr, drivers[k]);
 						}
 					}
 				}
@@ -479,11 +477,11 @@ public class LPWithReturn {
 							IloLinearNumExpr expr = cplex.linearNumExpr();
 							expr.addTerm(1, q[k][i]);
 							expr.addTerm((-1), q[k][j]);
-							expr.addTerm(p.getP()[j - 2 * n], x[k][i][j]);
-							expr.addTerm(drivers.getQ()[k], x[k][i][j]);
-							expr.addTerm((-1) * p.getP()[i - 2 * n], x[k][j][i]);
-							expr.addTerm(drivers.getQ()[k], x[k][j][i]);
-							cplex.addLe(expr, drivers.getQ()[k]);
+							expr.addTerm(p[j - 2 * n], x[k][i][j]);
+							expr.addTerm(drivers[k], x[k][i][j]);
+							expr.addTerm((-1) * p[i - 2 * n], x[k][j][i]);
+							expr.addTerm(drivers[k], x[k][j][i]);
+							cplex.addLe(expr, drivers[k]);
 						}
 					}
 				}
@@ -497,14 +495,14 @@ public class LPWithReturn {
 			for (int k = 0; k < O; k++) {
 				for (int i = 0; i < U; i++) {
 					IloLinearNumExpr expr = cplex.linearNumExpr();
-					expr.addTerm(drivers.getQ()[k], z[k][i]);
+					expr.addTerm(drivers[k], z[k][i]);
 					cplex.addLe(q[k][i], expr);
 				}
 			}
 			for (int k = 0; k < O; k++) {
 				for (int i = U; i < W; i++) {
 					IloLinearNumExpr expr = cplex.linearNumExpr();
-					expr.addTerm(drivers.getQ()[k], z[k][i]);
+					expr.addTerm(drivers[k], z[k][i]);
 					cplex.addLe(q[k][i], expr);
 				}
 			}
@@ -513,7 +511,7 @@ public class LPWithReturn {
 			{
 				IloLinearNumExpr expr = cplex.linearNumExpr();
 				for (int k = 0; k < O; k++) {
-					expr.addTerm(drivers.getQ()[k], y[k]);
+					expr.addTerm(drivers[k], y[k]);
 				}
 				cplex.addGe(expr, n);
 			}

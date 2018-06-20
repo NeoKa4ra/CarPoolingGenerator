@@ -1,16 +1,61 @@
 package Classes.FileManagement;
 
 import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.LinkedList;
 import java.util.ListIterator;
 
-public class RESFile {
+import Classes.Constants;
+import Classes.Instanciation.MatriceSettings;
 
+public class RESFile {
+	private String str;
 	public RESFile(LinkedList<LinkedList<Double>> everyResults, LinkedList<LinkedList<Integer>> varyingValues,
-			FileSettings FS) {
-		FilePath FILENAME = new FilePath(FS);
+			MatriceSettings MS, String suffix) {
+		
+		str = "";
+		str += "P:\\Travaux\\Modelisation\\Results\\res";
+		switch (MS.getMode()) {
+		case Constants.MM: // random matrix to go to work
+			str += "MM";
+			break;
+
+		case Constants.MC: // random matrix with close houses and close works
+			str += "MC";
+			break;
+
+		case Constants.MP: // random matrix with the same work
+			str += "MP";
+			break;
+
+		case Constants.MCP:
+			str += "MCP";
+			break;
+
+		case Constants.MCPW:
+			str += "MCPW";
+			break;
+
+		case Constants.MCPWP:
+			str += "MCPWP";
+			break;
+		}
+		str += "-";
+		str += MS.getN();
+		str += "-";
+		str += MS.getMaxRange();
+		str += "-";
+		str += suffix;
+		String FILENAME = str.toString() + ".txt";
+		int numFichier = 1;
+		File FILE = new File(FILENAME);
+		while (FILE.exists()) {
+			FILENAME = str.toString() + " (" + (numFichier++) + ")" + ".txt";
+			FILE = new File(FILENAME);
+		}
+		str = FILENAME;
 		BufferedWriter bw = null;
 		FileWriter fw = null;
 		int nbKeyVV = 0;

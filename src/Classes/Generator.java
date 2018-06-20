@@ -4,11 +4,11 @@ import java.time.Duration;
 import java.time.Instant;
 import java.util.LinkedList;
 
-import Classes.FileManagement.FileSettings;
 import Classes.FileManagement.RESFile;
 import Classes.FileManagement.TESTFile;
+import Classes.Instanciation.HoursSettings;
 import Classes.Instanciation.Instance;
-import Classes.Instanciation.InstanceSettings;
+import Classes.Instanciation.MatriceSettings;
 import Classes.LinearPrograms.LPResults;
 import Classes.LinearPrograms.LPSettings;
 import Classes.LinearPrograms.LPVariationsSettings;
@@ -26,7 +26,6 @@ public class Generator {
 	public Instance instance = null;
 	public static LPSettings var = null;
 	public LPWithReturn LP = null;
-	public static FileSettings FS = null;
 	// ************ VARIATIONS ************ //
 	public static int tempNUsers;
 	public static int tempAdvance;
@@ -34,31 +33,24 @@ public class Generator {
 	public static int tempDeviationPercentage;
 	public static int tempDeviationValue;
 
-	public boolean singleRun = false;
-
-	public static InstanceSettings tempIS;
 	public static Instant start = null;
 
-	public Generator(GlobalSettings GS, InstanceSettings IS, LPSettings LPS, LPVariationsSettings LPVS, int swap) {
-		if (swap == Constants.SINGLERUN) {
-			this.singleRun = true;
-		}
+	public Generator(GlobalSettings GS, MatriceSettings MS, HoursSettings HS, LPSettings LPS,
+			LPVariationsSettings LPVS) {
 
 		// **************** EXPERIMENTATIONS **************** //
 		for (int i = 0; i < GS.getNR(); i++) {
 			// ************ VARIATIONS ************ //
-			tempNUsers = IS.getNU();
+			tempNUsers = MS.getN();
 			tempAdvance = LPS.getWTA();
 			tempWaitingTime = LPS.getWTR();
 			tempDeviationPercentage = (int) LPS.getDP() * 100 - 100;
 			tempDeviationValue = LPS.getDV();
 
-			if (swap == Constants.LP || swap == Constants.SINGLERUN) {
+			if (GS.getMode() == Constants.LP || GS.getMode() == Constants.SINGLERUN) {
 				// ********* CONSTANT INSTANCIATIONS LP ********* //
-				tempIS = new InstanceSettings(tempNUsers, IS.getMA(), IS.getHM(), IS.getRR());
-				instance = new Instance(tempIS);
-				FS = new FileSettings(tempNUsers, tempIS, Constants.TEST, GS.getFS());
-				new TESTFile(instance, FS);
+				instance = new Instance(MS, HS);
+				new TESTFile(instance, MS, GS.getFS());
 			}
 			// Save the current values
 			varyingValues = new LinkedList<LinkedList<Integer>>();
@@ -68,12 +60,10 @@ public class Generator {
 				tempVaryingValues = new LinkedList<Integer>();
 				tempEveryResults = new LinkedList<Double>();
 
-				if (swap == Constants.USERS) {
+				if (GS.getMode() == Constants.USERS) {
 					// ********* CONSTANT INSTANCIATIONS USERS ********* //
-					tempIS = new InstanceSettings(tempNUsers, IS.getMA(), IS.getHM(), IS.getRR());
-					instance = new Instance(tempIS);
-					FS = new FileSettings(tempNUsers, tempIS, Constants.TEST, GS.getFS());
-					new TESTFile(instance, FS);
+					instance = new Instance(MS, HS);
+					new TESTFile(instance, MS, GS.getFS());
 				}
 				// To execute the LP
 				LP = new LPWithReturn(instance,
@@ -99,13 +89,11 @@ public class Generator {
 				System.out.println("O : " + LP.getRes().getObjective() + " ET : " + LP.getRes().getExecTime());
 			} while (LP.getRes().getExecTime() <= GS.getETM()
 					&& (Duration.between(start, Instant.now()).compareTo(Duration.ofMinutes(GS.getMBEM())) < 0)
-					&& tempNUsers < 20 && !singleRun);
+					&& tempNUsers < 20 && !GS.getSingleRun());
 
-			FS = new FileSettings(tempNUsers, IS, Constants.RES, GS.getFS());
-			new RESFile(everyResults, varyingValues, FS);
+			new RESFile(everyResults, varyingValues, MS, GS.getFS());
 		}
 	}
-
 
 	// GETTERS
 	public LPResults getResults() {
