@@ -32,7 +32,7 @@ public class LP {
 			//cplex.setParam(IloCplex.Param.MIP.Strategy.Branch,1);
 			//cplex.setParam(IloCplex.Param.MIP.Tolerances.MIPGap, 0.1);
 			// Display options
-			//cplex.setParam(IloCplex.Param.MIP.Display, 0);
+			cplex.setParam(IloCplex.Param.MIP.Display, 0);
 
 			// ****************************** DATAS ******************************
 			// ****************************** DATAS ******************************

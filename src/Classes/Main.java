@@ -20,7 +20,10 @@ public class Main {
 
 		// Matrix settings
 		int choice = 0;
-		
+
+		int compteurY = 0;
+		int compteurNpersons = 0;
+
 		LinkedList<Point> cities = new LinkedList<Point>();
 		LinkedList<Point> workplaces = new LinkedList<Point>();
 		workplaces.add(new Point(0, 0)); // GRENOBLE
@@ -47,40 +50,39 @@ public class Main {
 			break;
 		}
 
-		int nUsers = 25;
+		int nUsers = 5;
 		// Usage:(modeLP,modeInstance,numberofRun,execInstanceTimeMax,execTotalTimeMax,nMaxUsers,suffix)
-		GS = new GlobalSettings(Constants.GLPWR, Constants.GSR, 1, 300, 6, 12, "varyUsersWR");
-		// (matrixMode,nbPersons,matrixRange,citiesList,workplacesList,probScdWork,probScdHome)
-		MS = new MatriceSettings(Constants.MCPWP, nUsers, 200, cities, workplaces,0,0);
-		// Usage:(nPersons,morningHour,morningHourRange,eveningHour,eveningHourRange)
-		HS = new HoursSettings(nUsers, 790, 25, 1600, 500);
-		// Usage:LPSettings(advance, waitingTime, deviationPercentage, deviationValue)
-		LPS = new LPSettings(50, 25, 20, 5);
-		// (varyNUsers,varyAdvance,varyWaitingTime,varyDeviationPercentage,varyDeviationValue)
-		LPVS = new LPVariationsSettings(0, 0, 0, 0, 0);
-		g = new Generator(GS, MS, HS, LPS, LPVS);
-		new GraphPrinter(g.getInstance().getCostMatrices(), g.getResults());
-		new GraphPrinterReturn(g.getInstance().getCostMatrices(), g.getResults());
-		
-/*
-		// Usage:(modeLP,modeInstance,numberofRun,execInstanceTimeMax,execTotalTimeMax,nMaxUsers,suffix)
-		GS = new GlobalSettings(Constants.GLPOW, Constants.GDI, 10, 300, 6, 12, "varyUsersOW");
+		GS = new GlobalSettings(Constants.GLPWR, Constants.GDI, 30, 300, 6, 10, "varyUsersWR");
 		// (matrixMode,nbPersons,matrixRange,citiesList,workplacesList,probScdWork,probScdHome)
 		MS = new MatriceSettings(Constants.MCPWP, nUsers, 200, cities, workplaces, 20, 5);
 		// Usage:(nPersons,morningHour,morningHourRange,eveningHour,eveningHourRange)
-		HS = new HoursSettings(nUsers, 900, 100, 1500, 100);
+		HS = new HoursSettings(nUsers, 800, 1, 1500, 1);
 		// Usage:LPSettings(advance, waitingTime, deviationPercentage, deviationValue)
 		LPS = new LPSettings(50, 25, 20, 5);
 		// (varyNUsers,varyAdvance,varyWaitingTime,varyDeviationPercentage,varyDeviationValue)
 		LPVS = new LPVariationsSettings(1, 0, 0, 0, 0);
 		g = new Generator(GS, MS, HS, LPS, LPVS);
 		// new GraphPrinter(g.getInstance().getCostMatrices(), g.getResults());
-*/
+		// new GraphPrinterReturn(g.getInstance().getCostMatrices(), g.getResults());
+
+		// Usage:(modeLP,modeInstance,numberofRun,execInstanceTimeMax,execTotalTimeMax,nMaxUsers,suffix)
+		//GS = new GlobalSettings(Constants.GLPOW, Constants.GDI, 30, 300, 6, 13, "varyUsersOW");
+		// (matrixMode,nbPersons,matrixRange,citiesList,workplacesList,probScdWork,probScdHome)
+		//MS = new MatriceSettings(Constants.MCPWP, nUsers, 200, cities, workplaces, 20, 5);
+		// Usage:(nPersons,morningHour,morningHourRange,eveningHour,eveningHourRange)
+		//HS = new HoursSettings(nUsers, 900, 100, 1500, 100);
+		// Usage:LPSettings(advance, waitingTime, deviationPercentage, deviationValue)
+		//LPS = new LPSettings(50, 25, 20, 5);
+		// (varyNUsers,varyAdvance,varyWaitingTime,varyDeviationPercentage,varyDeviationValue)
+		//LPVS = new LPVariationsSettings(1, 0, 0, 0, 0);
+		// g = new Generator(GS, MS, HS, LPS, LPVS);
+		// new GraphPrinter(g.getInstance().getCostMatrices(), g.getResults());
+
 		// Print latex data
 		// P1: NBUSERS P2&P3: WAITING TIME P4: PERCENTAGE P5: DEVIATION VALUE
-		int nbFiles = 5;
+		int nbFiles = 28;
 		String xAxis = "P1";
-		String filePath = "data/couples/resMCPWP-10-200-varyUsersOW";
+		String filePath = "data/newcouple/resMCPWP-12-200-varyUsersOW";
 
 		//new LatexDataPrinter(nbFiles, xAxis, filePath);
 	}

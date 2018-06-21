@@ -1,8 +1,11 @@
 package Classes;
 
+import java.awt.Point;
 import java.time.Duration;
 import java.time.Instant;
+import java.util.Iterator;
 import java.util.LinkedList;
+import java.util.ListIterator;
 
 import Classes.FileManagement.RESFile;
 import Classes.FileManagement.TESTFile;
@@ -34,6 +37,8 @@ public class Generator {
 	public static int tempWaitingTime;
 	public static int tempDeviationPercentage;
 	public static int tempDeviationValue;
+	
+	public static LinkedList<Double> tauxDoccupation = new LinkedList<Double>();
 
 	public static Instant start = null;
 
@@ -78,6 +83,13 @@ public class Generator {
 				// Add here every results you want
 				tempEveryResults.add(LPWT.getRes().getObjective());
 				tempEveryResults.add(LPWT.getRes().getExecTime());
+				int sum = 0;
+				for (int k = 0; k < tempNUsers; k++) {
+					if (LPWT.getRes().gety()[k]) {
+						sum++;
+					}
+				}
+				tauxDoccupation.add((double)tempNUsers/(double)sum);
 				// Save the current values
 				varyingValues.add(tempVaryingValues);
 				everyResults.add(tempEveryResults);
@@ -94,8 +106,14 @@ public class Generator {
 
 			new RESFile(everyResults, varyingValues, MS, GS.getFS());
 		}
-	}
+		ListIterator<Double> tDIT = tauxDoccupation.listIterator();
+		while(tDIT.hasNext()) {
+			System.out.println(tDIT.next());
+		} 
 
+	}
+	
+	
 	// GETTERS
 	public LPResults getResults() {
 		return this.LPWT.getRes();
