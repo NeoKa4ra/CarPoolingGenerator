@@ -1,0 +1,223 @@
+\documentclass{beamer}
+
+\usetheme{Darmstadt}
+
+\newcommand\tab[1][1cm]{\hspace*{#1}}
+
+\makeatletter
+\setbeamertemplate{title page}{
+	\begin{centering}
+		\begin{beamercolorbox}[sep=8pt,center]{institute}
+			\usebeamerfont{institute}\insertinstitute
+		\end{beamercolorbox}
+		\begin{beamercolorbox}[sep=8pt,center]{title}
+			\usebeamerfont{title}\inserttitle
+		\end{beamercolorbox}
+		\begin{beamercolorbox}[sep=8pt,center]{date}
+			\usebeamerfont{author}\insertauthor \newline
+			\usebeamerfont{date}\insertdate
+		\end{beamercolorbox}
+	\end{centering}
+}
+\makeatother
+\title[Reducing Grenoble's car traffic]{\textsc{Decision Support System for carpooling to reduce car traffic in Grenoble area}}
+\author{Romain NAVARRO}
+\institute{ORCO \\ UGA \& ENSIMAG}
+\date{June, 29\textsuperscript{th} 2018}
+
+
+\AtBeginSection[]{%
+	\begin{frame}<beamer>
+		\frametitle{Outline}
+		\tableofcontents[currentsection,hideallsubsections]
+	\end{frame}
+	\addtocounter{framenumber}{-1}% Don't affect slide number
+}
+
+\AtBeginSubsection[]{
+	\begin{frame}<beamer>
+		\frametitle{Outline}
+		\tableofcontents[sectionstyle=show/hide,subsectionstyle=show/shaded/hide]
+	\end{frame}
+	\addtocounter{framenumber}{-1}% Don't affect slide number
+}
+
+\begin{document}
+	\begin{frame}
+		\maketitle
+		\begin{tabbing}
+			Supervisor:\tab \= \textsc{Prof.} \=Van-Dat \textsc{CUNG}, G-SCOP \& UGA\\\medskip
+			Jury members: \> \textsc{Prof.} \>Nadia \textsc{BRAUNER}\\
+			\> \textsc{Prof.} \>Van-Dat \textsc{CUNG}\\
+			\> \textsc{Dr.} \>Vassilissa \textsc{LEHOUX}\\
+			\> \textsc{Prof.} \>Matej \textsc{STEHLIK}
+		\end{tabbing}
+	\end{frame}
+	
+	\begin{frame}
+		\tableofcontents[hideallsubsections]
+	\end{frame}
+	%%%%%%%%%%%%% DEF OF THE GOAL %%%%%%%%%%
+	\section{Goal}
+	\begin{frame}[label=pagebanale]
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	%%%%%%%%% PRESENTATION OF THE PROBLEM %%%%%%%%%%
+	\section{Problem's presentation}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{Different workplaces}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{Time windows}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{Objective}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	%%%%%%%%%%%% STATE OF THE ART %%%%%%%%%%%
+	\section{State of the art}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{LCPP}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{DCPP}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	%%%%%%%%%%%%% ORIGINALITIES %%%%%%%%%%%%
+	\section{Originalities}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{Return management}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{Multiple places}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{Waiting time management}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{The case of Grenoble}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	%%%%%%%%%%%%%%%% MATHEMATICAL MODEL %%%%%%%%%%
+	\section{Modeling}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{Associated and dissociated models}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{Data}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{Decision variables}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{Scheduling}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{Resolution process}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	%%%%%%%%%%%% EXPERIMENTS %%%%%%%%%%%%
+	\section{Experiments}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{Experimental protocol}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{Generator}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{Experimental protocol}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{Varying the LP settings}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	\subsection{The case of Grenoble}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+	%%%%%%%%%%%%%%%% CONCLUSION %%%%%%%%%%%%
+	\section*{Conclusion}
+	\begin{frame}
+		\frametitle{Un exemple de titre}
+		\framesubtitle{avec un exemple de sous-titre}
+		Enfin, le texte ! :)
+	\end{frame}
+\end{document}
