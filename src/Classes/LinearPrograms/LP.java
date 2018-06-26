@@ -8,7 +8,6 @@ import ilog.concert.IloLinearNumExpr;
 import ilog.concert.IloNumVar;
 import ilog.cplex.IloCplex;
 
-
 public class LP {
 	private int n;
 	private int[] drivers;
@@ -25,12 +24,12 @@ public class LP {
 		this.p = instance.getP();
 		try {
 			IloCplex cplex = new IloCplex();
-			
-			// ********************* CPLEX SETTINGS ********************* 
+
+			// ********************* CPLEX SETTINGS *********************
 			// Branch and bound options
-			//cplex.setParam(IloCplex.Param.MIP.Strategy.NodeSelect, 1);
-			//cplex.setParam(IloCplex.Param.MIP.Strategy.Branch,1);
-			//cplex.setParam(IloCplex.Param.MIP.Tolerances.MIPGap, 0.1);
+			// cplex.setParam(IloCplex.Param.MIP.Strategy.NodeSelect, 1);
+			// cplex.setParam(IloCplex.Param.MIP.Strategy.Branch,1);
+			// cplex.setParam(IloCplex.Param.MIP.Tolerances.MIPGap, 0.1);
 			// Display options
 			cplex.setParam(IloCplex.Param.MIP.Display, 0);
 
@@ -542,14 +541,13 @@ public class LP {
 			} else {
 				System.out.println("No solution");
 			}
-			results.setExecTime(cplex.getCplexTime()-savedTime);
+			results.setExecTime(cplex.getCplexTime() - savedTime);
 			cplex.end();
-		} catch (
-		IloException exc) {
+		} catch (IloException exc) {
 			exc.printStackTrace();
 		}
 	}
-	
+
 	// GETTERS
 	public LPResults getRes() {
 		return this.results;

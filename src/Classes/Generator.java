@@ -1,11 +1,8 @@
 package Classes;
 
-import java.awt.Point;
 import java.time.Duration;
 import java.time.Instant;
-import java.util.Iterator;
 import java.util.LinkedList;
-import java.util.ListIterator;
 
 import Classes.FileManagement.RESFile;
 import Classes.FileManagement.TESTFile;
@@ -15,6 +12,7 @@ import Classes.Instanciation.MatriceSettings;
 import Classes.LinearPrograms.LP;
 import Classes.LinearPrograms.LPOneWay;
 import Classes.LinearPrograms.LPResults;
+import Classes.LinearPrograms.LPSP;
 import Classes.LinearPrograms.LPSettings;
 import Classes.LinearPrograms.LPVariationsSettings;
 
@@ -30,6 +28,7 @@ public class Generator {
 	public Instance instance = null;
 	public static LPSettings var = null;
 	public LP LPWT = null; // LP With Return
+	public LPSP LPSP = null; // LP With Return
 	public LPOneWay LPOW = null;
 	// ************ VARIATIONS ************ //
 	public static int tempNUsers;
@@ -74,6 +73,8 @@ public class Generator {
 				// To execute the LP
 				LPWT = new LP(instance,
 						new LPSettings(tempAdvance, tempWaitingTime, tempDeviationPercentage, tempDeviationValue));
+				LPSP = new LPSP(instance,
+						new LPSettings(tempAdvance, tempWaitingTime, tempDeviationPercentage, tempDeviationValue));
 				// Add here every varying value you want
 				tempVaryingValues.add(Integer.valueOf(tempNUsers));
 				tempVaryingValues.add(Integer.valueOf(tempAdvance));
@@ -82,15 +83,7 @@ public class Generator {
 				tempVaryingValues.add(Integer.valueOf(tempDeviationValue));
 				// Add here every results you want
 				tempEveryResults.add(LPWT.getRes().getObjective());
-				tempEveryResults.add(LPWT.getRes().getExecTime());
-				int sum = 0;
-				for (int k = 0; k < tempNUsers; k++) {
-					if (LPWT.getRes().gety()[k]) {
-						sum++;
-					}
-				}
-				tauxDoccupation.add((double)tempNUsers/(double)sum);
-				// Save the current values
+				tempEveryResults.add(LPWT.getRes().getExecTime());				// Save the current values
 				varyingValues.add(tempVaryingValues);
 				everyResults.add(tempEveryResults);
 				// ************ VARIATIONS ************ //
@@ -99,20 +92,14 @@ public class Generator {
 				tempWaitingTime += LPVS.getVWT();
 				tempDeviationPercentage += LPVS.getVDP();
 				tempDeviationValue += LPVS.getvDV();
-				System.out.println("O : " + LPWT.getRes().getObjective() + " ET : " + LPWT.getRes().getExecTime());
+				System.out.println("O : " + LPWT.getRes().getObjective() +" OSP : " + LPSP.getRes().getObjective() + " ET : " + LPWT.getRes().getExecTime()+ " ETSP : " + LPSP.getRes().getExecTime());
 			} while (LPWT.getRes().getExecTime() <= GS.getETM()
 					&& (Duration.between(start, Instant.now()).compareTo(Duration.ofMinutes(GS.getMBEM())) < 0)
 					&& tempNUsers < GS.getNMaxUsers() && !GS.getSingleRun());
 
 			new RESFile(everyResults, varyingValues, MS, GS.getFS());
 		}
-		ListIterator<Double> tDIT = tauxDoccupation.listIterator();
-		while(tDIT.hasNext()) {
-			System.out.println(tDIT.next());
-		} 
-
 	}
-	
 	
 	// GETTERS
 	public LPResults getResults() {

@@ -52,18 +52,18 @@ public class Main {
 
 		int nUsers = 5;
 		// Usage:(modeLP,modeInstance,numberofRun,execInstanceTimeMax,execTotalTimeMax,nMaxUsers,suffix)
-		GS = new GlobalSettings(Constants.GLPWR, Constants.GDI, 30, 300, 6, 10, "varyUsersWR");
+		GS = new GlobalSettings(Constants.GLPWR, Constants.GDI, 30, 300, 6, 10, "samePool");
 		// (matrixMode,nbPersons,matrixRange,citiesList,workplacesList,probScdWork,probScdHome)
 		MS = new MatriceSettings(Constants.MCPWP, nUsers, 200, cities, workplaces, 20, 5);
 		// Usage:(nPersons,morningHour,morningHourRange,eveningHour,eveningHourRange)
-		HS = new HoursSettings(nUsers, 800, 1, 1500, 1);
+		HS = new HoursSettings(nUsers, 800, 100, 1500, 100);
 		// Usage:LPSettings(advance, waitingTime, deviationPercentage, deviationValue)
 		LPS = new LPSettings(50, 25, 20, 5);
 		// (varyNUsers,varyAdvance,varyWaitingTime,varyDeviationPercentage,varyDeviationValue)
-		LPVS = new LPVariationsSettings(1, 0, 0, 0, 0);
+		LPVS = new LPVariationsSettings(0, 0, 0, 0, 0);
 		g = new Generator(GS, MS, HS, LPS, LPVS);
-		// new GraphPrinter(g.getInstance().getCostMatrices(), g.getResults());
-		// new GraphPrinterReturn(g.getInstance().getCostMatrices(), g.getResults());
+		//new GraphPrinter(g.getInstance().getCostMatrices(), g.getResults());
+		//new GraphPrinterReturn(g.getInstance().getCostMatrices(), g.getResults());
 
 		// Usage:(modeLP,modeInstance,numberofRun,execInstanceTimeMax,execTotalTimeMax,nMaxUsers,suffix)
 		//GS = new GlobalSettings(Constants.GLPOW, Constants.GDI, 30, 300, 6, 13, "varyUsersOW");
