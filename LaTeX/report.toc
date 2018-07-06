@@ -14,10 +14,10 @@
 \contentsline {section}{\numberline {3.3}Complexity of the problem}{19}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Hamiltonian Path Problem}{19}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}CarPooling Problem}{20}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Correspondances between the problems}{21}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.3}Correspondences between the problems}{21}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Proof of one way}{22}{subsection.3.3.4}
 \contentsline {subsection}{\numberline {3.3.5}Proof in the other way}{23}{subsection.3.3.5}
-\contentsline {subsection}{\numberline {3.3.6}Other caracteristics}{23}{subsection.3.3.6}
+\contentsline {subsection}{\numberline {3.3.6}Other characteristics}{23}{subsection.3.3.6}
 \contentsline {subsubsection}{Time windows}{23}{section*.33}
 \contentsline {subsubsection}{Return management}{24}{section*.35}
 \contentsline {subsubsection}{Different return locations}{24}{section*.36}
@@ -29,7 +29,7 @@
 \contentsline {subsubsection}{Chose the data}{29}{section*.43}
 \contentsline {section}{\numberline {4.2}The data model}{30}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}A representation in graph form}{30}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Sets's range}{30}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Sets range}{30}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Data used}{30}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Diagram representation of data}{31}{subsection.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}The dissociated models}{31}{subsection.4.2.5}
@@ -44,33 +44,47 @@
 \contentsline {subsection}{\numberline {4.4.2}The use of the model}{35}{subsection.4.4.2}
 \contentsline {subsubsection}{Limitations of the model}{35}{section*.50}
 \contentsline {section}{\numberline {4.5}Resolution process}{35}{section.4.5}
-\contentsline {chapter}{\chapternumberline {5}Experiments}{39}{chapter.5}
-\contentsline {section}{\numberline {5.1}Experimental protocol}{39}{section.5.1}
-\contentsline {section}{\numberline {5.2}Varying the waiting time values}{39}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Benchmarks}{39}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Configuration}{39}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Results}{39}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Analysis}{42}{subsection.5.2.4}
-\contentsline {section}{\numberline {5.3}Varying the deviation's percentage of the travel allowed}{42}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Benchmarks}{42}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Configuration}{42}{subsection.5.3.2}
-\contentsline {subsection}{\numberline {5.3.3}Results}{42}{subsection.5.3.3}
-\contentsline {subsection}{\numberline {5.3.4}Analysis}{44}{subsection.5.3.4}
-\contentsline {section}{\numberline {5.4}Varying the deviation's value of the travel allowed}{44}{section.5.4}
-\contentsline {subsection}{\numberline {5.4.1}Benchmarks}{44}{subsection.5.4.1}
-\contentsline {subsection}{\numberline {5.4.2}Configuration}{44}{subsection.5.4.2}
-\contentsline {subsection}{\numberline {5.4.3}Results}{44}{subsection.5.4.3}
-\contentsline {subsection}{\numberline {5.4.4}Analysis}{46}{subsection.5.4.4}
-\contentsline {section}{\numberline {5.5}Varying the number of users}{46}{section.5.5}
-\contentsline {subsection}{\numberline {5.5.1}Benchmarks}{46}{subsection.5.5.1}
-\contentsline {subsection}{\numberline {5.5.2}Configuration}{46}{subsection.5.5.2}
-\contentsline {subsection}{\numberline {5.5.3}Results}{46}{subsection.5.5.3}
-\contentsline {subsection}{\numberline {5.5.4}Analysis}{47}{subsection.5.5.4}
-\contentsline {section}{\numberline {5.6}Name of the experiment}{47}{section.5.6}
-\contentsline {subsection}{\numberline {5.6.1}Benchmarks}{47}{subsection.5.6.1}
-\contentsline {subsection}{\numberline {5.6.2}Configuration}{48}{subsection.5.6.2}
-\contentsline {subsection}{\numberline {5.6.3}Results}{48}{subsection.5.6.3}
-\contentsline {subsection}{\numberline {5.6.4}Analysis}{48}{subsection.5.6.4}
-\contentsline {chapter}{Conclusion and perspectives}{49}{chapter*.68}
-\contentsline {chapter}{Bibliography}{51}{chapter*.69}
-\contentsline {chapter}{Bibliography}{53}{chapter*.69}
+\contentsline {chapter}{\chapternumberline {5}Experiments}{37}{chapter.5}
+\contentsline {section}{\numberline {5.1}Experimental protocol}{37}{section.5.1}
+\contentsline {section}{\numberline {5.2}About configurations}{37}{section.5.2}
+\contentsline {section}{\numberline {5.3}Variations in LP parameters \& users}{38}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Benchmarks}{38}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Configuration}{38}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}Results}{39}{subsection.5.3.3}
+\contentsline {subsubsection}{Varying the deviation's percentage of the travel allowed}{40}{section*.52}
+\contentsline {subsection}{\numberline {5.3.4}Analysis}{40}{subsection.5.3.4}
+\contentsline {subsubsection}{Varying the number of users}{41}{section*.55}
+\contentsline {subsection}{\numberline {5.3.5}Analysis}{41}{subsection.5.3.5}
+\contentsline {section}{\numberline {5.4}Associated/dissociated programs}{41}{section.5.4}
+\contentsline {subsection}{\numberline {5.4.1}Benchmarks}{42}{subsection.5.4.1}
+\contentsline {subsection}{\numberline {5.4.2}Configuration}{42}{subsection.5.4.2}
+\contentsline {subsection}{\numberline {5.4.3}Results}{43}{subsection.5.4.3}
+\contentsline {subsection}{\numberline {5.4.4}Analysis}{43}{subsection.5.4.4}
+\contentsline {section}{\numberline {5.5}Users have the same workplace from generated cities}{43}{section.5.5}
+\contentsline {subsection}{\numberline {5.5.1}Benchmarks}{43}{subsection.5.5.1}
+\contentsline {subsection}{\numberline {5.5.2}Configuration}{43}{subsection.5.5.2}
+\contentsline {subsection}{\numberline {5.5.3}Results}{45}{subsection.5.5.3}
+\contentsline {subsection}{\numberline {5.5.4}Analysis}{45}{subsection.5.5.4}
+\contentsline {section}{\numberline {5.6}Heuristics in the case of Grenoble}{45}{section.5.6}
+\contentsline {subsection}{\numberline {5.6.1}Benchmarks}{46}{subsection.5.6.1}
+\contentsline {subsection}{\numberline {5.6.2}Configuration}{46}{subsection.5.6.2}
+\contentsline {subsection}{\numberline {5.6.3}Results}{47}{subsection.5.6.3}
+\contentsline {subsection}{\numberline {5.6.4}Analysis}{47}{subsection.5.6.4}
+\contentsline {section}{\numberline {5.7}Limitations of the linear program}{47}{section.5.7}
+\contentsline {subsection}{\numberline {5.7.1}About the fill rate of the cars}{47}{subsection.5.7.1}
+\contentsline {subsection}{\numberline {5.7.2}What remains to be done}{48}{subsection.5.7.2}
+\contentsline {chapter}{Conclusion and perspectives}{49}{chapter*.60}
+\contentsline {chapter}{Bibliography}{51}{chapter*.61}
+\contentsline {chapter}{Bibliography}{53}{chapter*.61}
+\contentsline {chapter}{Annexes}{55}{appendix*.62}
+\contentsline {subsection}{Second resolution process}{55}{section*.63}
+\contentsline {subsection}{Continuation of the results of the LP parameter variations}{56}{section*.65}
+\contentsline {subsubsection}{Varying the deviation's percentage of the travel allowed}{56}{section*.66}
+\contentsline {subsubsection}{Varying the deviation's value of the travel allowed}{57}{section*.69}
+\contentsline {subsubsection}{Varying the waiting time values}{58}{section*.73}
+\contentsline {subsubsection}{Varying the number of users}{60}{section*.77}
+\contentsline {subsection}{Results for the city of Grenoble}{61}{section*.79}
+\contentsline {subsubsection}{Cities : VOIRON VIF CROLLES}{61}{section*.80}
+\contentsline {subsubsection}{Cities : VOIRON VINAY SAINT-LAURENT-DU-PONT}{63}{section*.83}
+\contentsline {subsubsection}{Cities : PONTCHARRA LE-TOUVET CROLLES}{65}{section*.86}
+\contentsline {subsubsection}{Cities : VIZILLE PONT-DE-CLAIX VIF}{66}{section*.89}

@@ -17,11 +17,13 @@
 \BOOKMARK [1][-]{section.4.5}{Resolution process}{chapter.4}% 17
 \BOOKMARK [0][-]{chapter.5}{Experiments}{}% 18
 \BOOKMARK [1][-]{section.5.1}{Experimental protocol}{chapter.5}% 19
-\BOOKMARK [1][-]{section.5.2}{Varying the waiting time values}{chapter.5}% 20
-\BOOKMARK [1][-]{section.5.3}{Varying the deviation's percentage of the travel allowed}{chapter.5}% 21
-\BOOKMARK [1][-]{section.5.4}{Varying the deviation's value of the travel allowed}{chapter.5}% 22
-\BOOKMARK [1][-]{section.5.5}{Varying the number of users}{chapter.5}% 23
-\BOOKMARK [1][-]{section.5.6}{Name of the experiment}{chapter.5}% 24
-\BOOKMARK [0][-]{chapter*.68}{Conclusion and perspectives}{}% 25
-\BOOKMARK [0][-]{chapter*.69}{Bibliography}{}% 26
-\BOOKMARK [0][-]{chapter*.69}{Bibliography}{}% 27
+\BOOKMARK [1][-]{section.5.2}{About configurations}{chapter.5}% 20
+\BOOKMARK [1][-]{section.5.3}{Variations in LP parameters \046 users}{chapter.5}% 21
+\BOOKMARK [1][-]{section.5.4}{Associated/dissociated programs}{chapter.5}% 22
+\BOOKMARK [1][-]{section.5.5}{Users have the same workplace from generated cities}{chapter.5}% 23
+\BOOKMARK [1][-]{section.5.6}{Heuristics in the case of Grenoble}{chapter.5}% 24
+\BOOKMARK [1][-]{section.5.7}{Limitations of the linear program}{chapter.5}% 25
+\BOOKMARK [0][-]{chapter*.60}{Conclusion and perspectives}{}% 26
+\BOOKMARK [0][-]{chapter*.61}{Bibliography}{}% 27
+\BOOKMARK [0][-]{chapter*.61}{Bibliography}{}% 28
+\BOOKMARK [0][-]{appendix*.62}{Annexes}{}% 29
